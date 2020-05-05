@@ -1,0 +1,3302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arknights Вики </title>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../header.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+ <body>
+
+    <div id="header">
+
+        <img src="../../../pic/arknights.png" alt="" style="display: block; margin-left: auto; margin-right: auto;">
+        <div class="headernav">
+            <div class="quad">
+                <a href="">Главная</a>
+            </div>
+            
+            <div class="quad" style="margin-left: 25%;">
+                <a href="">Оперлист</a>
+            </div>
+            
+            <div class="quad" style="margin-left: 50%;">
+                <div class="drop">
+                    <button class="hui">Cюжет</button>
+                    <div class="headcont">
+                        <ul>
+                            <li>
+                                <a href=""> Основной сюжет </a>
+                            </li>
+                            <li>
+                                <a href=""> Побочные истории </a>
+                            </li>
+                            <li>
+                                <a href=""> Организации </a>
+                            </li>
+                            <li>
+                                <a href=""> Толковый Словарь </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quad" style="margin-left: 73%;">
+                <div class="drop">
+                    <button class="hui">Гайды</button>
+                    <div class="headcont">
+                        <ul>
+                            <li>
+                                <a href=""> ВСЕ ГАЙДЫ </a>
+                            </li>
+                            <li>
+                                <a href=""> Гайд по Классам </a>
+                            </li>
+                            <li>
+                                <a href=""> Гайд по Прокачке</a>
+                            </li>
+                            <li>
+                                <a href=""> Гайд по Умениям </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="freespace"></div>
+    <div id="content">   
+        
+        <ul>
+            <li>
+                <button onclick="showPanel(0)" style="top: 200px;"> <img src="../pic/elite1.png" alt="" width="40px"> </button>
+            </li>
+            <li>
+                <button onclick="showPanel(1)" style="top: 250px;"> <img src="../pic/elite2.png" alt="" width="40px"> </button>
+            </li>
+        </ul>
+
+        <h2 style="color: white; text-align: center; margin: 0;"> Magallan </h2>
+
+        <img src="pic/class_supporter.png" width="125px" style="position: absolute; left: 15px; bottom: 15px;">
+
+        <img src="pic/rhine.png" width="125px" style="position: absolute; left: 15px;">
+        
+        <div class="operPic">
+            <img src="pic/mag1.png" height="99%" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+
+        <div class="operPic">
+            <img src="pic/mag2.png" height="99%" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+        
+
+    </div>
+
+    <div id="info">
+
+        <h2>Статы:</h2>
+        
+        <table class="lvlButton">
+            <tr>
+                <td>
+                    <button onclick="changeElite(0)">Non-Elite </button>
+                </td>
+
+                <td>
+                    <button onclick="changeElite(1)">Элита I </button>
+                </td>
+
+                <td>
+                    <button onclick="changeElite(2)">Элита II </button>
+                </td>
+            </tr>
+        </table>
+
+        <div class="elite">
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="6" oninput="changeLevel(this,0)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <h3 id="lvl1num0" class="lev0 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
+            <h3 id="lvl2num0" class="lev0">10</h3>
+            <h3 id="lvl3num0" class="lev0">20</h3>
+            <h3 id="lvl4num0" class="lev0">30</h3>
+            <h3 id="lvl5num0" class="lev0">40</h3>
+            <h3 id="lvl6num0" class="lev0">50</h3>
+
+            <div id="elite0lev1" class="lvl0 active">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">495</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">211</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">10</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">60</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">15</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev2" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">527</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">228</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">10</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">65</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">15</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev3" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">563</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">246</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">10</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">70</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">15</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev4" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">599</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">265</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">10</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">76</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">15</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev5" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">634</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">283</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">10</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">81</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">15</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev6" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">670</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">302</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">10</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">87</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">15</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <img src="pic/range1.png" width="80px" style="display: block; margin-left: auto; margin-right: auto;">
+
+        </div>
+
+        <div class="elite">
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="9" oninput="changeLevel(this,1)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <h3 id="lvl1num1" class="lev1 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
+            <h3 id="lvl2num1" class="lev1">10</h3>
+            <h3 id="lvl3num1" class="lev1">20</h3>
+            <h3 id="lvl4num1" class="lev1">30</h3>
+            <h3 id="lvl5num1" class="lev1">40</h3>
+            <h3 id="lvl6num1" class="lev1">50</h3>
+            <h3 id="lvl7num1" class="lev1">60</h3>
+            <h3 id="lvl8num1" class="lev1">70</h3>
+            <h3 id="lvl9num1" class="lev1">80</h3>
+
+            <div id="elite1lev1" class="lvl1 active">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">670</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">302</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">87</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev2" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">693</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">314</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">90</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev3" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">718</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">326</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">94</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev4" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">744</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">339</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">98</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev5" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">769</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">352</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">101</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev6" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">795</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">365</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">105</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev7" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">820</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">377</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">109</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev8" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">846</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">390</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">112</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev9" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">871</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">403</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">116</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <img src="pic/range2.png" width="100px" style="display: block; margin-left: auto; margin-right: auto;">
+
+        </div>
+
+        <div class="elite">
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="10" oninput="changeLevel(this,2)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <h3 id="lvl1num2" class="lev2 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
+            <h3 id="lvl2num2" class="lev2">10</h3>
+            <h3 id="lvl3num2" class="lev2">20</h3>
+            <h3 id="lvl4num2" class="lev2">30</h3>
+            <h3 id="lvl5num2" class="lev2">40</h3>
+            <h3 id="lvl6num2" class="lev2">50</h3>
+            <h3 id="lvl7num2" class="lev2">60</h3>
+            <h3 id="lvl8num2" class="lev2">70</h3>
+            <h3 id="lvl9num2" class="lev2">80</h3>
+            <h3 id="lvl10num2" class="lev2">90</h3>
+
+            <div id="elite2lev1" class="lvl2 active">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">871</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">403</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">116</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev2" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">894</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">410</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">118</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev3" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">921</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">417</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">121</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev4" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">947</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">425</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">124</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev5" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">973</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">432</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">127</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev6" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">999</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">439</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">129</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev7" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1025</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">447</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">132</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev8" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1051</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">454</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">135</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev9" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1077</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">462</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">137</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev10" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1103</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">469</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">12</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">140</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            
+            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <img src="pic/range2.png" width="100px" style="display: block; margin-left: auto; margin-right: auto;">
+
+        </div>
+
+        <h2> Потенциал:</h2>
+            <div style="display: block; width: 65%; margin-left: auto; margin-right: auto;">
+                <ul id="potential" style="list-style-type: none; width: 75%; padding-left: 10px; margin-block-start: 0; margin-block-end: 0;">
+                    <li>
+                        <img src="../pic/pot1.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Стоимость: -1
+                        
+                    </li>
+                    <li>
+                        <img src="../pic/pot2.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Повторный призыв: -4
+                        
+                    </li>
+                    <li>
+                        <img src="../pic/pot3.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Сила Атаки: +23
+                        
+                    </li>
+                    <li>
+                        <img src="../pic/pot4.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Улучшение второго таланта
+                        
+                    </li>
+                    <li>
+                        <img src="../pic/pot5.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Стоимость: -1
+                        
+                    </li>
+                </ul>
+            </div>
+        
+            <h2> Бонус доверия:</h2>
+            <div style="display: block; width: 65%; margin-left: auto; margin-right: auto;">
+
+                <p style="text-align: center;">Максимум HP: +300</p>
+                <p style="text-align: center;">Сила Атаки: +40</p>
+                
+            </div>    
+
+        <h2 style="margin-top: 10px;">Скиллы:</h2>
+
+        <table class="skillButton">
+            <tbody>
+                <tr>
+                    <td>
+                        <button onclick="changeSkill(0)">Скилл I</button>
+                    </td>
+                    <td>
+                        <button onclick="changeSkill(1)">Скилл II</button>
+                    </td>
+                    <td>
+                        <button onclick="changeSkill(2)">Скилл III</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="skillDis">
+
+            <div style=" background-color: rgba(255, 0, 0, 0.4);">
+                <img src="pic/skill1.png" alt="" height="50px" style="display: inline-block">
+                <span class="skillTitle"style="margin-top: 2%; margin-left: 15px;"> High-efficiency Refrigeration Module </span>
+            </div>
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="10" oninput="changeSkillLevel(this,0)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <img src="../pic/1.png" height="50px" id="skill1num0" class="skillLev0 display1">
+            <img src="../pic/2.png" height="50px" id="skill2num0" class="skillLev0">
+            <img src="../pic/3.png" height="50px" id="skill3num0" class="skillLev0">
+            <img src="../pic/4.png" height="50px" id="skill4num0" class="skillLev0">
+            <img src="../pic/5.png" height="50px" id="skill5num0" class="skillLev0">
+            <img src="../pic/6.png" height="50px" id="skill6num0" class="skillLev0">
+            <img src="../pic/8.png" height="50px" id="skill7num0" class="skillLev0">
+            <img src="../pic/9.png" height="50px" id="skill8num0" class="skillLev0">
+            <img src="../pic/10.png" height="50px" id="skill9num0" class="skillLev0">
+            <img src="../pic/11.png" height="50px" id="skill10num0" class="skillLev0">
+
+           
+
+            <div id="skill0dis1" class="skill0 active">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 30</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 10</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Magallan и её дроны замедляют всех врагов в радиусе атаки на <span style="color: rgb(78, 196, 255);">0.7</span> 
+                    секунды, каждые <span style="color: rgb(78, 196, 255);">3</span> секунды.
+                    <br>
+                    Активный эффект: Эффект замедления сменяется на заморозку продолжительностью <span style="color: rgb(78, 196, 255);">1.6</span> секунды.
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill0dis2" class="skill0">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 30</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 11</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Magallan и её дроны замедляют всех врагов в радиусе атаки на <span style="color: rgb(78, 196, 255);">0.7</span> 
+                    секунды, каждые <span style="color: rgb(78, 196, 255);">3</span> секунды.
+                    <br>
+                    Активный эффект: Эффект замедления сменяется на заморозку продолжительностью <span style="color: rgb(78, 196, 255);">1.7</span> секунды.
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill0dis3" class="skill0">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 30</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 12</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Magallan и её дроны замедляют всех врагов в радиусе атаки на <span style="color: rgb(78, 196, 255);">0.7</span> 
+                    секунды, каждые <span style="color: rgb(78, 196, 255);">3</span> секунды.
+                    <br>
+                    Активный эффект: Эффект замедления сменяется на заморозку продолжительностью <span style="color: rgb(78, 196, 255);">1.8</span> секунды.
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+            </div>
+
+            <div id="skill0dis4" class="skill0">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 30</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 13</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Magallan и её дроны замедляют всех врагов в радиусе атаки на <span style="color: rgb(78, 196, 255);">0.8</span> 
+                    секунды, каждые <span style="color: rgb(78, 196, 255);">3</span> секунды.
+                    <br>
+                    Активный эффект: Эффект замедления сменяется на заморозку продолжительностью <span style="color: rgb(78, 196, 255);">1.9</span> секунды.
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill0dis5" class="skill0">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 30</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 14</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Magallan и её дроны замедляют всех врагов в радиусе атаки на <span style="color: rgb(78, 196, 255);">0.8</span> 
+                    секунды, каждые <span style="color: rgb(78, 196, 255);">3</span> секунды.
+                    <br>
+                    Активный эффект: Эффект замедления сменяется на заморозку продолжительностью <span style="color: rgb(78, 196, 255);">2</span> секунды.
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill0dis6" class="skill0">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 30</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 15</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Magallan и её дроны замедляют всех врагов в радиусе атаки на <span style="color: rgb(78, 196, 255);">0.8</span> 
+                    секунды, каждые <span style="color: rgb(78, 196, 255);">3</span> секунды.
+                    <br>
+                    Активный эффект: Эффект замедления сменяется на заморозку продолжительностью <span style="color: rgb(78, 196, 255);">2.1</span> секунды.
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill0dis7" class="skill0">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 30</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 16</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Magallan и её дроны замедляют всех врагов в радиусе атаки на <span style="color: rgb(78, 196, 255);">0.9</span> 
+                    секунды, каждые <span style="color: rgb(78, 196, 255);">3</span> секунды.
+                    <br>
+                    Активный эффект: Эффект замедления сменяется на заморозку продолжительностью <span style="color: rgb(78, 196, 255);">2.2</span> секунды.
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill0dis8" class="skill0">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 30</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 17</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Magallan и её дроны замедляют всех врагов в радиусе атаки на <span style="color: rgb(78, 196, 255);">0.9</span> 
+                    секунды, каждые <span style="color: rgb(78, 196, 255);">3</span> секунды.
+                    <br>
+                    Активный эффект: Эффект замедления сменяется на заморозку продолжительностью <span style="color: rgb(78, 196, 255);">2.3</span> секунды.
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill0dis9" class="skill0">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 30</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 18</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Magallan и её дроны замедляют всех врагов в радиусе атаки на <span style="color: rgb(78, 196, 255);">0.9</span> 
+                    секунды, каждые <span style="color: rgb(78, 196, 255);">3</span> секунды.
+                    <br>
+                    Активный эффект: Эффект замедления сменяется на заморозку продолжительностью <span style="color: rgb(78, 196, 255);">2.4</span> секунды.
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill0dis10" class="skill0">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 30</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 20</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Magallan и её дроны замедляют всех врагов в радиусе атаки на <span style="color: rgb(78, 196, 255);">1</span> 
+                    секунду, каждые <span style="color: rgb(78, 196, 255);">3</span> секунды.
+                    <br>
+                    Активный эффект: Эффект замедления сменяется на заморозку продолжительностью <span style="color: rgb(78, 196, 255);">2.5</span> секунды.
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+
+            
+            
+        </div>
+
+        <div class="skillDis">
+
+            <div style=" background-color: rgba(255, 0, 0, 0.4);">
+                <img src="pic/skill2.png" alt="" height="50px" style="display: inline-block">
+                <span class="skillTitle" style="margin-top: 5%; margin-left: 15px;"> Laser Mining Module </span>
+            </div>
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="10" oninput="changeSkillLevel(this,1)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <img src="../pic/1.png" height="50px" id="skill1num1" class="skillLev1 display1">
+            <img src="../pic/2.png" height="50px" id="skill2num1" class="skillLev1">
+            <img src="../pic/3.png" height="50px" id="skill3num1" class="skillLev1">
+            <img src="../pic/4.png" height="50px" id="skill4num1" class="skillLev1">
+            <img src="../pic/5.png" height="50px" id="skill5num1" class="skillLev1">
+            <img src="../pic/6.png" height="50px" id="skill6num1" class="skillLev1">
+            <img src="../pic/8.png" height="50px" id="skill7num1" class="skillLev1">
+            <img src="../pic/9.png" height="50px" id="skill8num1" class="skillLev1">
+            <img src="../pic/10.png" height="50px" id="skill9num1" class="skillLev1">
+            <img src="../pic/11.png" height="50px" id="skill10num1" class="skillLev1">
+
+            
+
+            <div id="skill1dis1" class="skill1 active">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 50</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на наземных клетках и наносят магический урон по одной цели.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+60</span> ASPD, и дроны начинают наносить урон по площади.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill1dis2" class="skill1">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 49</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на наземных клетках и наносят магический урон по одной цели.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+65</span> ASPD, и дроны начинают наносить урон по площади.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill1dis3" class="skill1">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 48</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на наземных клетках и наносят магический урон по одной цели.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+70</span> ASPD, и дроны начинают наносить урон по площади.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill1dis4" class="skill1">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 47</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на наземных клетках и наносят магический урон по одной цели.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+80</span> ASPD, и дроны начинают наносить урон по площади.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill1dis5" class="skill1">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 46</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на наземных клетках и наносят магический урон по одной цели.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+85</span> ASPD, и дроны начинают наносить урон по площади.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill1dis6" class="skill1">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 45</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на наземных клетках и наносят магический урон по одной цели.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+90</span> ASPD, и дроны начинают наносить урон по площади.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill1dis7" class="skill1">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 44</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на наземных клетках и наносят магический урон по одной цели.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+100</span> ASPD, и дроны начинают наносить урон по площади.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill1dis8" class="skill1">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 42</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на наземных клетках и наносят магический урон по одной цели.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+115</span> ASPD, и дроны начинают наносить урон по площади.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill1dis9" class="skill1">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 40</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на наземных клетках и наносят магический урон по одной цели.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+130</span> ASPD, и дроны начинают наносить урон по площади.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill1dis10" class="skill1">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 38</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на наземных клетках и наносят магический урон по одной цели.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+150</span> ASPD, и дроны начинают наносить урон по площади.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="skillDis">
+
+            <div style=" background-color: rgba(255, 0, 0, 0.4);">
+                <img src="pic/skill3.png" alt="" height="50px" style="display: inline-block">
+                <span class="skillTitle" style="margin-top: 5%; margin-left: 15px;"> Armed Combat Module </span>
+            </div>
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="10" oninput="changeSkillLevel(this,2)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <img src="../pic/1.png" height="50px" id="skill1num2" class="skillLev2 display1">
+            <img src="../pic/2.png" height="50px" id="skill2num2" class="skillLev2">
+            <img src="../pic/3.png" height="50px" id="skill3num2" class="skillLev2">
+            <img src="../pic/4.png" height="50px" id="skill4num2" class="skillLev2">
+            <img src="../pic/5.png" height="50px" id="skill5num2" class="skillLev2">
+            <img src="../pic/6.png" height="50px" id="skill6num2" class="skillLev2">
+            <img src="../pic/8.png" height="50px" id="skill7num2" class="skillLev2">
+            <img src="../pic/9.png" height="50px" id="skill8num2" class="skillLev2">
+            <img src="../pic/10.png" height="50px" id="skill9num2" class="skillLev2">
+            <img src="../pic/11.png" height="50px" id="skill10num2" class="skillLev2">
+
+            
+
+            <div id="skill2dis1" class="skill2 active">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 50</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на надземных клетках и наносят физический урон по площади.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+60%</span> к Силе Атаки, площадь атак дронов увеличивается.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill2dis2" class="skill2">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 49</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на надземных клетках и наносят физический урон по площади.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+65%</span> к Силе Атаки, площадь атак дронов увеличивается.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill2dis3" class="skill2">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 48</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на надземных клетках и наносят физический урон по площади.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+70%</span> к Силе Атаки, площадь атак дронов увеличивается.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill2dis4" class="skill2">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 47</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на надземных клетках и наносят физический урон по площади.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+80%</span> к Силе Атаки, площадь атак дронов увеличивается.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill2dis5" class="skill2">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 46</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на надземных клетках и наносят физический урон по площади.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+85%</span> к Силе Атаки, площадь атак дронов увеличивается.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill2dis6" class="skill2">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 45</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на надземных клетках и наносят физический урон по площади.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+90%</span> к Силе Атаки, площадь атак дронов увеличивается.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill2dis7" class="skill2">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 44</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на надземных клетках и наносят физический урон по площади.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+100%</span> к Силе Атаки, площадь атак дронов увеличивается.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill2dis8" class="skill2">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 42</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на надземных клетках и наносят физический урон по площади.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+115%</span> к Силе Атаки, площадь атак дронов увеличивается.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill2dis9" class="skill2">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 40</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на надземных клетках и наносят физический урон по площади.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+130%</span> к Силе Атаки, площадь атак дронов увеличивается.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            <div id="skill2dis10" class="skill2">
+
+                <div style="background-color:rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 38</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 25</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> 15 секунд</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+                <p>
+                    Пассивный эффект: Дроны могут быть размещены на надземных клетках и наносят физический урон по площади.
+                    <br>
+                    Активный эффект: Magallan и её дроны получают <span style="color: rgb(78, 196, 255);">+150%</span> к Силе Атаки, площадь атак дронов увеличивается.
+                    <br>
+                    <span style="color: #fc8803;">Возвращает всех дронов по окончанию действия.</span>
+                </p>
+
+            </div>
+
+            
+
+        </div>
+
+        <h2>RIIC Скиллы:</h2>
+        <div class="RIIC">
+
+            
+            <h4> <img src="pic/RIIC1.png" alt="" style="vertical-align: middle;"> Multi-purpose Mapper </h4>
+            <p>
+                При размещении в <span style="color: skyblue;">Мастерской</span>, возможность получения побочного продукта при производстве
+                <span style="color: skyblue;">любого</span> предмета увеличивается на <span style="color: skyblue;">50%</span>
+            </p>
+
+        </div>
+
+        <div class="RIIC">
+             <h4> <img src="pic/RIIC2.png" alt="" style="vertical-align: middle;"> Dragon-style Drone</h4>
+            <p>
+                При размещении в <span style="color: skyblue;">Мастерской</span>, при производстве <span style="color: skyblue;">любого</span> предмета, формулы,
+                которые потребляют <span style="color: skyblue;">4+</span> морального духа, потребляют на <span style="color: skyblue;">2</span> морального духа меньше.
+             </p>
+            
+
+        </div>
+
+        <h2>Таланты:</h2>
+
+        <div class="talent">
+            <p>
+                Support Drone · Dragon <img src="../pic/elite1.png" height="17px">
+            </p>
+            <p>
+                Может призвать до <span style="color: skyblue;">4</span> дронов которые не могут блокировать врага
+                <br>
+                (можно разместить только 3 за раз).
+                <br>
+                Эффекты дронов меняются в зависимости от выбранного скилла.
+            </p>
+        </div>
+
+        <div class="talent">
+            <p>
+                Support Drone · Dragon <img src="../pic/elite2.png" height="17px">
+            </p>
+            <p>
+                Может призвать до <span style="color: skyblue;">5</span> дронов которые не могут блокировать врага
+                <br>
+                (можно разместить только 3 за раз).
+                <br>
+                Эффекты дронов меняются в зависимости от выбранного скилла.
+            </p>
+        </div>
+
+        <div class="talent second">
+            <p>
+                Optical Refraction Accessory <img src="../pic/elite1.png" height="17px">
+            </p>
+            <p>
+                Враги не могут атаковать дронов в течении <span style="color: skyblue;">12</span> течении секунд после размещения
+            </p>
+        </div>
+
+        
+        <div class="talent second">
+            <p>
+                Optical Refraction Accessory <img src="../pic/elite1.png" height="17px"> <img src="../pic/pot4.png" height="17px" style="margin-bottom: -2px;">
+            </p>
+            <p>
+                Враги не могут атаковать дронов в течении <span style="color: skyblue;">14</span> течении секунд после размещения
+            </p>
+
+        </div>
+
+        <div class="talent second">
+            <p>
+                Optical Refraction Accessory <img src="../pic/elite2.png" height="17px">
+            </p>
+            <p>
+                Враги не могут атаковать дронов в течении <span style="color: skyblue;">20</span> течении секунд после размещения
+            </p>
+        </div>
+
+        <div class="talent second">
+            <p>
+                Optical Refraction Accessory <img src="../pic/elite2.png" height="17px"> <img src="../pic/pot4.png" height="17px" style="margin-bottom: -2px;">
+            </p>
+
+            <p>
+                Враги не могут атаковать дронов в течении <span style="color: skyblue;">22</span> течении секунд после размещения
+            </p>
+        </div>
+
+
+        
+    </div>
+
+    <div id="stick">
+        
+        <button onclick="displayMain(0)"> <img src="../pic/bio.png" alt="" height="55px"><br> Биография  </button>
+        <br>
+        <button onclick="displayMain(1)"> <img src="../pic/voice.png" alt="" height="55px"><br> Голос </button>
+        
+    </div>
+
+    <div class="main">
+
+        <div id="infoSpace">
+
+            <div class="part1" style="height: fit-content; margin-bottom: 10px;">
+                <h3>Рекрутинговый контракт</h3>
+                <p style="margin-left: 5px; margin-right: 5px;">
+                    Многие вещи могут случиться, когда она нажимает на эту кнопку, но она клянется, что взрывы не являются одними из них.<br>
+                    <br>
+                    Magallan, уполномоченная Rhine Lab, рада новым приключениям.</p>
+            </div>
+
+            <div class="part2" style="height: fit-content; left: 0; margin-bottom: 10px;">
+                <h3>Токен</h3>
+                <p style="margin-left: 5px; margin-right: 5px;">
+                    Окаменевшая ветка, покрытая снегом. Могучее дерево, которому она принадлежала, однажды раскинуло свои корни по всей земле, но эта ветвь - 
+                    всё, что осталось, чтобы рассказать его историю. <br>
+                    <br>
+                    Используется для улучшения Потенциала Magallan.</p>
+            </div>
+
+            <div class="part1">
+
+                <table class="info-table">
+                    <tbody>
+                        <tr>
+                            <th colspan="2" style="text-align: center; border-bottom: 1.5px solid rgb(80, 80, 80); height: 30px;">
+                                Общая Информация
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Позывной: </td>
+                            <td>Magallan</td>
+                        </tr>
+                        <tr>
+                            <td>Пол: </td>
+                            <td>Женский</td>
+                        </tr>
+                        <tr>
+                            <td>Класс: </td>
+                            <td>Supporter</td>
+                        </tr>
+                        <tr>
+                            <td>Боевой опыт: </td>
+                            <td>Отсутствует</td>
+                        </tr>
+                        <tr >
+                            <td>Место рождения: </td>
+                            <td><a href="">Columbia</a></td>
+                        </tr>
+                        <tr>
+                            <td>Дата рождения: </td>
+                            <td>17 октября</td>
+                        </tr>
+                        <tr>
+                            <td>Раса: </td>
+                            <td><a href="">Liberi</a></td>
+                        </tr>
+                        <tr>
+                            <td>Рост: </td>
+                            <td>160 см</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: none;">Статус заражения: </td>
+                            <td style="border-bottom: none;">Не заражена</td>
+                        </tr>
+                    </tbody>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="part2">
+
+                <table class="info-table">
+
+                    <tr>
+                        <th colspan="2" style="text-align: center; border-bottom: 1.5px solid rgb(80, 80, 80); height: 30px;">
+                            Физические показатели
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Физическая сила: </td>
+                        <td>Стандартная</td>
+                    </tr>
+                    <tr>
+                        <td>Мобильность: </td>
+                        <td>Стандартная</td>
+                    </tr>
+                    <tr>
+                        <td>Выносливость:</td>
+                        <td>Отличная</td>
+                    </tr>
+                    <tr>
+                        <td>Тактическое мышление: </td>
+                        <td>Отличное</td>
+                    </tr>
+                    <tr>
+                        <td>Боевые навыки: </td>
+                        <td>Стандартные</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: none;">Усвоение Ориджиниума: </td>
+                        <td style="border-bottom: none;">Стандартное</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+        
+        <h2>Профиль</h2>
+
+        <p>
+            Магаллан является полевым специалистом, нанятой Rhine Lab, работающей по соглашению о сотрудничестве с Rhodes Island.
+            В настоящее время она находится вместе с нами в процессе подготовки к запуску новой экспедиции.
+            Магаллан имеет опыт работы с высокомодульными беспилотниками, используя их для атаки или поддержки в зависимости от ситуации.
+        </p>
+
+        <h2>Клинический анализ</h2>
+        <p>Требуется <span class="sky">уровень доверия: 25%</span></p>
+        <p>
+            Обследование показало четкие, нормальные очертания внутренних органов, и никаких аномальных теней обнаружено не было.
+            Гранулы Ориджиниума не были обнаружены в системе кровообращения и других признаков инфекции нет.
+            На данный момент можно подтвердить, что этот оперативник не заражён.
+            <br>
+            Оперативник Магаллан не проявляет никаких признаков Орипатии.
+            <br>
+            Регулярно работает в неизвестных условиях, должна принимать соответствующие защитные меры.
+            </p>
+
+        <h2>Архивные записи</h2>
+        <h3>Запись 1 </h3>
+        <p>Требуется <span class="sky">уровень доверия: 50%</span></p>
+        <br>
+        <p>
+            [Обзор касаемо Ориджиниума]
+            <br>
+            "Lutra Workshop и Rhine Lab Development объединили усилия для создания исследовательского костюма специально для Magallan. Он включает в себя широкий спектр сенсорных систем, а также вспомогательный дрон типа Egret!"
+            Многофункциональные системы датчиков наблюдения
+            Высокая температура, низкая температура, высокое давление, возможность работы в любых условиях.
+            Высокая прочность, высокая эффективность, гарантированное время работы.
+            Допустимая погрешность <1мм, соответствует самым высоким стандартам тестирования.
+            Улучшенный лазерный порт для измерения/нападения/излучения, один инструмент со многими функциями.
+            Внутренние системы прилагаются со всем новейшим программным обеспечением для вашего удобства.
+            <br>
+            <br>
+            Вспомогательный дрон типа Egret
+            <br>
+            Предварительно установленные модули: 4
+            <br>
+            Количество дронов, которыми можно управлять при нормальных операциях: 2
+            <br>
+            Количество дронов, которыми можно управлять при выполнении [отредактированно] операций: 5
+            <br>
+            Резервные дроны: 3
+            <br>
+            Убедитесь, что ваши дроны оборудованы в соответствии с ситуацией на земле.
+            <br>
+            Список модулей:
+            Модуль R23: Высокоэффективный модуль заморозки. Стандартные функции замедляют цели, способные к замерзанию при активации.
+            <br>
+            Модуль LRBD: Модуль лазерной обработки. Стандартные функции выпускают луч промышленного лазера по цели, способный увеличить выходную мощность на короткое время после активации.
+            <br>
+            #Модуль 66: вооруженный штурмовой модуль, стандартные операции используют штурмовой порт разведывательного аппарата. Когда включен, атакует цель в радиусе действия. Активация значительно улучшает штурмовой порт.
+            <br>
+            [Редактировано] модуль: эффекты неизвестны, за дополнительной информацией обращайтесь к техническому специалисту.
+        </p>
+
+        <h3>Запись 2 </h3>
+        <p>Требуется <span class="sky">уровень доверия: 100%</span></p>
+        В качестве полевого специалиста Rhine Lab, Магаллан участвовала в многочисленных исследовательских проектах в течении довольно длительного времени. Её основной сферой интересов является малонаселенный ледяной покров. Идет ли речь о личном увлечении или привычке на данный момент, мы не можем сказать.
+        Обычно она отправляется в начале лета, чтобы вернуться до начала зимы, собирая данные с неисследованной земли к северу от аванпостов Rhine. Во время последнего этапа перевода персонала Magallan получила новые приказы и начала готовиться к перемещению своей базы на Rhodes Island.
+        До прибытия на Rhodes Island пополнение запасов Магаллан в основном осуществлялось опытными курьерами, в основном из-за соображений безопасности. В связи с этим она знакома с рядом логистических фирм. Интересно, что у Magallan, похоже, хорошие отношения с боссом Penguin Logistics, "Emperor" до такой степени, что некоторые оперативники выражали зависть.
+        Почему это так, никто не может быть уверен.
+        </p>
+
+        <h3>Запись 3 </h3>
+        <p>Требуется <span class="sky">уровень доверия: 150%</span></p>
+        <p>
+        Каюта Магаллан была построена с небольшим секретным отсеком, который после согласования с оперативником, ответственным за проектирование коридоров, был разрешен к расширению, без изменений внутренней структуры судна. У нас не будет проблем с несанкционированными преобразованиями, как в мастерской Мэйр.
+        <br>
+        Отсек остается довольно маленьким, но достаточно большим, чтобы Магаллан могла проводить свои исследования. Одна из стен была превращена в большой экран, на котором отображаются результаты её недавних экспедиций, в том числе её заметки и теории, а также фотографии важных мест, сделанных в полевых условиях. Образцы и результаты тестов захламляют комнату, и хотя она сделала всё возможное, чтобы организовать всё это, нельзя не почувствовать, что это место немного переполнено.
+        В исследовательских проектах Rhine Lab используются самые современные технологии, а некоторые проекты не в состоянии проанализировать даже исследователи Rhodes Island. Если бы кто-то крикнул в столовой: "Это что, в Райн Лабе одни гении?", это бы даже не вызвало у многих удивления. Но если бы вы забрались в лабораторный отсек Магаллан, вы бы поняли, что такие результаты дает не только сырой талант, но и море усилий.
+        И даже больше.
+        </p>
+
+        <h3>Запись 4 </h3>
+        <p>Требуется <span class="sky">уровень доверия: 200%</span></p>
+        <p>
+            Будь то Черный Поток Боливара, высокогорные равнины Казимежа или подводные вулканы Иберии, мир полон бесчисленных мест, которые стоит исследовать. Но, несмотря на это, любопытные глаза людей ослеплены их личными конфликтами.
+            Магаллан стоит одна в бескрайней ледяной пустыне. Там, вдали от друзей и родственников, в негостеприимной обстановке, у неё нет ничего, кроме льда и снега. И даже несмотря на то, что она привносит множество ценных исследовательских данных, всё еще есть так много людей, которые не могут понять сделанный ею выбор. Но для Magallan её цели всегда были предельно ясны, и она никогда не сомневалась в своем выборе ни на секунду.
+            Песня, которую она слышала в детстве, перекликается в её ушах, песня о теперь уже давно забытых людях с крайнего севера. Последний куплет песни говорит о конце, когда всё было потеряно и теперь похоронено глубоко, глубоко подо льдом. Древние факты с тех пор стали легендой, и не смогли запечатлеть себя в коллективном сознании, чтобы перенестись сквозь поколения как великие деяния прошлого.
+            Эти легендарные народные песни стали мечтами маленькой Магаллан. Когда она была ребенком, люди хвалили её; в юности, люди сомневались в ней; когда она стала взрослой, люди критиковали её. Никто не мог понять её выбор, но Magallan остается мотивирована своей любовью к знаниям и стремлением к своей мечте.
+            Rhine Lab открыла ей дверь, и, принимая свою должность, она выбрала кодовое имя, которое использует и по сей день: "Магаллан".
+        </p>
+
+        <h2>Запись после Повышения</h2>
+        <p>Разблокируется <span class="sky">при повышении до Элиты II</span></p>
+        <p>
+            "Магаллан? Исследовательница... Я помню её. Она очень открытая, добра ко всем своим коллегам. Но знаешь, оперативники-исследователи отправляются на чрезвычайно длительные задания. Полагаю, здесь очень мало людей, которые могли бы назвать её имя. Может быть, Ifrit и Muelsyse - единственные исключения."
+            "Они очень хорошо ладят. В конце концов, в Rhine Lab не так много людей, которые могли бы успокоить Ифрит".
+            "И Muelsyse, эта Muelsyse... Представляете, как Магаллан и Ифрит называют её? Хахаха... Аха-ха... Они зовут её Мьюмью".
+            "Иффи и Мьюмью".
+            "Исследовательница Магаллан... всё, что я могу сказать, это то, что она действительно нечто особенное".
+        </p>
+        
+
+    </div>
+
+    <div class="main" style="width: 79.1%; margin-left: 9.9%; margin-top: -150px;">
+
+        <table class="quote">
+            <tbody>
+                <tr>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;" >Диалог</td>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Аудио</td>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Английский</td>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Русский</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Назначение ассистентом</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_001.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >I will stay with you until the next expedition, Doctor. If you need me at your side, please do not be afraid to call upon me boldly!</td>
+                    <td >Я останусь с Вами до следующей экспедиции, Доктор. Если я нужна вам, пожалуйста, не бойтесь, смело зовите меня!</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_002.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Actually, I've known about you for a long time, Doctor! Well, Mayer and MuMu told me all about you, so I had to come to Rhodes Island to see what you are like in person... Oh, I also brought a small present for you! Here!</td>
+                    <td >На самом деле, я давно о Вас знаю, Доктор! Ну, Майер и МуМу рассказали мне всё о Вас, так что мне пришлось приехать на Rhodes Island, чтобы лично увидеть, какой Вы... О, а ещё я принесла небольшой подарок для Вас! Вот!</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_003.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >This one? This is the pendant of the Great Emperor of Penguin Logistics. I used to see it many times when I went to Penguin Logistics. I always thought it was really cute. Every time, I used to rub it a whole lot! Doctor, you've never rubbed it before? You didn't dare? Why?!</td>
+                    <td >Это? Это кулон c Великим Emperor из Пингвин Логистикс. Я встречала его много раз, когда ходила в Пингвин Логистикс. Я всегда думала, что он очень милый. Каждый раз я очень много его гладила! Доктор, вы никогда не гладили его раньше? Вы не посмели? Почему?!</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор 3</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_004.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Is Iffy doing better these days? When I left Rhine Lab last time, I was really worried about her condition...</td>
+                    <td >Иффи сейчас уже лучше? Когда я покинула Райн Лаб в последний раз, я очень беспокоилась о её состоянии...</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после Повышения 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_005.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Has Mayer made anything new recently? I haven't worked on any new equipment for a long time so I should do some research with her. Oh right, Doctor, let me let you in on a secret on what happens when you disturb Mayer... Oh no! You've already been bitten before?</td>
+                    <td >Делала ли Майер недавно что-нибудь новое? Я давно не работала над новым оборудованием, так что я должна провести с ней кое-какие исследования. О, да, Доктор, позвольте мне рассказать Вам секрет о том, что происходит, когда вы беспокоите Майер... О нет! Она уже успела вас покусать?</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после Повышения 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_006.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >My drone and Meeboo, Sisyphus and Kirkika, are not controlled the same way. There is no limit to the types of uses they can have. However, there is currently a new system under development and it will soon be ready. Hehe, I'm looking forward to it.</td>
+                    <td >Мой дрон и Мибу, Сизиф и Киркика не контролируются одинаково. Нет никаких ограничений на применения, которые они могут иметь. Однако в настоящее время разрабатывается новая система, которая скоро будет готова. Хе-хе, я с нетерпением жду этого.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после увеличения Доверия 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_007.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >The Polar North? The dreams that are buried there are cold and cruel, but... in order to make my dreams a reality, I am willing to do anything it takes.</td>
+                    <td >Полярный Север? Мечты, которые там похоронены, холодны и жестоки, но... чтобы мои мечты стали реальностью, я готова сделать всё, что угодно.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после увеличения Доверия 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_008.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >"The tiny gardner, and the tiny flower, growing under the tile with no one to care for it..." This was Iffy's favorite story to read, perhaps due to how she can relate to it. However... she seems to have forgotten the book here. How odd.?</td>
+                    <td >"Крошечный садовник, и крошечный цветочек, растущий под плиткой, и некому о нем позаботиться..." Это была любимая история Иффи, возможно, из-за того, что она может в ней узнать себя. Однако... кажется, она забыла книгу здесь. Как странно.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после увеличения Доверия 3</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_009.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >The Polar North...that place is both mysterious and beautiful. The towering cliffs, the lonely, snow-covered trees, and the source of the radiant snow all stretch to the end of the earth. Doctor, you should go with me. Let's head there together, okay?</td>
+                    <td >Полярный Север... это место одновременно таинственно и красиво. Возвышающиеся скалы, одинокие, покрытые снегом деревья и источник сияющего снега - всё это простирается до самого края земли. Доктор, Вы должны пойти со мной. Давайте отправимся туда вместе, хорошо?</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Бездействие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_010.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Doctor? Doctor you can't! If you fall asleep, you'll freeze to death!</td>
+                    <td >Доктор? Доктор, Вы не можете! Если Вы уснёте, то замёрзнете до смерти!Ы</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Прибытие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_011.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Rhine Lab Commissioner Magallan discovered a mysterous research ship? Woah, y-you're that doctor from Rhodes Island, Ahem... Would you like to join my expedition? It'll be very interesting!</td>
+                    <td >Уполномоченная Райн Лаб Магаллан обнаружила загадочный исследовательский корабль? Вау, Вы тот доктор с Rhodes Island. Кхм... Хотите присоединиться к моей экспедиции? Это будет очень интересно!</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Просмотр Боевых записей</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_012.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >The efficiency has improved.</td>
+                    <td >Эффективность возросла.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Повышение 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_013.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Update completed! Now the response speed of the device is twice as fast as before.</td>
+                    <td >Обновление завершено! Теперь скорость реакции устройства в два раза выше, чем раньше.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Повышение 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_014.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Doctor, if you want to see the results of my research, then I must also demonstrate my strength! Hehehe, just so you know, I'm very strong, so don't be scared!</td>
+                    <td >Доктор, если Вы хотите увидеть результаты моих исследований, то я также должна продемонстрировать свою силу! Хехехе, просто, чтобы вы знали, я очень сильная, так что не бойтесь!</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Добавление в отряд</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_017.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Leave the exploration and support to me.</td>
+                    <td >Оставьте исследование и поддержку мне.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Назначение командиром отряда</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_018.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Everyone, maintain communication, over!</td>
+                    <td >Всем оставаться на связи, приём!</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Отбытие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_019.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Need to calibrate the equipment...Done!</td>
+                    <td >Нужно откалибровать оборудование... Готово!</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Начало операции</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_020.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Once the drone is commissioned, it can take off at any time.</td>
+                    <td >Как только дрон будет запущен, он может взлететь в любое время.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Выбор оператора 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_021.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Okay!</td>
+                    <td >Окей!</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Выбор оператора 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_022.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Do you need my skills?</td>
+                    <td >Вам нужны мои способности?</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Размещение на поле 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_023.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td> Time to start working!</td>
+                    <td >Время начинать работать!</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Размещение на поле 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_024.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >The equipment is working fine!</td>
+                    <td >Оборудование работает отлично!</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Во время боя 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_025.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Is the target marked? Ok, the drone is launched!</td>
+                    <td >Цель помечена? Хорошо, дрон запущен!</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Во время боя 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_026.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Now! Snow blindness is a terrible think, you know!</td>
+                    <td >Сейчас! Снежная слепота - это ужасная штука, знаешь ли!</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Во время боя 3</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_027.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >3......2......1！</td>
+                    <td >3......2......1！</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Во время боя 4</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_028.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >"Bloom, my flowers!"</td>
+                    <td >"Распуститесь, мои цветы!"</td>
+                </tr>
+                <tr>
+                    <td class="cent" >4★ результат</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_029.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Watch out, that's a blind spot! Huh, it's already over? As expected, Doctor, you're so reliable.</td>
+                    <td >Осторожно, это слепая зона! А, уже всё закончилось? Как и ожидалось, Доктор, Вы такой надежный.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >3★ результат</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_030.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >There are no other hostile signals.</td>
+                    <td >Вражеских сигналов больше не осталось.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >2★ результат</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_031.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >There are still enemies nearby. Will you pursue them?</td>
+                    <td >Поблизости всё еще есть враги. Вы будете преследовать их?</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Провал Операции</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_032.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >We've been surrounded? Its my fault...</td>
+                    <td >Нас окружили? Это моя вина...</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Назначение на Объект</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_033.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Huh? Th-there are even heated floors?! Ahh~ this is bliss~</td>
+                    <td >А? Здесь даже полы с подогревом?! Ахх~ это блаженство~</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Касание</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_034.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Huh?</td>
+                    <td >А?</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Касание Доверия</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_036.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Lets go, Lets go! Ice skating is not that scary with me here.</td>
+                    <td >Давайте, давайте! Катание на коньках не такое страшное, пока я здесь.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Титульный экран</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_037.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Arknights.</td>
+                    <td >Аркнайтс.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Приветствие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_042.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Do you need something?</td>
+                    <td >Вам что-то нужно?</td>
+                </tr>              
+            </tbody>
+        </table>
+
+    </div>
+
+    
+
+    <script src="../../../jquery.min.js"></script>
+    <script src="../java.js"></script>
+ </body>
+</html>

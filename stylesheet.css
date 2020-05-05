@@ -1,0 +1,147 @@
+#slider
+{
+  margin-top: 20px;
+  width: 85%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#slider .slide
+{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.arrow
+{
+  width: 100%;
+  height: 25px;
+  margin-top: 50%;
+}
+
+#slider .prev, .next 
+{
+  cursor: pointer;
+  position: relative;
+  top: 100%;
+  width: auto;
+  padding: 16px;
+  color: rgb(200, 200, 200);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.dot 
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+  top: 100%;
+}
+
+.dot:hover 
+{
+    background-color: #717171;
+}
+
+.fade 
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade 
+{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  
+@keyframes fade 
+{
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slide img
+{
+  width: auto;
+  max-width: 100%;
+}
+
+.block
+{
+  margin-top: 45px;
+  width: 75%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.half
+{
+  display: inline-block;
+  width: 49%;
+}
+
+.half img
+{
+  width: 80%;
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+@media (max-width: 950px)
+{
+
+  #slider
+  {
+    width: 100%;
+  }
+
+  #slider .slide
+  {
+    width: 100%;
+    height: auto;
+
+  }
+
+  #slider .prev .dot .next
+  {
+    font-size: 10px;
+  }
+
+  .block
+  {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .half
+  {
+    display: block;
+    width: 90%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+  
+  .half img
+  {
+    width: 100%;
+  }
+}

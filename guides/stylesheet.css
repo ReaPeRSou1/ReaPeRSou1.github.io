@@ -1,0 +1,44 @@
+#main
+{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.half
+{
+  display: inline-block;
+  width: 49.5%;
+  height: auto;
+  min-height: 15px;
+  margin-top: 15px;
+}
+
+.window
+{
+  width: 90%;
+  height: auto;
+  background-color: rgba(30, 30, 30, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border: 1.5px solid gray;
+  border-radius: 5px;
+}
+
+.window img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.window p
+{
+  font-size: 16px;
+  text-align: justify;
+  color: rgb(185, 185, 185);
+  padding-left: 5px;
+  padding-right: 5px;
+}

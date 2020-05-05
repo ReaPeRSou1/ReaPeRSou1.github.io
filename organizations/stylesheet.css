@@ -1,0 +1,51 @@
+
+#freespace
+{
+  width: 100%;
+  margin-top: 25px;
+  height: 70px;
+}
+
+#freespace img
+{
+  border: 1.5px solid rgba(135, 207, 235, 0.37);
+}
+
+#freespace img:hover
+{
+  background-color: rgba(24, 112, 146, 0.5);
+}
+
+#main
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+}
+
+.window
+{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-bottom: 15px;
+  font-size: 16px;
+  background-color: rgb(30, 30, 30);
+  color: rgb(170, 170, 170);
+}
+
+.window img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.window p
+{
+  text-align: justify;
+  padding: 0 50px 10px 50px;
+  font-size: 18px;
+}

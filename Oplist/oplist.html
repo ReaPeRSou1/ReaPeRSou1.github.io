@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Arknights Вики </title>
+   <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+ </head>
+
+ <body>
+
+    <div id="header">
+
+        <img src="../pic/arknights.png" alt="" style="display: block; margin-left: auto; margin-right: auto;">
+        <div class="headernav">
+            <div class="quad">
+                <a href="">Главная</a>
+            </div>
+            
+            <div class="quad" style="margin-left: 25%;">
+                <a href="">Оперлист</a>
+            </div>
+            
+            <div class="quad" style="margin-left: 50%;">
+                <div class="drop">
+                    <button class="hui">Cюжет</button>
+                    <div class="headcont">
+                        <ul>
+                            <li>
+                                <a href=""> Основной сюжет </a>
+                            </li>
+                            <li>
+                                <a href=""> Побочные истории </a>
+                            </li>
+                            <li>
+                                <a href=""> Организации </a>
+                            </li>
+                            <li>
+                                <a href=""> Толковый Словарь </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quad" style="margin-left: 73%;">
+                <div class="drop">
+                    <button class="hui">Гайды</button>
+                    <div class="headcont">
+                        <ul>
+                            <li>
+                                <a href=""> ВСЕ ГАЙДЫ </a>
+                            </li>
+                            <li>
+                                <a href=""> Гайд по Классам </a>
+                            </li>
+                            <li>
+                                <a href=""> Гайд по Прокачке</a>
+                            </li>
+                            <li>
+                                <a href=""> Гайд по Умениям </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div id="content">
+
+        <div class="sorter">
+      
+            <ul id="classlist">
+              <li class="item" >
+                <img id='cast' width="50" onclick="showCaster()" src="classes/class_caster.png">
+              </li>
+              <li  class="item">
+                <img id='guar' width="50" onclick="showGuard()" src="classes/class_guard.png">
+              </li>
+              <li class="item">
+                <img id='med' width="50" onclick="showMedic()" src="classes/class_medic.png">
+              </li>
+              <li class="item">
+                <img id="snip" width="50" onclick="showSniper()" src="classes/class_sniper.png">
+              </li>
+              <li class="item">
+                <img id="spec" width="50" onclick="showSpecialist()" src="classes/class_specialist.png">
+              </li>
+              <li class="item">
+                <img id="supp" width="50" onclick="showSupporter()" src="classes/class_supporter.png">
+              </li>
+              <li class="item">
+                <img id="def" width="50" onclick="showDefender()" src="classes/class_defender.png">
+              </li>
+              <li class="item">
+                <img id="vg" width="50" onclick="showVanguard()" src="classes/class_vanguard.png">
+              </li>
+            </ul>
+            <ul id="raritylist">
+                <li  class="item">
+                  <span id="_6" onclick="show6()">6★</span>
+                </li>
+                <li class="item">
+                  <span id="_5" onclick="show5()">5★</span>
+                </li>
+                <li class="item">
+                  <span id="_4" onclick="show4()">4★</span>
+                </li>
+                <li class="item">
+                  <span id="_3" onclick="show3()">3★</span>
+                </li>
+                <li class="item">
+                  <span id="_2" onclick="show2()">2★</span>
+                </li>
+                <li class="item">
+                  <span id="_1" onclick="show1()">1★</span>
+                </li>
+            </ul>
+            <button id="all" onclick="showAll()">Показать всех</button>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script>
+            $(document).ready(function(){
+              $("button").click(function (){
+                  $('.clicked').removeClass("clicked");
+                  $('.clickeD').removeClass("clickeD");   
+          });
+      });
+            </script>
+          </div>
+      
+          
+          <script>
+          $('.item img').click(function (){
+              $(this).toggleClass('clicked');
+          });   
+          $('.item span').click(function (){
+              $(this).toggleClass('clickeD');
+          });  
+          </script>
+
+        <div id="op_table">
+            <div  dir="ltr" class="content-ltr">
+              <div class="6">      
+                <div  class="oper vanGuard">
+                 <div class="oper-image"><a href="/Siege" title="Siege"><img alt="Siege-0-portrait.png" src="vanguards/100px-Siege-0-portrait.png" width="100" height="199"></a></div>
+                 <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                 <div class="oper-class"><a href="/Siege" title="Siege"><img alt="Class-vanguard.png" src="classes/30px-Class-vanguard.png" width="30" height="30"></a></div>
+                 <div class="oper-color rarity-6"></div>
+                 <div class="oper-diagonal"></div>
+                 <div class="oper-name"><a href="/Siege" title="Siege">Siege</a></div>
+              </div>
+        
+                  <div class="oper sniper">
+              <div class="oper-image"><a href="/Exusiai" title="Exusiai"><img alt="Exusiai-0-portrait.png" src="snipers/100px-Exusiai-0-portrait.png" width="100" height="196"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Exusiai" title="Exusiai"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png" width="30" height="30"></a></div>
+              <div class="oper-color rarity-6"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Exusiai" title="Exusiai">Exusiai</a></div>
+              </div>
+                  <div class="oper caster">
+              <div class="oper-image"><a href="/Ifrit" title="Ifrit"><img alt="Ifrit-0-portrait.png" src="casters/100px-Ifrit-0-portrait.png" width="100" height="180"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Ifrit" title="Ifrit"><img alt="Class-caster.png" src="classes/30px-Class-caster.png" width="30" height="30"></a></div>
+              <div class="oper-color rarity-6"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Ifrit" title="Ifrit">Ifrit</a></div>
+              </div>
+                  <div class="oper supporter">
+              <div class="oper-image"><a href="/Angelina" title="Angelina"><img alt="Angelina-0-portrait.png" src="supporters/100px-Angelina-0-portrait.png" width="100" height="197"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Angelina" title="Angelina"><img alt="Class-supporter.png" src="classes/30px-Class-supporter.png"></a></div>
+              <div class="oper-color rarity-6"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Angelina" title="Angelina">Angelina</a></div>
+              </div>
+                  <div class="oper defender">
+              <div class="oper-image"><a href="/Saria" title="Saria"><img alt="Saria-0-portrait.png" src="defenders/100px-Saria-0-portrait.png" width="100" height="177"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Saria" title="Saria"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+              <div class="oper-color rarity-6"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Saria" title="Saria">Saria</a></div>
+              </div>
+                  <div class="oper caster">
+              <div class="oper-image"><a href="/Eyjafjalla" title="Eyjafjalla"><img alt="Eyjafjalla-0-portrait.png" src="casters/100px-Eyjafjalla-0-portrait.png" width="100" height="186"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Eyjafjalla" title="Eyjafjalla"><img alt="Class-caster.png" src="classes/30px-Class-caster.png"></a></div>
+              <div class="oper-color rarity-6"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Eyjafjalla" title="Eyjafjalla">Eyjafjalla</a></div>
+              </div>
+                  <div class="oper medic">
+              <div class="oper-image"><a href="/Nightingale" title="Nightingale"><img alt="Nightingale-0-portrait.png" src="medics/100px-Nightingale-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Nightingale" title="Nightingale"><img alt="Class-medic.png" src="classes/30px-Class-medic.png"></a></div>
+              <div class="oper-color rarity-6"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Nightingale" title="Nightingale">Nightingale</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="Operator/Ch'en/Ch'en.html" title="Ch'en"><img alt="Ch'en-0-portrait.png" src="guards/100px-Ch%27en-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="Operator/Ch'en/Ch'en.html" title="Ch'en"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-6"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="Operator/Ch'en/Ch'en.html" title="Ch'en">Ch'en</a></div>
+              </div>
+                  <div class="oper defender">
+              <div class="oper-image"><a href="/Hoshiguma" title="Hoshiguma"><img alt="Hoshiguma-0-portrait.png" src="defenders/100px-Hoshiguma-0-portrait.png" width="100" height="174"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Hoshiguma" title="Hoshiguma"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+              <div class="oper-color rarity-6"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Hoshiguma" title="Hoshiguma">Hoshiguma</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/SilverAsh" title="SilverAsh"><img alt="Silverash-0-portrait.png" src="guards/100px-Silverash-0-portrait.png" width="100" height="184"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/SilverAsh" title="SilverAsh"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-6"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/SilverAsh" title="SilverAsh">SilverAsh</a></div>
+              </div>
+              <div class="oper guard">
+                <div class="oper-image"><a href="/Skadi" title="Skadi"><img alt="Skadi-0-portrait.png" src="guards/100px-Skadi-0-portrait.png" width="100" height="184"></a></div>
+                <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="oper-class"><a href="/Skadi" title="Skadi"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+                <div class="oper-color rarity-6"></div>
+                <div class="oper-diagonal"></div>
+                <div class="oper-name"><a href="/Skadi" title="Skadi">Skadi</a></div>
+                </div>
+                  <div class="oper medic">
+              <div class="oper-image"><a href="/Shining" title="Shining"><img alt="Shining-0-portrait.png" src="medics/100px-Shining-0-portrait.png" width="100" height="189"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Shining" title="Shining"><img alt="Class-medic.png" src="classes/30px-Class-medic.png"></a></div>
+              <div class="oper-color rarity-6"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Shining" title="Shining">Shining</a></div>
+              </div>
+            </div>
+            <div class="5">
+                  <div class="oper caster">
+              <div class="oper-image"><a href="/Skyfire" title="Skyfire"><img alt="Skyfire-0-portrait.png" src="casters/100px-Skyfire-0-portrait.png" width="100" height="180"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Skyfire" title="Skyfire"><img alt="Class-caster.png" src="classes/30px-Class-caster.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Skyfire" title="Skyfire">Skyfire</a></div>
+              </div>
+                  <div class="oper sniper">
+              <div class="oper-image"><a href="/Platinum" title="Platinum"><img alt="Platinum-0-portrait.png" src="snipers/100px-Platinum-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Platinum" title="Platinum"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Platinum" title="Platinum">Platinum</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/Specter" title="Specter"><img alt="Specter-0-portrait.png" src="guards/100px-Specter-0-portrait.png" width="100" height="185"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Specter" title="Specter"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Specter" title="Specter">Specter</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/Indra" title="Indra"><img alt="Indra-0-portrait.png" src="guards/100px-Indra-0-portrait.png" width="100" height="182"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Indra" title="Indra"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Indra" title="Indra">Indra</a></div>
+              </div>
+                  <div class="oper specialist">
+              <div class="oper-image"><a href="/FEater" title="FEater"><img alt="Feater-0-portrait.png" src="specialists/100px-Feater-0-portrait.png" width="100" height="183"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/FEater" title="FEater"><img alt="Class-specialist.png" src="classes/30px-Class-specialist.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/FEater" title="FEater">FEater</a></div>
+              </div>
+                  <div class="oper caster">
+              <div class="oper-image"><a href="/Amiya" title="Amiya"><img alt="Amiya-0-portrait.png" src="casters/100px-Amiya-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Amiya" title="Amiya"><img alt="Class-caster.png" src="classes/30px-Class-caster.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Amiya" title="Amiya">Amiya</a></div>
+              </div>
+              <div class="oper caster">
+                <div class="oper-image"><a href="/Nightmare" title="Nightmare"><img alt="Nightmare-0-portrait.png" src="casters/100px-Nightmare-0-portrait.png" width="100" height="200"></a></div>
+                <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="oper-class"><a href="/Nightmare" title="Amiya"><img alt="Class-caster.png" src="classes/30px-Class-caster.png"></a></div>
+                <div class="oper-color rarity-5"></div>
+                <div class="oper-diagonal"></div>
+                <div class="oper-name"><a href="/ANightmare" title="Nightmare">Nightmare</a></div>
+                </div>
+                  <div class="oper sniper">
+              <div class="oper-image"><a href="/Meteorite" title="Meteorite"><img alt="Meteorite-0-portrait.png" src="snipers/100px-Meteorite-0-portrait.png" width="100" height="179"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Meteorite" title="Meteorite"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Meteorite" title="Meteorite">Meteorite</a></div>
+              </div>
+                  <div class="oper specialist">
+              <div class="oper-image"><a href="/Manticore" title="Manticore"><img alt="Manticore-0-portrait.png" src="specialists/100px-Manticore-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Manticore" title="Manticore"><img alt="Class-specialist.png" src="classes/30px-Class-specialist.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Manticore" title="Manticore">Manticore</a></div>
+              </div>
+                  <div class="oper sniper">
+              <div class="oper-image"><a href="/Provence" title="Provence"><img alt="Provence-0-portrait.png" src="snipers/100px-Provence-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Provence" title="Provence"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Provence" title="Provence">Provence</a></div>
+              </div>
+                  <div class="oper defender">
+              <div class="oper-image"><a href="/Croissant" title="Croissant"><img alt="Croissant-0-portrait.png" src="defenders/100px-Croissant-0-portrait.png" width="100" height="175"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Croissant" title="Croissant"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Croissant" title="Croissant">Croissant</a></div>
+              </div>
+                  <div class="oper vanGuard">
+              <div class="oper-image"><a href="/Texas" title="Texas"><img alt="Texas-0-portrait.png" src="vanguards/100px-Texas-0-portrait.png" width="100" height="195"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Texas" title="Texas"><img alt="Class-vanguard.png" src="classes/30px-Class-vanguard.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Texas" title="Texas">Texas</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/Franka" title="Franka"><img alt="Franka-0-portrait.png" src="guards/100px-Franka-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Franka" title="Franka"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Franka" title="Franka">Franka</a></div>
+              </div>
+                  <div class="oper medic">
+              <div class="oper-image"><a href="/Silence" title="Silence"><img alt="Silence-0-portrait.png" src="medics/100px-Silence-0-portrait.png" width="100" height="184"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Silence" title="Silence"><img alt="Class-medic.png" src="classes/30px-Class-medic.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Silence" title="Silence">Silence</a></div>
+              </div>
+                  <div class="oper medic">
+              <div class="oper-image"><a href="/Warfarin" title="Warfarin"><img alt="Warfarin-0-portrait.png" src="medics/100px-Warfarin-0-portrait.png" width="100" height="179"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Warfarin" title="Warfarin"><img alt="Class-medic.png" src="classes/30px-Class-medic.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Warfarin" title="Warfarin">Warfarin</a></div>
+              </div>
+                  <div class="oper sniper">
+              <div class="oper-image"><a href="/Firewatch" title="Firewatch"><img alt="Firewatch-0-portrait.png" src="snipers/100px-Firewatch-0-portrait.png" width="100" height="189"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Firewatch" title="Firewatch"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Firewatch" title="Firewatch">Firewatch</a></div>
+              </div>
+                  <div class="oper supporter">
+              <div class="oper-image"><a href="/Istina" title="Istina"><img alt="Istina-0-portrait.png" src="supporters/100px-Istina-0-portrait.png" width="100" height="180"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Istina" title="Istina"><img alt="Class-supporter.png" src="classes/30px-Class-supporter.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Istina" title="Istina">Istina</a></div>
+              </div>
+                  <div class="oper specialist">
+              <div class="oper-image"><a href="/Cliffheart" title="Cliffheart"><img alt="Cliffheart-0-portrait.png" src="specialists/100px-Cliffheart-0-portrait.png" width="100" height="182"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Cliffheart" title="Cliffheart"><img alt="Class-specialist.png" src="classes/30px-Class-specialist.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Cliffheart" title="Cliffheart">Cliffheart</a></div>
+              </div>
+                  <div class="oper vanGuard">
+              <div class="oper-image"><a href="/Zima" title="Zima"><img alt="Zima-0-portrait.png" src="vanguards/100px-Zima-0-portrait.png" width="100" height="181"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Zima" title="Zima"><img alt="Class-vanguard.png" src="classes/30px-Class-vanguard.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Zima" title="Zima">Zima</a></div>
+              </div>
+                  <div class="oper supporter">
+              <div class="oper-image"><a href="/Pramanix" title="Pramanix"><img alt="Pramanix-0-portrait.png" src="supporters/100px-Pramanix-0-portrait.png" width="100" height="194"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Pramanix" title="Pramanix"><img alt="Class-supporter.png" src="classes/30px-Class-supporter.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Pramanix" title="Pramanix">Pramanix</a></div>
+              </div>
+                  <div class="oper defender">
+              <div class="oper-image"><a href="/Vulcan" title="Vulcan"><img alt="Vulcan-0-portrait.png" src="defenders/100px-Vulcan-0-portrait.png" width="100" height="192"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Vulcan" title="Vulcan"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Vulcan" title="Vulcan">Vulcan</a></div>
+              </div>
+                  <div class="oper supporter">
+              <div class="oper-image"><a href="/Mayer" title="Mayer"><img alt="Mayer-0-portrait.png" src="supporters/100px-Mayer-0-portrait.png" width="100" height="179"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Mayer" title="Mayer"><img alt="Class-supporter.png" src="classes/30px-Class-supporter.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Mayer" title="Mayer">Mayer</a></div>
+              </div>
+                  <div class="oper supporter">
+              <div class="oper-image"><a href="/Sora" title="Sora"><img alt="Sora-0-portrait.png" src="supporters/100px-Sora-0-portrait.png" width="100" height="191"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Sora" title="Sora"><img alt="Class-supporter.png" src="classes/30px-Class-supporter.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Sora" title="Sora">Sora</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/Savage" title="Savage"><img alt="Savage-0-portrait.png" src="guards/100px-Savage-0-portrait.png" width="100" height="180"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Savage" title="Savage"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Savage" title="Savage">Savage</a></div>
+              </div>
+                  <div class="oper medic">
+              <div class="oper-image"><a href="/Ptilopsis" title="Ptilopsis"><img alt="Ptilopsis-0-portrait.png" src="medics/100px-Ptilopsis-0-portrait.png" width="100" height="180"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Ptilopsis" title="Ptilopsis"><img alt="Class-medic.png" src="classes/30px-Class-medic.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Ptilopsis" title="Ptilopsis">Ptilopsis</a></div>
+              </div>
+                  <div class="oper defender">
+              <div class="oper-image"><a href="/Liskarm" title="Liskarm"><img alt="Liskarm-0-portrait.png" src="defenders/100px-Liskarm-0-portrait.png" width="100" height="199"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Liskarm" title="Liskarm"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Liskarm" title="Liskarm">Liskarm</a></div>
+              </div>
+                  <div class="oper specialist">
+              <div class="oper-image"><a href="Operator/Projekt_red/oper.html" title="Projekt Red"><img alt="ProjektRed-0-portrait.png" src="specialists/100px-ProjektRed-0-portrait.png" width="100" height="198"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="Operator/Projekt_red/oper.html" title="Projekt Red"><img alt="Class-specialist.png" src="classes/30px-Class-specialist.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="Operator/Projekt_red/oper.html" title="Projekt Red">Projekt Red</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/Lappland" title="Lappland"><img alt="Lappland-0-portrait.png" src="guards/100px-Lappland-0-portrait.png" width="100" height="179"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Lappland" title="Lappland"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Lappland" title="Lappland">Lappland</a></div>
+              </div>
+                  <div class="oper sniper">
+              <div class="oper-image"><a href="/Blue_Poison" title="Blue Poison"><img alt="BluePoison-0-portrait.png" src="snipers/100px-BluePoison-0-portrait.png" width="100" height="178"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Blue_Poison" title="Blue Poison"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Blue_Poison" title="Blue Poison">Blue Poison</a></div>
+              </div>
+              <div class="oper guard">
+                <div class="oper-image"><a href="/Swire" title="Swire"><img alt="Swire-0-portrait.png" src="guards/100px-Swire-0-portrait.png" width="100" height="179"></a></div>
+                <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="oper-class"><a href="/Swire" title="Swire"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+                <div class="oper-color rarity-5"></div>
+                <div class="oper-diagonal"></div>
+                <div class="oper-name"><a href="/Lappland" title="Swire">Swire</a></div>
+                </div>
+                  <div class="oper defender">
+              <div class="oper-image"><a href="/Nearl" title="Nearl"><img alt="Nearl-0-portrait.png" src="defenders/100px-Nearl-0-portrait.png" width="100" height="198"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Nearl" title="Nearl"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+              <div class="oper-color rarity-5"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Nearl" title="Nearl">Nearl</a></div>
+              </div>
+              <div class="oper vanGuard">
+                <div class="oper-image"><a href="/Grani" title="Grani"><img alt="Grani-0-portrait.png" src="vanguards/100px-Grani-0-portrait.png" width="100" height="181"></a></div>
+                <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="oper-class"><a href="/Grani" title="Grani"><img alt="Class-vanguard.png" src="classes/30px-Class-vanguard.png"></a></div>
+                <div class="oper-color rarity-5"></div>
+                <div class="oper-diagonal"></div>
+                <div class="oper-name"><a href="/Grani" title="Grani">Grani</a></div>
+                </div>
+            </div>
+            <div class="4">
+                  <div class="oper sniper">
+              <div class="oper-image"><a href="/Jessica" title="Jessica"><img alt="Jessica-0-portrait.png" src="snipers/100px-Jessica-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Jessica" title="Jessica"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Jessica" title="Jessica">Jessica</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/Dobermann" title="Dobermann"><img alt="Dobermann-0-portrait.png" src="guards/100px-Dobermann-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Dobermann" title="Dobermann"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Dobermann" title="Dobermann">Dobermann</a></div>
+              </div>
+                  <div class="oper medic">
+              <div class="oper-image"><a href="/Gavial" title="Gavial"><img alt="Gavial-0-portrait.png" src="medics/100px-Gavial-0-portrait.png" width="100" height="191"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Gavial" title="Gavial"><img alt="Class-medic.png" src="classes/30px-Class-medic.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Gavial" title="Gavial">Gavial</a></div>
+              </div>
+                  <div class="oper medic">
+              <div class="oper-image"><a href="/Myrrh" title="Myrrh"><img alt="Myrrh-0-portrait.png" src="medics/100px-Myrrh-0-portrait.png" width="100" height="183"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Myrrh" title="Myrrh"><img alt="Class-medic.png" src="classes/30px-Class-medic.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Myrrh" title="Myrrh">Myrrh</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/Frostleaf" title="Frostleaf"><img alt="Frostleaf-0-portrait.png" src="guards/100px-Frostleaf-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Frostleaf" title="Frostleaf"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Frostleaf" title="Frostleaf">Frostleaf</a></div>
+              </div>
+                  <div class="oper vanGuard">
+              <div class="oper-image"><a href="/Scavenger" title="Scavenger"><img alt="Scavenger-0-portrait.png" src="vanguards/100px-Scavenger-0-portrait.png" width="100" height="185"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Scavenger" title="Scavenger"><img alt="Class-vanguard.png" src="classes/30px-Class-vanguard.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Scavenger" title="Scavenger">Scavenger</a></div>
+              </div>
+                  <div class="oper defender">
+              <div class="oper-image"><a href="/Cuora" title="Cuora"><img alt="Cuora-0-portrait.png" src="defenders/100px-Cuora-0-portrait.png" width="100" height="183"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Cuora" title="Cuora"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Cuora" title="Cuora">Cuora</a></div>
+              </div>
+                  <div class="oper defender">
+              <div class="oper-image"><a href="/Gum" title="Gum"><img alt="Gum-0-portrait.png" src="defenders/100px-Gum-0-portrait.png" width="100" height="177"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Gum" title="Gum"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Gum" title="Gum">Gum</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/Estelle" title="Estelle"><img alt="Estelle-0-portrait.png" src="guards/100px-Estelle-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Estelle" title="Estelle"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Estelle" title="Estelle">Estelle</a></div>
+              </div>
+                  <div class="oper defender">
+              <div class="oper-image"><a href="/Matterhorn" title="Matterhorn"><img alt="Matterhorn-0-portrait.png" src="defenders/100px-Matterhorn-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Matterhorn" title="Matterhorn"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Matterhorn" title="Matterhorn">Matterhorn</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/Mousse" title="Mousse"><img alt="Mousse-0-portrait.png" src="guards/100px-Mousse-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Mousse" title="Mousse"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Mousse" title="Mousse">Mousse</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/Matoimaru" title="Matoimaru"><img alt="Matoimaru-0-portrait.png" src="guards/100px-Matoimaru-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Matoimaru" title="Matoimaru"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Matoimaru" title="Matoimaru">Matoimaru</a></div>
+              </div>
+                  <div class="oper supporter">
+              <div class="oper-image"><a href="/Deepcolor" title="Deepcolor"><img alt="Deepcolor-0-portrait.png" src="supporters/100px-Deepcolor-0-portrait.png" width="100" height="186"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Deepcolor" title="Deepcolor"><img alt="Class-supporter.png" src="classes/30px-Class-supporter.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Deepcolor" title="Deepcolor">Deepcolor</a></div>
+              </div>
+                  <div class="oper vanGuard">
+              <div class="oper-image"><a href="/Vigna" title="Vigna"><img alt="Vigna-0-portrait.png" src="vanguards/100px-Vigna-0-portrait.png" width="100" height="190"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Vigna" title="Vigna"><img alt="Class-vanguard.png" src="classes/30px-Class-vanguard.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Vigna" title="Vigna">Vigna</a></div>
+              </div>
+                  <div class="oper specialist">
+              <div class="oper-image"><a href="/Rope" title="Rope"><img alt="Rope-0-portrait.png" src="specialists/100px-Rope-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Rope" title="Rope"><img alt="Class-specialist.png" src="classes/30px-Class-specialist.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Rope" title="Rope">Rope</a></div>
+              </div>
+              <div class="oper guard">
+                <div class="oper-image"><a href="/Beehunter" title="Beehunter"><img alt="Beehunter-0-portrait.png" src="guards/100px-Beehunter-0-portrait.png" width="100" height="200"></a></div>
+                <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="oper-class"><a href="/Beehunter" title="Beehunter"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+                <div class="oper-color rarity-4"></div>
+                <div class="oper-diagonal"></div>
+                <div class="oper-name"><a href="/Beehunter" title="Beehunter">Beehunter</a></div>
+                </div>
+                  <div class="oper supporter">
+              <div class="oper-image"><a href="/Earthspirit" title="Earthspirit"><img alt="Earthspirit-0-portrait.png" src="supporters/100px-Earthspirit-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Earthspirit" title="Earthspirit"><img alt="Class-supporter.png" src="classes/30px-Class-supporter.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Earthspirit" title="Earthspirit">Earthspirit</a></div>
+              </div>
+                  <div class="oper caster">
+              <div class="oper-image"><a href="/Haze" title="Haze"><img alt="Haze-0-portrait.png" src="casters/100px-Haze-0-portrait.png" width="100" height="189"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Haze" title="Haze"><img alt="Class-caster.png" src="classes/30px-Class-caster.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Haze" title="Haze">Haze</a></div>
+              </div>
+                  <div class="oper specialist">
+              <div class="oper-image"><a href="/Gravel" title="Gravel"><img alt="Gravel-0-portrait.png" src="specialists/100px-Gravel-0-portrait.png" width="100" height="184"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Gravel" title="Gravel"><img alt="Class-specialist.png" src="classes/30px-Class-specialist.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Gravel" title="Gravel">Gravel</a></div>
+              </div>
+                  <div class="oper medic">
+              <div class="oper-image"><a href="/Perfumer" title="Perfumer"><img alt="Perfumer-0-portrait.png" src="medics/100px-Perfumer-0-portrait.png" width="100" height="178"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Perfumer" title="Perfumer"><img alt="Class-medic.png" src="classes/30px-Class-medic.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Perfumer" title="Perfumer">Perfumer</a></div>
+              </div>
+                  <div class="oper specialist">
+              <div class="oper-image"><a href="/Shaw" title="Shaw"><img alt="Shaw-0-portrait.png" src="specialists/100px-Shaw-0-portrait.png" width="100" height="195"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Shaw" title="Shaw"><img alt="Class-specialist.png" src="classes/30px-Class-specialist.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Shaw" title="Shaw">Shaw</a></div>
+              </div>
+                  <div class="oper sniper">
+              <div class="oper-image"><a href="/ShiraYuki" title="ShiraYuki"><img alt="Shirayuki-0-portrait.png" src="snipers/100px-Shirayuki-0-portrait.png" width="100" height="182"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/ShiraYuki" title="ShiraYuki"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/ShiraYuki" title="ShiraYuki">ShiraYuki</a></div>
+              </div>
+                  <div class="oper sniper">
+              <div class="oper-image"><a href="/Meteor" title="Meteor"><img alt="Meteor-0-portrait.png" src="snipers/100px-Meteor-0-portrait.png" width="100" height="187"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Meteor" title="Meteor"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Meteor" title="Meteor">Meteor</a></div>
+              </div>
+                  <div class="oper caster">
+              <div class="oper-image"><a href="/Gitano" title="Gitano"><img alt="Gitano-0-portrait.png" src="casters/100px-Gitano-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Gitano" title="Gitano"><img alt="Class-caster.png" src="classes/30px-Class-caster.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Gitano" title="Gitano">Gitano</a></div>
+              </div>
+              <div class="oper caster">
+                <div class="oper-image"><a href="/Greyy" title="Greyy"><img alt="Greyy-0-portrait.png" src="casters/100px-Greyy-0-portrait.png" width="100" height="200"></a></div>
+                <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="oper-class"><a href="/Greyy" title="Greyy"><img alt="Class-caster.png" src="classes/30px-Class-caster.png"></a></div>
+                <div class="oper-color rarity-4"></div>
+                <div class="oper-diagonal"></div>
+                <div class="oper-name"><a href="/Greyy" title="Greyy">Greyy</a></div>
+                </div>
+                  <div class="oper vanGuard">
+              <div class="oper-image"><a href="/Courier" title="Courier"><img alt="Courier-0-portrait.png" src="vanguards/100px-Courier-0-portrait.png" width="100" height="186"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Courier" title="Courier"><img alt="Class-vanguard.png" src="classes/30px-Class-vanguard.png"></a></div>
+              <div class="oper-color rarity-4"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Courier" title="Courier">Courier</a></div>
+              </div>
+            </div>
+            <div class="3">
+                  <div class="oper medic">
+              <div class="oper-image"><a href="/Hibiscus" title="Hibiscus"><img alt="Hibiscus-0-portrait.png" src="medics/100px-Hibiscus-0-portrait.png" width="100" height="179"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Hibiscus" title="Hibiscus"><img alt="Class-medic.png" src="classes/30px-Class-medic.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Hibiscus" title="Hibiscus">Hibiscus</a></div>
+              </div>
+                  <div class="oper vanGuard">
+              <div class="oper-image"><a href="/Plume" title="Plume"><img alt="Plume-0-portrait.png" src="vanguards/100px-Plume-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Plume" title="Plume"><img alt="Class-vanguard.png" src="classes/30px-Class-vanguard.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Plume" title="Plume">Plume</a></div>
+              </div>
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/Melantha" title="Melantha"><img alt="Melantha-0-portrait.png" src="guards/100px-Melantha-0-portrait.png" width="100" height="193"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Melantha" title="Melantha"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Melantha" title="Melantha">Melantha</a></div>
+              </div>
+                  <div class="oper sniper">
+              <div class="oper-image"><a href="/Kroos" title="Kroos"><img alt="Kroos-0-portrait.png" src="snipers/100px-Kroos-0-portrait.png" width="100" height="200"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Kroos" title="Kroos"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Kroos" title="Kroos">Kroos</a></div>
+              </div>
+                  <div class="oper caster">
+              <div class="oper-image"><a href="/Lava" title="Lava"><img alt="Lava-0-portrait.png" src="casters/100px-Lava-0-portrait.png" width="100" height="188"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Lava" title="Lava"><img alt="Class-caster.png" src="classes/30px-Class-caster.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Lava" title="Lava">Lava</a></div>
+              </div>
+                  <div class="oper supporter">
+              <div class="oper-image"><a href="/Orchid" title="Orchid"><img alt="Orchid-0-portrait.png" src="supporters/100px-Orchid-0-portrait.png" width="100" height="189"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Orchid" title="Orchid"><img alt="Class-supporter.png" src="classes/30px-Class-supporter.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Orchid" title="Orchid">Orchid</a></div>
+              </div>
+              <div class="oper guard">
+                <div class="oper-image"><a href="/Midnight" title="Midnight"><img alt="Midnight-0-portrait.png" src="guards/100px-Midnight-0-portrait.png" width="100" height="193"></a></div>
+                <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+                <div class="oper-class"><a href="/Midnight" title="Midnight"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+                <div class="oper-color rarity-3"></div>
+                <div class="oper-diagonal"></div>
+                <div class="oper-name"><a href="/Midnight" title="Midnight">Midnight</a></div>
+                </div>
+                <div class="oper guard">
+                    <div class="oper-image"><a href="/Popukar" title="Popukar"><img alt="Popukar-0-portrait.png" src="guards/100px-Popukar-0-portrait.png" width="100" height="193"></a></div>
+                    <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+                    <div class="oper-class"><a href="/Popukar" title="Popukar"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+                    <div class="oper-color rarity-3"></div>
+                    <div class="oper-diagonal"></div>
+                    <div class="oper-name"><a href="/Popukar" title="Popukar">Popukar</a></div>
+                    </div>
+                  <div class="oper vanGuard">
+              <div class="oper-image"><a href="/Fang" title="Fang"><img alt="Fang-0-portrait.png" src="vanguards/100px-Fang-0-portrait.png" width="100" height="183"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Fang" title="Fang"><img alt="Class-vanguard.png" src="classes/30px-Class-vanguard.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Fang" title="Fang">Fang</a></div>
+              </div>
+                  <div class="oper defender">
+              <div class="oper-image"><a href="/Beagle" title="Beagle"><img alt="Beagle-0-portrait.png" src="defenders/100px-Beagle-0-portrait.png" width="100" height="196"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Beagle" title="Beagle"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Beagle" title="Beagle">Beagle</a></div>
+              </div>
+                  <div class="oper defender">
+              <div class="oper-image"><a href="/Cardigan" title="Cardigan"><img alt="Cardigan-0-portrait.png" src="defenders/100px-Cardigan-0-portrait.png" width="100" height="195"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Cardigan" title="Cardigan"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Cardigan" title="Cardigan">Cardigan</a></div>
+              </div>
+                  <div class="oper caster">
+              <div class="oper-image"><a href="/Steward" title="Steward"><img alt="Steward-0-portrait.png" src="casters/100px-Steward-0-portrait.png" width="100" height="197"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Steward" title="Steward"><img alt="Class-caster.png" src="classes/30px-Class-caster.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Steward" title="Steward">Steward</a></div>
+              </div>
+                  <div class="oper medic">
+              <div class="oper-image"><a href="/Ansel" title="Ansel"><img alt="Ansel-0-portrait.png" src="medics/100px-Ansel-0-portrait.png" width="100" height="176"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Ansel" title="Ansel"><img alt="Class-medic.png" src="classes/30px-Class-medic.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Ansel" title="Ansel">Ansel</a></div>
+              </div>
+                  <div class="oper sniper">
+              <div class="oper-image"><a href="/Adnachiel" title="Adnachiel"><img alt="Adnachiel-0-portrait.png" src="snipers/100px-Adnachiel-0-portrait.png" width="100" height="188"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Adnachiel" title="Adnachiel"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Adnachiel" title="Adnachiel">Adnachiel</a></div>
+              </div>
+                  <div class="oper vanGuard">
+              <div class="oper-image"><a href="/Vanilla" title="Vanilla"><img alt="Vanilla-0-portrait.png" src="vanguards/100px-Vanilla-0-portrait.png" width="100" height="186"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Vanilla" title="Vanilla"><img alt="Class-vanguard.png" src="classes/30px-Class-vanguard.png"></a></div>
+              <div class="oper-color rarity-3"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Vanilla" title="Vanilla">Vanilla</a></div>
+              </div>
+              <div class="oper sniper">
+                <div class="oper-image"><a href="/Catapult" title="Catapult"><img alt="Catapult-0-portrait.png" src="snipers/100px-Catapult-0-portrait.png" width="100" height="188"></a></div>
+                <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+                <div class="oper-class"><a href="/Catapult" title="Catapult"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png"></a></div>
+                <div class="oper-color rarity-3"></div>
+                <div class="oper-diagonal"></div>
+                <div class="oper-name"><a href="/Catapult" title="Catapult">Catapult</a></div>
+                </div>
+                <div class="oper defender">
+                    <div class="oper-image"><a href="/Spot" title="Spot"><img alt="Spot-0-portrait.png" src="defenders/100px-Spot-0-portrait.png" width="100" height="195"></a></div>
+                    <div class="oper-stars"><span>★</span><span>★</span><span>★</span></div>
+                    <div class="oper-class"><a href="/Spot" title="Spot"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+                    <div class="oper-color rarity-3"></div>
+                    <div class="oper-diagonal"></div>
+                    <div class="oper-name"><a href="/Spot" title="Spot">Spot</a></div>
+                    </div>
+            </div>
+            <div class="2">
+                  <div class="oper caster">
+              <div class="oper-image"><a href="/12F" title="12F"><img alt="12f-0-portrait.png" src="casters/100px-12f-0-portrait.png" width="100" height="199"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/12F" title="12F"><img alt="Class-caster.png" src="classes/30px-Class-caster.png"></a></div>
+              <div class="oper-color rarity-2"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/12F" title="12F">12F</a></div>
+              </div>
+                  <div class="oper vanGuard">
+              <div class="oper-image"><a href="/Yato" title="Yato"><img alt="Yato-0-portrait.png" src="vanguards/100px-Yato-0-portrait.png" width="100" height="197"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Yato" title="Yato"><img alt="Class-vanguard.png" src="classes/30px-Class-vanguard.png"></a></div>
+              <div class="oper-color rarity-2"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Yato" title="Yato">Yato</a></div>
+              </div>
+                  <div class="oper caster">
+              <div class="oper-image"><a href="/Durin" title="Durin"><img alt="Durin-0-portrait.png" src="casters/100px-Durin-0-portrait.png" width="100" height="178"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Durin" title="Durin"><img alt="Class-caster.png" src="classes/30px-Class-caster.png"></a></div>
+              <div class="oper-color rarity-2"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Durin" title="Durin">Durin</a></div>
+              </div>
+                  <div class="oper defender">
+              <div class="oper-image"><a href="/Noir_Corne" title="Noir Corne"><img alt="NoirCorne-0-portrait.png" src="defenders/100px-NoirCorne-0-portrait.png" width="100" height="197"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Noir_Corne" title="Noir Corne"><img alt="Class-defender.png" src="classes/30px-Class-defender.png"></a></div>
+              <div class="oper-color rarity-2"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Noir_Corne" title="Noir Corne">Noir Corne</a></div>
+              </div>
+                  <div class="oper sniper">
+              <div class="oper-image"><a href="/Rangers" title="Rangers"><img alt="Rangers-0-portrait.png" src="snipers/100px-Rangers-0-portrait.png" width="100" height="179"></a></div>
+              <div class="oper-stars"><span>★</span><span>★</span></div>
+              <div class="oper-class"><a href="/Rangers" title="Rangers"><img alt="Class-sniper.png" src="classes/30px-Class-sniper.png"></a></div>
+              <div class="oper-color rarity-2"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Rangers" title="Rangers">Rangers</a></div>
+              </div>
+            </div>
+            <div class="1">
+                  <div class="oper guard">
+              <div class="oper-image"><a href="/Castle-3" title="Castle-3"><img alt="Castle3-0-portrait.png" src="guards/100px-Castle3-0-portrait.png" width="100" height="199"></a></div>
+              <div class="oper-stars"><span>★</span></div>
+              <div class="oper-class"><a href="/Castle-3" title="Castle-3"><img alt="Class-guard.png" src="classes/30px-Class-guard.png"></a></div>
+              <div class="oper-color rarity-1"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Castle-3" title="Castle-3">Castle-3</a></div>
+              </div>
+                  <div class="oper medic">
+              <div class="oper-image"><a href="/Lancet-2" title="Lancet-2"><img alt="Lancet2-0-portrait.png" src="medics/100px-Lancet2-0-portrait.png" width="100" height="196"></a></div>
+              <div class="oper-stars"><span>★</span></div>
+              <div class="oper-class"><a href="/Lancet-2" title="Lancet-2"><img alt="Class-medic.png" src="classes/30px-Class-medic.png"></a></div>
+              <div class="oper-color rarity-1"></div>
+              <div class="oper-diagonal"></div>
+              <div class="oper-name"><a href="/Lancet-2" title="Lancet-2">Lancet-2</a></div>
+              </div>
+            </div>
+              
+              <script src="sort.js"></script>
+            </div>
+        </div>
+
+    </div>
+ </body>
+</html>
