@@ -38,6 +38,11 @@
   top: 301px;
 }
 
+#but4
+{
+  top: 351px;
+}
+
 #but1 img
 {
   width: 40px;
@@ -531,19 +536,25 @@
 
   #but1
   {
-    left: 20px;
+    right: 20px;
     top: 120px;
   }
   #but2
   {
-    left: 20px;
+    right: 20px;
     top: 160px;
   }
 
   #but3
   {
-    left: 20px;
+    right: 20px;
     top: 200px;
+  }
+
+  #but4
+  {
+    right: 20px;
+    top: 240px;
   }
 
   #but1 img
@@ -557,7 +568,15 @@
 
   #but3 img
   {
-    height: 31px;
+    max-height: 30px;
+    max-width: 30px;
+  }
+
+  #but4 img
+  {
+    max-height: 30px;
+    max-width: 30px;
+    
   }
 
   #classs
@@ -622,19 +641,25 @@
 
   #but1
   {
-    left: 20px;
+    right: 20px;
     top: 120px;
   }
   #but2
   {
-    left: 20px;
+    right: 20px;
     top: 160px;
   }
 
   #but3
   {
-    left: 20px;
+    right: 20px;
     top: 200px;
+  }
+
+  #but4
+  {
+    right: 20px;
+    top: 240px;
   }
 
   #but1 img
@@ -648,7 +673,14 @@
 
   #but3 img
   {
-    height: 31px;
+    max-height: 30px;
+    max-width: 30px;
+  }
+
+  #but4 img
+  {
+    max-height: 30px;
+    max-width: 30px;
   }
 
   #classs

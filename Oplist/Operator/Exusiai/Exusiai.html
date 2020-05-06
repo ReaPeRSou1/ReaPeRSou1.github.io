@@ -11,7 +11,7 @@
 
     <div id="header">
 
-        <img src="../../../pic/arknights.png" alt="" style="display: block; margin-left: auto; margin-right: auto;">
+        <img id="headPic" src="../../../pic/arknights.png" alt="">
         <div class="headernav">
             <div class="quad">
                 <a href="">Главная</a>
@@ -73,16 +73,16 @@
         
         <ul>
             <li>
-                <button onclick="showPanel(0)" style="top: 200px;"> <img src="../pic/elite1.png" alt="" width="40px"> </button>
+                <button id="but1" onclick="showPanel(0)"> <img src="../pic/elite1.png" alt=""> </button>
             </li>
             <li>
-                <button onclick="showPanel(1)" style="top: 250px;"> <img src="../pic/elite2.png" alt="" width="40px"> </button>
+                <button id="but2" onclick="showPanel(1)"> <img src="../pic/elite2.png" alt=""> </button>
             </li>
             <li>
-                <button onclick="showPanel(2)" style="top: 301px;"> <img src="pic/wilds.png" alt="" height="40px" style="margin-left: 3px; margin-right: 3px; margin-top: 6px;"> </button>
+                <button id="but3" onclick="showPanel(2)"> <img src="pic/wilds.png" alt="" height="40px" style="margin-left: 3px; margin-right: 3px; margin-top: 6px;"> </button>
             </li>
             <li>
-                <button onclick="showPanel(3)" style="top: 358px;"> <img src="pic/kfc.png" alt="" width="40px" style="margin-top: 13px; margin-bottom: 13px;"> </button>
+                <button id="but4" onclick="showPanel(3)"> <img src="pic/kfc.png" alt="" width="40px" style="margin-top: 13px; margin-bottom: 13px;"> </button>
             </li>
         </ul>
 
@@ -2774,16 +2774,16 @@
     <div id="stick">
         
         <button onclick="displayMain(0)"> <img src="../pic/bio.png" alt="" height="55px"><br> Биография  </button>
-        <br>
+        <div id="br"></div>
         <button onclick="displayMain(1)"> <img src="../pic/voice.png" alt="" height="55px"><br> Голос </button>
         
     </div>
 
-    <div class="main">
+    <div class="main" id="main1">
 
         <div id="infoSpace">
 
-            <div class="part1" style="height: fit-content; margin-bottom: 10px;">
+            <div class="part3">
                 <h3>Рекрутинговый контракт</h3>
                 <p style="margin-left: 5px; margin-right: 5px;">
                     Ей действительно можно доверить любой груз? <br>
@@ -2791,7 +2791,7 @@
                     Exusiai, сотрудница Penguin Logistics, очистит всё на своем пути, используя свое оружие.</p>
             </div>
 
-            <div class="part2" style="height: fit-content; left: 0; margin-bottom: 10px;">
+            <div class="part4">
                 <h3>Токен</h3>
                 <p style="margin-left: 5px; margin-right: 5px;">
                     Медаль Лучшего Босса. Соберите пять таких, чтобы обменять их на медаль Супер-Босса. <br>
@@ -2985,7 +2985,7 @@
 
     </div>
 
-    <div class="main" style="width: 79.1%; margin-left: 9.9%; margin-top: -150px;">
+    <div class="main" id="main2">
 
         <table class="quote">
             <tbody>
