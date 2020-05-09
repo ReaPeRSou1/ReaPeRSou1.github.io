@@ -6,6 +6,11 @@
   height: 70px;
 }
 
+.fracPic
+{
+  width: 3%;
+}
+
 #freespace img
 {
   border: 1.5px solid rgba(135, 207, 235, 0.37);
@@ -48,4 +53,46 @@
   text-align: justify;
   padding: 0 50px 10px 50px;
   font-size: 18px;
+}
+
+.window h3
+{
+  padding-left: 50px; 
+  font-size: 20px;
+}
+
+@media(max-width:1300px)
+{
+  #main
+  {
+    width: 100%;
+  }
+
+  #freespace
+  {
+    margin-top: 5px;
+    margin-bottom: 35px;
+  }
+  
+  .fracPic
+  {
+    width: 12%;
+  }
+
+  .window
+  {
+    width: 90%;
+  }
+
+  .window p
+  {
+    font-size: 15px;
+    padding: 0 10px 5px 10px;
+  }
+
+  .window h3
+  {
+    padding-left: 10px; 
+    font-size: 18px;
+  }
 }
