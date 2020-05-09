@@ -11,7 +11,7 @@
 
     <div id="header">
 
-        <img src="../../../pic/arknights.png" alt="" style="display: block; margin-left: auto; margin-right: auto;">
+        <img id="headPic" src="../../../pic/arknights.png" alt="">
         <div class="headernav">
             <div class="quad">
                 <a href="">Главная</a>
@@ -68,30 +68,29 @@
         </div>
 
     </div>
-    <div class="freespace"></div>
     <div id="content">   
         
         <ul>
             <li>
-                <button onclick="showPanel(0)" style="top: 200px;"> <img src="../pic/elite1.png" alt="" width="40px"> </button>
+                <button id="but1" onclick="showPanel(0)"> <img src="../pic/elite1.png" alt="" width="40px"> </button>
             </li>
             <li>
-                <button onclick="showPanel(1)" style="top: 250px;"> <img src="../pic/elite2.png" alt="" width="40px"> </button>
+                <button id="but2" onclick="showPanel(1)"> <img src="../pic/elite2.png" alt="" width="40px"> </button>
             </li>
         </ul>
 
         <h2 style="color: white; text-align: center; margin: 0;"> Skadi </h2>
 
-        <img src="pic/class_guard.png" width="125px" style="position: absolute; left: 15px; bottom: 15px;">
+        <img id="classs" src="pic/class_guard.png" width="125px" style="position: absolute; left: 15px; bottom: 15px;">
 
-        <img src="pic/ping.png" width="125px" style="position: absolute; left: 15px;">
+        <img id="frac" src="pic/ping.png" width="125px" style="position: absolute; left: 15px;">
         
         <div class="operPic">
-            <img src="pic/ska1.png" height="99%" style="display: block; margin-left: auto; margin-right: auto;">
+            <img src="pic/ska1.png" height="99%">
         </div>
 
         <div class="operPic">
-            <img src="pic/ska2.png" height="99%" style="display: block; margin-left: auto; margin-right: auto;">
+            <img src="pic/ska2.png" height="99%">
         </div>
         
 
@@ -2733,16 +2732,16 @@
     <div id="stick">
         
         <button onclick="displayMain(0)"> <img src="../pic/bio.png" alt="" height="55px"><br> Биография  </button>
-        <br>
+        <div id="br"></div>
         <button onclick="displayMain(1)"> <img src="../pic/voice.png" alt="" height="55px"><br> Голос </button>
         
     </div>
 
-    <div class="main">
+    <div class="main" id="main1">
 
         <div id="infoSpace">
 
-            <div class="part1" style="height: fit-content; margin-bottom: 10px;">
+            <div class="part3">
                 <h3>Рекрутинговый контракт</h3>
                 <p style="margin-left: 5px; margin-right: 5px;">
                     Она немного не в себе, буквально.<br>
@@ -2751,7 +2750,7 @@
                     Skadi, охотница за головами, пришла с приливом, чтобы утопить ваших врагов.</p>
             </div>
 
-            <div class="part2" style="height: fit-content; left: 0; margin-bottom: 10px;">
+            <div class="part4">
                 <h3>Токен</h3>
                 <p style="margin-left: 5px; margin-right: 5px;">
                     Песня, написанная на её родном языке. Хоть ты и не можешь понять ни слова из неё, она СОБИРАЕТСЯ научить тебя ей. <br>
@@ -3011,7 +3010,7 @@
 
     </div>
 
-    <div class="main" style="width: 79.1%; margin-left: 9.9%; margin-top: -150px;">
+    <div class="main" id="main2">
 
         <table class="quote">
             <tbody>
