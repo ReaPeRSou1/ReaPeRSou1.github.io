@@ -50,33 +50,13 @@
   top: 351px;
 }
 
-#sweep
-{
-  margin-left: 1px; 
-  margin-top: 15px; 
-  margin-bottom: 16px; 
-  vertical-align: middle
-}
-
-#but5
-{
-  top: 401px;
-}
-
 #but1 img
 {
   width: 40px;
 }
 #but2 img
 {
-  max-width: 40px;
-  max-height: 40px;
-}
-
-#but3 img
-{
-  max-width: 40px;
-  max-height: 40px;
+  width: 40px;
 }
 
 #content .operPic
@@ -84,8 +64,6 @@
     display: none;
     width: 100%;
     height: 93%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #classs
@@ -566,38 +544,24 @@
   #but1
   {
     right: 20px;
-    top: 50px;
+    top: 120px;
   }
   #but2
   {
     right: 20px;
-    top: 90px;
+    top: 160px;
   }
 
   #but3
   {
     right: 20px;
-    top: 130px;
+    top: 200px;
   }
 
   #but4
   {
     right: 20px;
-    top: 170px;
-  }
-
-  #sweep
-  {
-    margin-left: 1px; 
-    margin-top: 12px; 
-    margin-bottom: 13px; 
-    vertical-align: middle;
-  }
-
-  #but5
-  {
-    right: 20px;
-    top: 210px;
+    top: 240px;
   }
 
   #but1 img
@@ -620,13 +584,8 @@
   #but4 img
   {
     max-height: 30px;
-    max-width: 30px; 
-  }
-
-  #but5 img
-  {
-    max-height: 30px;
-    max-width: 30px; 
+    max-width: 30px;
+    
   }
 
   #classs
@@ -729,20 +688,6 @@
     top: 406px;
   }
 
-  #sweep
-  {
-    margin-left: 1px; 
-    margin-top: 12px; 
-    margin-bottom: 13px; 
-    vertical-align: middle;
-  }
-
-  #but5
-  {
-    left: 188px;
-    top: 406px;
-  }
-
   #but1 img
   {
     max-height: 30px;
@@ -761,12 +706,6 @@
   }
 
   #but4 img
-  {
-    max-height: 30px;
-    max-width: 30px;
-  }
-
-  #but5 img
   {
     max-height: 30px;
     max-width: 30px;
