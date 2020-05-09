@@ -11,7 +11,7 @@
 
     <div id="header">
 
-        <img src="../../../pic/arknights.png" alt="" style="display: block; margin-left: auto; margin-right: auto;">
+        <img id="headPic" src="../../../pic/arknights.png">
         <div class="headernav">
             <div class="quad">
                 <a href="">Главная</a>
@@ -68,34 +68,36 @@
         </div>
 
     </div>
-    <div class="freespace"></div>
     <div id="content">   
         
         <ul>
             <li>
-                <button onclick="showPanel(0)" style="top: 200px;"> <img src="../pic/elite1.png" alt="" width="40px"> </button>
+                <button id="but1" onclick="showPanel(0)"> <img src="../pic/elite1.png" alt="" width="40px"> </button>
             </li>
             <li>
-                <button onclick="showPanel(1)" style="top: 250px;"> <img src="../pic/elite2.png" alt="" width="40px"> </button>
+                <button id="but2" onclick="showPanel(1)"> <img src="../pic/elite2.png" alt="" width="40px"> </button>
+            </li>
+            <li>
+                <button id="but3" onclick="showPanel(2)"> <img src="pic/boc.png" alt="" style="vertical-align: middle; margin-top: 2px; margin-bottom: 1px;"> </button>
             </li>
         </ul>
 
         <h2 style="color: white; text-align: center; margin: 0;"> Saria </h2>
 
-        <img src="pic/def.png" width="125px" style="position: absolute; left: 15px; bottom: 15px;">
+        <img id="classs" src="pic/def.png" width="125px" style="position: absolute; left: 15px; bottom: 15px;">
 
-        <img src="pic/rhine.png" width="125px" style="position: absolute; left: 15px;">
+        <img id="frac" src="pic/rhine.png" width="125px" style="position: absolute; left: 15px;">
         
         <div class="operPic">
-            <img src="pic/saria_1.png" height="99%" style="display: block; margin-left: auto; margin-right: auto;">
+            <img src="pic/saria_1.png" height="99%">
         </div>
 
         <div class="operPic">
-            <img src="pic/saria_2.png" height="99%" style="display: block; margin-left: auto; margin-right: auto;">
+            <img src="pic/saria_2.png" height="99%">
         </div>
 
         <div class="operPic">
-            <img src="pic/SiegeSkinWild.png" height="99%" style="display: block; margin-left: auto; margin-right: auto;">
+            <img src="pic/saria_boc.png" height="99%">
         </div>    
 
     </div>
@@ -2746,16 +2748,16 @@
     <div id="stick">
         
         <button onclick="displayMain(0)"> <img src="../pic/bio.png" alt="" height="55px"><br> Биография  </button>
-        <br>
+        <div id="br"></div>
         <button onclick="displayMain(1)"> <img src="../pic/voice.png" alt="" height="55px"><br> Голос </button>
         
     </div>
 
-    <div class="main">
+    <div class="main" id="main1">
 
         <div id="infoSpace">
 
-            <div class="part1" style="height: fit-content; margin-bottom: 10px;">
+            <div class="part3">
                 <h3>Рекрутинговый контракт</h3>
                 <p style="margin-left: 5px; margin-right: 5px;">
                     Алмаз более податлив, чем она.<br>
@@ -2763,7 +2765,7 @@
                     Saria, бывшая исследовательница Rhine Lab, будет служить ключевой опорой отряда по защите и исцелению на поле боя.</p>
             </div>
 
-            <div class="part2" style="height: fit-content; left: 0; margin-bottom: 10px;">
+            <div class="part4">
                 <h3>Токен</h3>
                 <p style="margin-left: 5px; margin-right: 5px;">
                     Несколько контрактов о сотрудничестве в области безопасности. На некоторых из них уже есть серая печать. <br>
@@ -2977,7 +2979,7 @@ Rhodes Island признаёт, что леди Сария достаточно 
 
     </div>
 
-    <div class="main" style="width: 79.1%; margin-left: 9.9%; margin-top: -150px;">
+    <div class="main" id="main2">
 
         <table class="quote">
             <tbody>
