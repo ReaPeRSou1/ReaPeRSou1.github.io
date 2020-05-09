@@ -85,6 +85,11 @@
     width: 90%;
   }
 
+  .window img
+  {
+    width: 50%;
+  }
+
   .window p
   {
     font-size: 15px;
