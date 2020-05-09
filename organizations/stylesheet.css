@@ -43,6 +43,7 @@
 
 .window img
 {
+  width: 150px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -84,9 +85,14 @@
     width: 90%;
   }
 
+  .window img
+  {
+    width: 50%;
+  }
+
   .window p
   {
-    font-size: 15px;
+    font-size: 16.5px;
     padding: 0 10px 5px 10px;
   }
 
