@@ -513,6 +513,12 @@
 {
   background-color: rgba(95, 228, 68, 0.315);
 }
+
+.third
+{
+  background-color: rgba(228, 68, 89, 0.315);
+}
+
 .parentCell{ 
   position: relative; 
 } 
