@@ -48,6 +48,7 @@ function changeSkill(index)
 {
     var buttons=document.querySelectorAll("#info .skillButton button");
     var content=document.querySelectorAll("#info .skillDis");
+    
 
     buttons.forEach(function(node){
         node.style.backgroundColor="";
@@ -62,6 +63,8 @@ function changeSkill(index)
     });
 
     content[index].style.display="block";
+
+   
 }
 
 
@@ -81,6 +84,15 @@ function changeSkillLevel(el, n)
     $("#skill"+value+"num"+n).addClass("display1");
     $(".skill"+n).removeClass("active");
     $("#skill"+n+"dis"+value).addClass("active");
+    var range1=document.querySelector('#info .skillDis .range1');
+    var range2=document.querySelector('#info .skillDis .range2');
+    if (value < 7) {
+        range1.style.display="block"
+        range2.style.display="none"
+    } else {
+        range1.style.display="none"
+        range2.style.display="block"
+    }
 }
 
 
