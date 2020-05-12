@@ -86,7 +86,7 @@ function changeSkillLevel(el, n)
     $("#skill"+n+"dis"+value).addClass("active");
     var range1=document.querySelector('#info .skillDis .range1');
     var range2=document.querySelector('#info .skillDis .range2');
-    if (value < 7) {
+    if (value < 8) {
         range1.style.display="block"
         range2.style.display="none"
     } else {
