@@ -49,9 +49,13 @@
 
 }
 
-#sticky li
+#stickUl
 {
     list-style: none;
+}
+
+#stickUl li
+{
     border: 1px solid rgb(95, 95, 95);
     border-radius: 4px;
     padding: 10px 5px 10px 5px;
@@ -60,12 +64,12 @@
     text-align: center;
 }
 
-#sticky li:hover
+#stickUl li:hover
 {
     background-color: rgba(200, 200, 200, 0.5);
 }
 
-#sticky a
+#stickUl a
 {
     font-weight: bold;
     text-decoration: none;
@@ -75,27 +79,52 @@
 
 @media (max-width: 1300px)
 {
-    #sticky a
+    #main
     {
-        font-weight: bold;
-        text-decoration: none;
-        color: rgb(220, 220, 220);
-        padding: 10px 15px 10px 15px;
+        width: 87%;
+        margin-top: 0;
+        margin-left: 12%;
+        margin-right: 0;
     }
 
     #sticky
     {
-        top: 15%;
+        left: 0;
+    }
+   
+    #stickUl
+    {
+        list-style-type: none;
+        margin: 0;
+        margin-left: 15px;
+        padding: 0;
+        overflow: hidden;
+        writing-mode: vertical-lr;
     }
 
-    #main h2
+    #stickUl li
     {
-        font-size: 27px;
+        display: inline-block;
+        padding: 10px 5px 10px 5px;
+        margin: 0;
+    }
+
+    
+    #sticky a
+    {
+        padding: 5px 5px 5px 5px;
     }
 
     .object
     {
-        font-size: 22px;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .discript
+    {
+        display: block;
     }
 
 }
