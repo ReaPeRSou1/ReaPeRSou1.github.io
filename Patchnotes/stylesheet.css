@@ -96,6 +96,16 @@ body
     height: 100%;
 }
 
+@media (max-width: 1200px)
+{
+  .PP1 {
+    padding-top: 5%
+  }
+
+  .PP2 {
+    padding-top: 10%;
+  }
+}
 
 @media (max-width: 500px)
 {
@@ -152,6 +162,6 @@ body
         display: flex;
         border-radius: 5px;
         border: 2px solid gray;
-        overflow-x: auto;
+        height: fit-content;
       }
 }
