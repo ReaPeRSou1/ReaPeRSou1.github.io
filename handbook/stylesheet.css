@@ -1,0 +1,130 @@
+#main
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#main h2
+{
+    text-align: center;
+    
+    border-bottom: 1.5px solid gray;
+}
+
+#mainTable
+{
+    width: 100%;
+    color: rgb(230, 230, 230);
+    text-align: justify;
+}
+
+#mainTable td
+{
+    padding: 15px;
+    
+}
+
+.object
+{
+    background-color: rgba(15, 15, 15, 0.4);
+    border: 1px solid rgb(40, 40, 40);
+}
+
+.discript
+{
+    background-color: rgba(15, 15, 15, 0.3);
+    border: 1px solid rgb(40, 40, 40);
+}
+
+#sticky
+{
+    position: fixed;
+    left: -20px;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+
+}
+
+#stickUl
+{
+    list-style: none;
+}
+
+#stickUl li
+{
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 4px;
+    padding: 10px 5px 10px 5px;
+    margin: 5px;
+    background-color: rgba(200, 200, 200, 0.2);
+    text-align: center;
+}
+
+#stickUl li:hover
+{
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+#stickUl a
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+    padding: 10px 35px 10px 35px;
+}
+
+@media (max-width: 1300px)
+{
+    #main
+    {
+        width: 87%;
+        margin-top: 0;
+        margin-left: 12%;
+        margin-right: 0;
+    }
+
+    #sticky
+    {
+        left: 0;
+    }
+   
+    #stickUl
+    {
+        list-style-type: none;
+        margin: 0;
+        margin-left: 15px;
+        padding: 0;
+        overflow: hidden;
+        writing-mode: vertical-lr;
+    }
+
+    #stickUl li
+    {
+        display: inline-block;
+        padding: 10px 5px 10px 5px;
+        margin: 0;
+    }
+
+    
+    #sticky a
+    {
+        padding: 5px 5px 5px 5px;
+    }
+
+    .object
+    {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .discript
+    {
+        display: block;
+    }
+
+}

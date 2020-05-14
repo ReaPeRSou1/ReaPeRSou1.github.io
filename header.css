@@ -249,9 +249,23 @@ input[type=range] {
 
 @media (max-width: 1300px)
 {
-    .headcont a
+  .headcont a
   {
     font-size: 11px;
   }
+
+  #headPic
+  {
+    width: 500px;
+  }
   
+}
+
+
+@media (max-width: 950px)
+{
+  #headPic
+  {
+    width: 300px;
+  }
 }

@@ -543,10 +543,6 @@
 
 @media (max-width: 1300px)
 {
-  #header img
-  {
-    width: 500px;
-  }
 
   #content h2
   {
@@ -676,11 +672,6 @@
     display: table;
     margin: 0 auto;
     margin-bottom: 20px;
-  }
-
-  #header img
-  {
-    width: 300px;
   }
 
   #content
