@@ -1,0 +1,157 @@
+body
+{
+    background-color: rgb(60, 60, 60);
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+}
+
+
+
+#navigation
+  {
+    display: block;
+    height: auto;
+    max-width: fit-content;
+    margin-top: 2%;
+    margin-left: 13%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 2px solid gray;
+  }
+
+  .nav li
+{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  list-style-type: decimal;
+  margin-right: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav span:hover, li:hover {
+    color: skyblue;
+
+}
+
+.nav a:visited {
+    color:rgb(180, 180, 180); 
+  }
+
+.mainbody
+{
+  text-align: justify;
+  width: 74%;
+  margin: auto;
+  padding-top: 1%;
+}
+
+.separate
+{
+  color:rgb(180, 180, 180); 
+  border-bottom: 2px solid grey;
+
+}
+
+.row {
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid gray;
+  }
+  
+  .column {
+    float: left;
+  }
+
+  .left {
+    width: 37%;
+  }
+  
+  .right {
+    width: 63%;
+  }
+
+  .PP1 {
+    padding-top: 27%
+  }
+
+  .PP2 {
+    padding-top: 40%;
+  }
+
+  .mobile{
+      display: none;
+  }
+
+.text {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.column img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 500px)
+{
+  #navigation
+  {
+    display: block;
+    height: auto;
+    max-width: fit-content;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 2px solid gray;
+  }
+
+  .left {
+    width: 100%;
+  }
+  
+  .right {
+    width: 0%;
+  }
+
+  .PP1 {
+    padding-top: 0;
+  }
+
+  .PP2 {
+    padding-top: 0;
+  }
+
+  .mobile{
+    display: block;
+  }
+
+    .separate
+    {
+         color:rgb(180, 180, 180); 
+         border-bottom: 2px solid grey;
+         font-size: large;
+         text-align: center;
+    }
+
+    .mainbody
+    {
+        text-align: justify;
+        width: 100%;
+        margin: auto;
+        padding-top: 1%;
+    }
+
+    .row {
+        display: flex;
+        border-radius: 5px;
+        border: 2px solid gray;
+        overflow-x: auto;
+      }
+}
