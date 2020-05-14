@@ -1,0 +1,101 @@
+#main
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#main h2
+{
+    text-align: center;
+    
+    border-bottom: 1.5px solid gray;
+}
+
+#mainTable
+{
+    width: 100%;
+    color: rgb(230, 230, 230);
+    text-align: justify;
+}
+
+#mainTable td
+{
+    padding: 15px;
+    
+}
+
+.object
+{
+    background-color: rgba(15, 15, 15, 0.4);
+    border: 1px solid rgb(40, 40, 40);
+}
+
+.discript
+{
+    background-color: rgba(15, 15, 15, 0.3);
+    border: 1px solid rgb(40, 40, 40);
+}
+
+#sticky
+{
+    position: fixed;
+    left: -20px;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+
+}
+
+#sticky li
+{
+    list-style: none;
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 4px;
+    padding: 10px 5px 10px 5px;
+    margin: 5px;
+    background-color: rgba(200, 200, 200, 0.2);
+    text-align: center;
+}
+
+#sticky li:hover
+{
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+#sticky a
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+    padding: 10px 35px 10px 35px;
+}
+
+@media (max-width: 1300px)
+{
+    #sticky a
+    {
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(220, 220, 220);
+        padding: 10px 15px 10px 15px;
+    }
+
+    #sticky
+    {
+        top: 15%;
+    }
+
+    #main h2
+    {
+        font-size: 27px;
+    }
+
+    .object
+    {
+        font-size: 22px;
+    }
+
+}
