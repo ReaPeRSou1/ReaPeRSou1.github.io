@@ -847,14 +847,36 @@
 
 @media (min-width: 1899px)
 {
+
+  #main1
+  {
+    font-size: 18px;
+  }
+
+  #main2
+  {
+    font-size: 18px;
+  }
+
   #content
   {
     margin-left: 18%;
   }
 
-
+}
 @media (min-width: 2200px)
 {
+  
+  #main1
+  {
+    font-size: 20px;
+  }
+ 
+  #main2
+  {
+    font-size: 20px;
+  }
+  
   #content
   {
     margin-left: 24%;
@@ -863,6 +885,16 @@
 
 @media (min-width: 3000px)
 {
+  #main1
+  {
+    font-size: 22px;
+  }
+
+  #main2
+  {
+    font-size: 22px;
+  }
+  
   #content
   {
     margin-left: 29%;
