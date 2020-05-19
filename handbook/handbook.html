@@ -69,24 +69,15 @@
 
     </div>
 
-    <div id="sticky">
-
-        <ul id="stickUl">
-            <li>
-                <a href="#common">Общее</a>
-            </li>
-            <li>
-                <a href="#char">Персонажи</a> 
-            </li>
-            <li>
-                <a href="#race">Расы</a>
-            </li>
-            <li>
-                <a href="#terr">Территории</a>
-            </li>
-        </ul>
-
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#common">Общие понятия: </a>
+        <a href="#char">Персонажи: </a>
+        <a href="#race">Расы: </a>
+        <a href="#terr">Территории: </a>
+        
     </div>
+    <span id="point" onclick="openNav()">&#9776; Навигация</span>
 
     <div id="main">
 
@@ -661,5 +652,6 @@
 
     </div>
 
+    <script src="java.js"></script>
  </body>
 </html>

@@ -38,44 +38,47 @@
     border: 1px solid rgb(40, 40, 40);
 }
 
-#sticky
-{
+.sidenav {
+    height: 55%;
+    width: 0;
     position: fixed;
-    left: -20px;
-    top: 60%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%)
-
-}
-
-#stickUl
-{
-    list-style: none;
-}
-
-#stickUl li
-{
-    border: 1px solid rgb(95, 95, 95);
-    border-radius: 4px;
-    padding: 10px 5px 10px 5px;
-    margin: 5px;
-    background-color: rgba(200, 200, 200, 0.2);
-    text-align: center;
-}
-
-#stickUl li:hover
-{
-    background-color: rgba(200, 200, 200, 0.5);
-}
-
-#stickUl a
-{
-    font-weight: bold;
+    z-index: 1;
+    transform: translateY(20%);
+    background-color: rgb(39, 39, 39);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: rgb(220, 220, 220);
-    padding: 10px 35px 10px 35px;
-}
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #point
+  {
+    font-size:23px;
+    cursor:pointer;
+    position: fixed;
+    transform: translateY(100px);
+  
+  }
 
 @media (max-width: 1300px)
 {
@@ -87,32 +90,20 @@
         margin-right: 0;
     }
 
-    #sticky
+    .sidenav 
     {
-        left: 0;
+        padding-top: 15px;
+        transform: translateY(5%);
     }
-   
-    #stickUl
+    .sidenav a 
     {
-        list-style-type: none;
-        margin: 0;
-        margin-left: 15px;
-        padding: 0;
-        overflow: hidden;
+        font-size: 18px;
+    }
+    #point
+    {
+        transform: translateY(7%);
         writing-mode: vertical-lr;
-    }
-
-    #stickUl li
-    {
-        display: inline-block;
-        padding: 10px 5px 10px 5px;
-        margin: 0;
-    }
-
-    
-    #sticky a
-    {
-        padding: 5px 5px 5px 5px;
+        font-size:29px;
     }
 
     .object
