@@ -1,12 +1,19 @@
+var x = window.matchMedia("(max-width: 900px)")
+
 function open0()
 {
     var cont=document.querySelectorAll("#contentHolder .content");
     var back=document.querySelectorAll("#contentHolder .bg");
     cont.forEach(function(node){
         node.style.display="none";
+        node.style.height="0";
     });
     cont[0].style.width = "100%";
-    cont[0].style.height = "120vh";
+    if (x.matches) 
+        cont[0].style.height = "80vh";
+    else
+        cont[0].style.height = "60vh";
+
     cont[0].style.display = "block";
     back.forEach(function(node){
         node.style.display="none";
@@ -22,9 +29,14 @@ function open1()
     var back=document.querySelectorAll("#contentHolder .bg");
     cont.forEach(function(node){
         node.style.display="none";
+        node.style.height="0";
     });
     cont[1].style.width = "100%";
-    cont[1].style.height = "120vh";
+    if (x.matches) 
+        cont[1].style.height = "80vh";
+    else
+        cont[1].style.height = "60vh";
+
     cont[1].style.display = "block";
     back.forEach(function(node){
         node.style.display="none";
