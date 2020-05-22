@@ -1,0 +1,88 @@
+#contentHolder
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#contentHolder .content
+{
+    position: relative;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    width: 49%;
+    height: 60vh;
+    margin: 2px;
+    background: #252525;
+    transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s;
+    will-change: transform, width, opacity;
+    flex: 1 !important;
+    overflow: auto;
+}
+
+#contentHolder .bg
+{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+
+#myImg
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+  
+@-webkit-keyframes fade 
+{
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+  
+@keyframes fade 
+{
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+.closebtn 
+{
+    position: absolute;
+    top: 170px;
+    right: 150px;
+    font-size: 70px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.inactive
+{
+    display: none;
+}
+
+@media (max-width: 1000px)
+{
+    #contentHolder
+    {
+        margin-top: 0;
+        width: 90%;
+    }
+
+    #contentHolder .content
+    {
+        height: 30vh;
+        margin: 0;
+    }
+    .closebtn 
+    {
+        z-index: 1;
+        top: 140px;
+        right: 30px;
+        font-size: 40px;
+    }
+}
