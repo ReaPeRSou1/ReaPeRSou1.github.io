@@ -1,0 +1,2500 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Arknights Вики </title>
+   <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+   <link rel="stylesheet" type="text/css" href="../../../header.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+
+ <body>
+
+    <div id="header">
+
+        <a href="../../../index.html"><img id="headPic" src="../../../pic/arknights.png" alt=""></a>
+        <div class="headernav">
+            <div class="quad">
+                <a href="../../../index.html">Главная</a>
+            </div>
+            
+            <div class="quad" style="margin-left: 25%;">
+                <a href="../../oplist.html">Оперлист</a>
+            </div>
+            
+            <div class="quad" style="margin-left: 50%;">
+                <div class="drop">
+                    <button class="hui">Cюжет</button>
+                    <div class="headcont">
+                        <ul>
+                            <li>
+                                <a href="../../../story/mainStory/storyList.html"> Основной сюжет </a>
+                            </li>
+                            <li>
+                                <a href="../../../story/eventStory/storyList.html"> Побочные истории </a>
+                            </li>
+                            <li>
+                                <a href="../../../organizations/fractions.html"> Организации </a>
+                            </li>
+                            <li>
+                                <a href="../../../handbook/handbook.html"> Толковый Словарь </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quad" style="margin-left: 73%;">
+                <div class="drop">
+                    <button class="hui">Гайды</button>
+                    <div class="headcont">
+                        <ul>
+                            <li>
+                                <a href="../../../guides/guideMain.html"> ВСЕ ГАЙДЫ </a>
+                            </li>
+                            <li>
+                                <a href="../../../guides/Guide1/Guide.html"> Гайд по Классам </a>
+                            </li>
+                            <li>
+                                <a href="../../../guides/Guide2/Guide.html"> Гайд по Прокачке</a>
+                            </li>
+                            <li>
+                                <a href="../../../guides/Guide3/Guide.html"> Гайд по Умениям </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="content">   
+        
+        <ul>
+            <li>
+                <button id="but1" onclick="showPanel(0)"> <img src="../pic/elite1.png" alt="" width="40px"> </button>
+            </li>
+            <li>
+                <button id="but2" onclick="showPanel(1)"> <img src="../pic/elite2.png" alt="" width="40px"> </button>
+            </li>
+        </ul>
+
+        <h2 style="color: white; text-align: center; margin: 0;"> Mayer</h2>
+
+        <img id="classs" src="pic/Supporter_Icon.png" width="125px" style="position: absolute; left: 15px; bottom: 15px;">
+
+        <img id="frac" src="pic/RL_logo.png" width="125px" style="position: absolute; left: 15px;">
+        
+        <div class="operPic">
+            <img src="pic/Mayer_e0.png" height="99%">
+        </div>
+
+        <div class="operPic">
+            <img src="pic/Mayer_e2.png   " height="99%">
+        </div>
+        
+
+    </div>
+
+    <div id="info">
+
+        <h2>Статы:</h2>
+        
+        <table class="lvlButton">
+            <tr>
+                <td>
+                    <button onclick="changeElite(0)">Non-Elite </button>
+                </td>
+
+                <td>
+                    <button onclick="changeElite(1)">Элита I </button>
+                </td>
+
+                <td>
+                    <button onclick="changeElite(2)">Элита II </button>
+                </td>
+            </tr>
+        </table>
+
+        <div class="elite">
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="6" oninput="changeLevel(this,0)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <h3 id="lvl1num0" class="lev0 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
+            <h3 id="lvl2num0" class="lev0">10</h3>
+            <h3 id="lvl3num0" class="lev0">20</h3>
+            <h3 id="lvl4num0" class="lev0">30</h3>
+            <h3 id="lvl5num0" class="lev0">40</h3>
+            <h3 id="lvl6num0" class="lev0">50</h3>
+
+            <div id="elite0lev1" class="lvl0 active">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">480</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">199</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">9</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">56</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">15</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev2" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">511</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">215</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">9</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">60</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">15</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev3" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">546</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">232</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">9</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">65</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">15</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev4" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">580</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">250</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">9</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">70</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">15</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev5" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">615</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">267</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">9</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">75</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">15</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev6" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">649</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">285</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">9</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">80</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">15</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <img src="pic/Mayer_Self_Range_1.png" width="75px" style="display: block; margin-left: auto; margin-right: auto;">
+            
+        </div>
+
+        <div class="elite">
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="8" oninput="changeLevel(this,1)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <h3 id="lvl1num1" class="lev1 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
+            <h3 id="lvl2num1" class="lev1">10</h3>
+            <h3 id="lvl3num1" class="lev1">20</h3>
+            <h3 id="lvl4num1" class="lev1">30</h3>
+            <h3 id="lvl5num1" class="lev1">40</h3>
+            <h3 id="lvl6num1" class="lev1">50</h3>
+            <h3 id="lvl7num1" class="lev1">60</h3>
+            <h3 id="lvl8num1" class="lev1">70</h3>
+
+            <div id="elite1lev1" class="lvl1 active">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">649</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">285</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">80</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev2" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">674</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">297</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">84</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev3" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">702</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">311</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">87</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev4" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">731</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">325</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">91</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev5" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">759</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">339</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">95</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev6" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">787</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">352</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">99</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev7" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">815</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">366</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">103</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev8" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">843</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">380</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">107</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <img src="pic/Mayer_Self_Range_2.png" width="100px" style="display: block; margin-left: auto; margin-right: auto;">
+            
+        </div>
+
+        <div class="elite">
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="9" oninput="changeLevel(this,2)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <h3 id="lvl1num2" class="lev2 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
+            <h3 id="lvl2num2" class="lev2">10</h3>
+            <h3 id="lvl3num2" class="lev2">20</h3>
+            <h3 id="lvl4num2" class="lev2">30</h3>
+            <h3 id="lvl5num2" class="lev2">40</h3>
+            <h3 id="lvl6num2" class="lev2">50</h3>
+            <h3 id="lvl7num2" class="lev2">60</h3>
+            <h3 id="lvl8num2" class="lev2">70</h3>
+            <h3 id="lvl9num2" class="lev2">80</h3>
+
+            <div id="elite2lev1" class="lvl2 active">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">843</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">380</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">107</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev2" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">869</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70c</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">387</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">110</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev3" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">897</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">395</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">113</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev4" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">926</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">403</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">115</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev5" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">954</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">411</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">118</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev6" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">983</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">419</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">121</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev7" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1011</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">427</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">124</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev8" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1040</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">435</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">127</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev9" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1068</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">443</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">11</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">130</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">20</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1,6с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            
+            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <img src="pic/Mayer_Self_Range_2.png" width="100px" style="display: block; margin-left: auto; margin-right: auto;">
+
+        </div>
+
+        <h2> Потенциал:</h2>
+            <div style="display: block; width: 65%; margin-left: auto; margin-right: auto;">
+                <ul id="potential" style="list-style-type: none; width: 75%; padding-left: 10px; margin-block-start: 0; margin-block-end: 0;">
+                    <li>
+                        <img src="../pic/pot1.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Стоимость: -1
+                        
+                    </li>
+                    <li>
+                        <img src="../pic/pot2.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Повторный призыв: -4
+                        
+                    </li>
+                    <li>
+                        <img src="../pic/pot3.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Маг. Защита: +8
+                        
+                    </li>
+                    <li>
+                        <img src="../pic/pot4.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Повторный призыв: -6
+                        
+                    </li>
+                    <li>
+                        <img src="../pic/pot5.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Стоимость: -1
+                        
+                    </li>
+                </ul>
+            </div>
+
+            <h2> Бонус доверия:</h2>
+            <div style="display: block; width: 65%; margin-left: auto; margin-right: auto;">
+
+                <p style="text-align: center;">Максимум HP: 200<br>
+                    Сила Атаки: +35</p>
+                
+            </div>   
+            
+
+        <h2 style="margin-top: 10px;">Скиллы:</h2>
+
+        <table class="skillButton">
+            <tbody>
+                <tr>
+                    <td>
+                        <button onclick="changeSkill(0)">Скилл I</button>
+                    </td>
+                    <td>
+                        <button onclick="changeSkill(1)">Скилл II</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="skillDis">
+
+            <div style=" background-color: rgba(248, 182, 42, 1);">
+                <img src="pic/Mayer_Skill_1.png" alt="" height="50px" style="display: inline-block">
+                <span class="skillTitle"style="margin-top: 5%; margin-left: 15px"> Confusing Device  </span>
+            </div>
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="10" oninput="changeSkillLevelMay(this,0)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <img src="../pic/1.png" height="50px" id="skill1num0" class="skillLev0 display1">
+            <img src="../pic/2.png" height="50px" id="skill2num0" class="skillLev0">
+            <img src="../pic/3.png" height="50px" id="skill3num0" class="skillLev0">
+            <img src="../pic/4.png" height="50px" id="skill4num0" class="skillLev0">
+            <img src="../pic/5.png" height="50px" id="skill5num0" class="skillLev0">
+            <img src="../pic/6.png" height="50px" id="skill6num0" class="skillLev0">
+            <img src="../pic/8.png" height="50px" id="skill7num0" class="skillLev0">
+            <img src="../pic/9.png" height="50px" id="skill8num0" class="skillLev0">
+            <img src="../pic/10.png" height="50px" id="skill9num0" class="skillLev0">
+            <img src="../pic/11.png" height="50px" id="skill10num0" class="skillLev0">
+
+            <div id="skill0dis1" class="skill0 active">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 0</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие </span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Пассивный </span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p>
+                    All mechanical otters gain <span style="color: rgb(78, 196, 255);">10%</span> physical and magic evasion.
+                </p>
+
+            </div>
+
+            <div id="skill0dis2" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 0</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие </span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Пассивный </span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p>
+                    All mechanical otters gain <span style="color: rgb(78, 196, 255);">13%</span> physical and magic evasion.
+                </p>
+
+            </div>
+
+            <div id="skill0dis3" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 0</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Пассивный </span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p>
+                    All mechanical otters gain <span style="color: rgb(78, 196, 255);">15%</span> physical and magic evasion.
+                </p>
+
+            </div>
+
+            <div id="skill0dis4" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 0</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Пассивный</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p>
+                    All mechanical otters gain <span style="color: rgb(78, 196, 255);">18%</span> physical and magic evasion.
+                </p>
+
+            </div>
+
+            <div id="skill0dis5" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 0</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Пассивный </span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p>
+                    All mechanical otters gain <span style="color: rgb(78, 196, 255);">20%</span> physical and magic evasion.
+                </p>
+
+            </div>
+
+            <div id="skill0dis6" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 0</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Пассивный</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p>
+                    All mechanical otters gain <span style="color: rgb(78, 196, 255);">22%</span> physical and magic evasion.
+                </p>
+
+            </div>
+
+            <div id="skill0dis7" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 0</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Пассивный</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p>
+                    All mechanical otters gain <span style="color: rgb(78, 196, 255);">25%</span> physical and magic evasion.
+                </p>
+
+            </div>
+
+            <div id="skill0dis8" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 0</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Пассивный</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p>
+                    All mechanical otters gain <span style="color: rgb(78, 196, 255);">25%</span> physical and magic evasion. Allies adjacent to them also gain the same effect.
+                </p>
+
+            </div>
+
+            <div id="skill0dis9" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 0</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);">Пассивный</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p>
+                    All mechanical otters gain <span style="color: rgb(78, 196, 255);">30%</span> physical and magic evasion. Allies adjacent to them also gain the same effect.
+                </p>
+
+            </div>
+
+            <div id="skill0dis10" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 0</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Пассивный</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p>
+                    All mechanical otters gain <span style="color: rgb(78, 196, 255);">35%</span> physical and magic evasion. Allies adjacent to them also gain the same effect.
+                </p>
+
+            </div>
+
+            <div class="range1">
+                <h3 style="text-align: center; background-color: rgba(78, 196, 255,0.6); margin-bottom: 0; color: white;">Радиус:</h3>
+
+                <img src="pic/Mayer_Skill_Range_3.png" alt="" height="30px" style="display: block; margin-left: auto; margin-right: auto; margin-top: 2%;">
+            </div>
+
+            <div class="range2" style="display: none;">
+                <h3 style="text-align: center; background-color: rgba(78, 196, 255,0.6); margin-bottom: 0; color: white;">Радиус:</h3>
+
+                <img src="pic/Mayer_Skill_Range_1.png" alt="" height="90px" style="display: block; margin-left: auto; margin-right: auto; margin-top: 2%;">
+            </div>
+    
+        </div>
+
+        <div class="skillDis">
+
+            <div style=" background-color: rgba(255, 0, 0, 0.4);">
+                <img src="pic/Mayer_Skill_2.png" alt="" height="50px" style="display: inline-block">
+                <span class="skillTitle" style="margin-top: 5%; margin-left: 15px;"> Detonate and Recycle </span>
+            </div>
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="10" oninput="changeSkillLevelMay(this,1)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <img src="../pic/1.png" height="50px" id="skill1num1" class="skillLev1 display1">
+            <img src="../pic/2.png" height="50px" id="skill2num1" class="skillLev1">
+            <img src="../pic/3.png" height="50px" id="skill3num1" class="skillLev1">
+            <img src="../pic/4.png" height="50px" id="skill4num1" class="skillLev1">
+            <img src="../pic/5.png" height="50px" id="skill5num1" class="skillLev1">
+            <img src="../pic/6.png" height="50px" id="skill6num1" class="skillLev1">
+            <img src="../pic/8.png" height="50px" id="skill7num1" class="skillLev1">
+            <img src="../pic/9.png" height="50px" id="skill8num1" class="skillLev1">
+            <img src="../pic/10.png" height="50px" id="skill9num1" class="skillLev1">
+            <img src="../pic/11.png" height="50px" id="skill10num1" class="skillLev1">
+
+            
+
+            <div id="skill1dis1" class="skill1 active">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 40</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную </span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p>
+                    Immediately detonate all deployed mechanical otters, dealing <span style="color: rgb(78, 196, 255);">300%</span> magical damage to nearby enemies and stunning them for 
+                    <span style="color: rgb(78, 196, 255);">1</span> seconds. All detonated mechanical otters will be retrieved.
+                </p>
+
+            </div>
+
+            <div id="skill1dis2" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 39</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p>
+                    Immediately detonate all deployed mechanical otters, dealing <span style="color: rgb(78, 196, 255);">320%</span> magical damage to nearby enemies and stunning them for 
+                    <span style="color: rgb(78, 196, 255);">1</span> seconds. All detonated mechanical otters will be retrieved.
+                </p>
+
+            </div>
+
+            <div id="skill1dis3" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 38</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p>
+                    Immediately detonate all deployed mechanical otters, dealing <span style="color: rgb(78, 196, 255);">350%</span> magical damage to nearby enemies and stunning them for 
+                    <span style="color: rgb(78, 196, 255);">1</span> seconds. All detonated mechanical otters will be retrieved.
+                </p>
+
+            </div>
+
+            <div id="skill1dis4" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 37</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);">Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p>
+                    Immediately detonate all deployed mechanical otters, dealing <span style="color: rgb(78, 196, 255);">380%</span> magical damage to nearby enemies and stunning them for 
+                    <span style="color: rgb(78, 196, 255);">1</span> seconds. All detonated mechanical otters will be retrieved.
+                </p>
+
+            </div>
+
+            <div id="skill1dis5" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 36</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно </span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие </span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную </span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p>
+                    Immediately detonate all deployed mechanical otters, dealing <span style="color: rgb(78, 196, 255);">400%</span> magical damage to nearby enemies and stunning them for 
+                    <span style="color: rgb(78, 196, 255);">1</span> seconds. All detonated mechanical otters will be retrieved.
+                </p>
+
+            </div>
+
+            <div id="skill1dis6" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 35</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p>
+                    Immediately detonate all deployed mechanical otters, dealing <span style="color: rgb(78, 196, 255);">420%</span> magical damage to nearby enemies and stunning them for 
+                    <span style="color: rgb(78, 196, 255);">1</span> seconds. All detonated mechanical otters will be retrieved.
+                </p>
+
+            </div> 
+
+            <div id="skill1dis7" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 34</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);">Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p>
+                    Immediately detonate all deployed mechanical otters, dealing <span style="color: rgb(78, 196, 255);">450%</span> magical damage to nearby enemies and stunning them for 
+                    <span style="color: rgb(78, 196, 255);">1</span> seconds. All detonated mechanical otters will be retrieved.
+                </p>
+
+            </div>
+
+            <div id="skill1dis8" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 33</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);">Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p>
+                    Immediately detonate all deployed mechanical otters, dealing <span style="color: rgb(78, 196, 255);">500%</span> magical damage to nearby enemies and stunning them for 
+                    <span style="color: rgb(78, 196, 255);">1,5</span> seconds. All detonated mechanical otters will be retrieved.
+                </p>
+
+            </div>
+
+            <div id="skill1dis9" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 32</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p>
+                    Immediately detonate all deployed mechanical otters, dealing <span style="color: rgb(78, 196, 255);">550%</span> magical damage to nearby enemies and stunning them for 
+                    <span style="color: rgb(78, 196, 255);">1,5</span> seconds. All detonated mechanical otters will be retrieved.
+                </p>
+
+            </div>
+
+            <div id="skill1dis10" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 30</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);">Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p>
+                    Immediately detonate all deployed mechanical otters, dealing <span style="color: rgb(78, 196, 255);">600%</span> magical damage to nearby enemies and stunning them for 
+                    <span style="color: rgb(78, 196, 255);">2</span> seconds. All detonated mechanical otters will be retrieved.
+                </p>
+
+            </div>
+
+            <div>
+                <h3 style="text-align: center; background-color: rgba(78, 196, 255,0.6); margin-bottom: 0; color: white;">Радиус:</h3>
+
+                <img src="pic/Mayer_Skill_Range_2.png" alt="" height="80px" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+
+        </div>
+
+        <h2>RIIC Скиллы:</h2>
+        <div class="RIIC">
+
+            <h4> <img src="pic/Mayer_RIIC_1.png" alt="" style="vertical-align: middle;">  Meeboo: Processing</h4>
+            <p>
+                При размещении в <span style="color: skyblue;">Мастерской</span> и производстве любого типа материала
+                увеличивает шанс получения побочного продукта на <span style="color: skyblue;">65%</span>
+            </p>
+
+        </div>
+
+        <div class="RIIC">
+
+            
+            <h4> <img src="pic/Mayer_RIIC_2.png" alt="" style="vertical-align: middle;">  Meeboo: Production </h4>
+            <p>
+                При размещении в <span style="color: skyblue;"> Производственной комнате, </span>эффективность
+                производства возрастает на <span style="color: skyblue;">30%</span>
+            </p>
+
+        </div>
+
+        <h2>Таланты:</h2>
+
+        <div class="talent">
+            <p>
+                Mechanical Otters Lv:1
+            </p>
+            <p>
+                Can summon <span style="color: skyblue;">3</span> mechanical otters. Inflict Attack speed <span style="color: skyblue;">-10</span> to enemies attacking the otters.
+            </p>
+        </div>
+        
+        <div class="talent">
+            <p>
+                Mechanical Otters Lv:1 <img src="../pic/elite1.png" height="17px"> 
+            </p>
+            <p>
+                Can summon <span style="color: skyblue;">4</span> mechanical otters. Inflict Attack speed <span style="color: skyblue;">-25</span> to enemies attacking the otters.
+            </p>
+        </div>
+
+        <div class="talent">
+            <p>
+                Mechanical Otters Lv:1 <img src="../pic/elite2.png" height="17px">
+            </p>
+            <p>
+                Can summon <span style="color: skyblue;">5</span> mechanical otters. Inflict Attack speed <span style="color: skyblue;">-25</span> to enemies attacking the otters.
+            </p>
+        </div>
+
+    </div>
+
+    <div id="stick">
+        
+        <button onclick="displayMain(0)"> <img src="../pic/bio.png" alt="" height="55px"><br> Биография  </button>
+        <div id="br"></div>
+        <button onclick="displayMain(1)"> <img src="../pic/voice.png" alt="" height="55px"><br> Голос </button>
+        
+    </div>
+
+    <div class="main" id="main1">
+
+        <div id="infoSpace" >
+
+            <div class="part3">
+                <h3>Рекрутинговый контракт</h3>
+                <p style="margin-left: 5px; margin-right: 5px;">
+                    A genius at multitasking in all aspects. <br>
+                    <br>
+                    Mayer, researcher of Rhine Lab, is ready for combat with her Meeboos.</p>
+            </div>
+
+            <div class="part4">
+                <h3>Токен</h3>
+                <p style="margin-left: 5px; margin-right: 5px;">
+                    A mini Meeboo model. There is a red button in its belly. Hmm... <br>
+                    <br>
+                    Используется для улучшения Потенциала Mayer.</p>
+            </div>
+
+            <div class="part1" >
+
+                <table class="info-table">
+                    <tbody>
+                        <tr>
+                            <th colspan="2" style="text-align: center; border-bottom: 1.5px solid rgb(80, 80, 80); height: 30px;">
+                                Общая Информация
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Позывной: </td>
+                            <td>Mayer</td>
+                        </tr>
+                        <tr>
+                            <td>Пол: </td>
+                            <td>Женский</td>
+                        </tr>
+                        <tr>
+                            <td>Класс: </td>
+                            <td>Supporter</td>
+                        </tr>
+                        <tr>
+                            <td>Боевой опыт: </td>
+                            <td>Отсутствует</td>
+                        </tr>
+                        <tr >
+                            <td>Место рождения: </td>
+                            <td><a href="">Columbia</a></td>
+                        </tr>
+                        <tr>
+                            <td>Дата рождения: </td>
+                            <td>20 Ноября</td>
+                        </tr>
+                        <tr>
+                            <td>Раса: </td>
+                            <td><a href="">Anaty</a></td>
+                        </tr>
+                        <tr>
+                            <td>Рост: </td>
+                            <td>159 см</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: none;">Статус заражения: </td>
+                            <td style="border-bottom: none;">Medical tests have confirmed that no infection is present.</td>
+                        </tr>
+                    </tbody>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="part2" >
+
+                <table class="info-table">
+
+                    <tr>
+                        <th colspan="2" style="text-align: center; border-bottom: 1.5px solid rgb(80, 80, 80); height: 30px;">
+                            Физические показатели
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Физическая сила: </td>
+                        <td>Нормальная</td>
+                    </tr>
+                    <tr>
+                        <td>Мобильность: </td>
+                        <td>Стандартная</td>
+                    </tr>
+                    <tr>
+                        <td>Сопротивление &nbsp;&nbsp; <br> физическим атакам:</td>
+                        <td>Стандартное</td>
+                    </tr>
+                    <tr>
+                        <td>Тактическое мышление: </td>
+                        <td>Отличное</td>
+                    </tr>
+                    <tr>
+                        <td>Боевые навыки: </td>
+                        <td>Стандартные</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: none;">Усвоение Ориджиниума: </td>
+                        <td style="border-bottom: none;">Нормальное</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+        
+        <h2>Краткая Биография</h2>
+
+        <p> 
+            Mayer was born in Columbia and was a member of the Rhine Lab Research Lab. She is the inventor of the 
+            "Meeboo" wire control system. She is outstandingly capable and runs her own workshop called "Lutra." She 
+            is currently working with Rhodes Islands to provide assistance with construction, planning, and development.
+        </p>
+
+        <h2>Клинический анализ</h2>
+        <p>Требуется <span class="sky">уровень доверия: 25%</span></p>
+        <p>
+            Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been 
+            detected. Originium granules have not been detected in the circulatory system and there is no sign of 
+            infection. At this time, this Operator is believed to be non-infected.
+        </p>   
+            <p> 
+                [Поглощение клеток Ориджиниумом] 0%
+                <br>
+                Operator shows no signs of infection at this time.
+            </p>  
+            <p> 
+                [Плотность кристалов Ориджиниума в крови] 0.12u/L 
+                <br>
+                Operator has been in long-term contact with Originium and frequently works to process it. However, due to 
+                strict adherence to safety protocols, Operator has not yet displayed any signs of Oripathy.
+            </p>
+        <h2>Архивные записи</h2>
+        <h3>Архивная запись 1 </h3>
+        <p>Требуется <span class="sky">уровень доверия: 50%</span></p>
+        <br>
+        <p> 
+            Mayer frequently encountered Silence at Rhine headquarters since she was responsible for preparing, 
+            installing, and commissioning experimental devices for her. This was up until Silence abruptly disappeared 
+            which in turn caused this project to be terminated. Mayer often feels a sense of regret when reminded of 
+            this instance but had she known the true goal of the project, she would have pulled the plug herself.
+        </p>
+
+        <h3>Архивная запись 2 </h3>
+        <p>Требуется <span class="sky">уровень доверия: 100%</span></p>
+        <br>
+        <p>
+            Mayer possesses just the right mixture of a scientist's meticulous thinking and an engineer's hands-on 
+            mentality. If there's any downside to this, it's that she never has enough time. If you don't believe it, take a 
+            look in her personal dictionary. The word "idle" is missing.
+        </p>
+
+        <h3>Архивная запись 3 </h3>
+        <p>Требуется <span class="sky">уровень доверия: 150%</span></p>
+        <br>
+        <p>
+            Mayer's head contains a multitude of, shall we say, volatile ideas, which makes it no surprise when she 
+            creates something eccentric. Out of her countless inventions, her prized and most cherished "masterpiece" 
+            is "Meeboo." Mayer diligently creates nameplates for each individual "Meeboo" and carefully cleans up its 
+            wreckage after it's served its purpose. It is clear that she pours her heart and soul into the maintenance and 
+            operation of each Meeboo, despite their mechanical origins.
+        </p>
+
+        <h3>Архивная запись 4 </h3>
+        <p>Требуется <span class="sky">уровень доверия: 200%</span></p>
+        <br>
+        <p style="text-align: justify;">
+            Since Meeboos take up so much space, Mayer's workshop is extremely cramped, causing her to devise 
+            ways to expand it. Despite having a room twice as large as anyone else's, she has managed to run out of 
+            space after increasing Meeboo production. Mayer has begged the Doctor to increase her room's size. That 
+            request was denied by the logistics department out of fairness towards others. Despite this ban on room 
+            expansion, the Doctor nonetheless granted her extra space in the hangar to allow her to continue the 
+            production of her Meeboos.
+
+        </p>
+
+        <h2>Повышение</h2>
+        <p>Разблокируется <span class="sky">при повышении до Элиты II</span></p>
+        <br>
+        <p>
+            So far, a total of 80 Meeboos have been constructed by Mayer. 20 of them are serving in Mayer's squad, 
+            while the others have been disassembled for various reasons. All available components have been 
+            installed on these models in service and are uniquely named by Mayer on their respective nameplates. Of 
+            the 20 Meeboos in service, there remains a single one with an unknown serial number that Mayer uses 
+            both as a mobile workbench and an experimental prototype. Despite its advanced functions, it is unarmed 
+            and useless for combat.
+    </div>
+
+    <div class="main" id="main2">
+
+        <table class="quote">
+            <tbody>
+                <tr>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;" >Диалог</td>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Аудио</td>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Английский</td>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Русский</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Назначение ассистентом</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_001.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Structural design, industrial R&D, scientific research. You name it, and I can do it, Doctor.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_002.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >The Engineering Department never approve my proposals. Do they have any bias toward me? What should I do... Right! Doctor, would you please submit this suggestion on improvement for me? It's a deal then!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_003.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >There are many workshops like mine in Rhine Lab, but what takes others six weeks to finish, I can have it done in one. I'm not boasting!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор 3</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_004.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >DO NOT interrupt me when I'm doing my research, or you'll have my Meeboos on your ass! And me!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после Повышения 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_005.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >At night I'm always full of inspiration... and the urgency to sleep! No... I can't bear it... Where's the pillow... I need to rest...</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после Повышения 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_006.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Hm? Why are these cuties called Meeboos? That's because they go "meeee-boooo" when they boot up. So I named them after that. Fitting, don't you think? Just listen and you'll get it. You press this switch to... WHUAH?! Wrong one! That's the self-destruct button! Oh shoot, run awaaaaaay!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после увеличения Доверия 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_007.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >That girl who just passed by... that was Silence, right? If only then... Oh, sorry, the non-disclosure agreement is still in effect. I should keep my mouth shut.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после увеличения Доверия 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_008.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >I feel kinda empty when I've got nothing to do... I guess that's just how engineers are. You know how that's like, right, Doctor? Huh? You don't?</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после увеличения Доверия 3</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_009.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Doctor, may I request... No! Not 10 square meters! I asked too much last time, so this time... all I need is 3 square meters! Don't... Don't you leave, Doctor! Even 1 square meter for my research will do! Please!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Бездействие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_010.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Geez... where's the coffeemaker... Oh, there it is... You want some too, Doctor?</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Прибытие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_011.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >I am the Lutra Workshop of Rhine Lab, at your service. Yup, I said "workshop," but it's just me. I'm the whole workshop. Am I amazing or what?</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Просмотр Боевых записей</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_012.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >This structure... Interesting. I'll look into it.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Повышение 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_013.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >This raise came just in time! I can afford to upgrade my equipment now.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Повышение 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_014.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >I promised I'd show you progress one day, didn't I? Look at what I have! Isn't it nice?</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Добавление в отряд</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_017.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Time to go, Meeboos!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Назначение командиром отряда</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_018.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Commanding both Operators and my Meeboos at the same time is a bit much even for me...</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Отбытие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_019.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Hopefully we can get some useful experiment data!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Начало операции</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_020.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Come on, Meeboo, show them what Rhine Lab's technology can do!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Выбор оператора 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_021.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Whoa!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Выбор оператора 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_022.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Gentle! Be gentle with it!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Размещение на поле 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_023.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Handle with care!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Размещение на поле 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_024.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Precision equipment isn't cheap!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Во время боя 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_025.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Get 'em, Meeboo #3!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Во время боя 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_026.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Bite 'em, Meeboo!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Во время боя 3</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_027.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >If anything breaks, I can just make another one!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Во время боя 4</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_028.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >My Meeboos are more than just machines!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >4★ результат</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_029.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Come on, Meeboo! Show everyone your victory dance!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >3★ результат</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_030.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Nice! We practically rolled over them!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >2★ результат</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_031.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >The device is slightly damaged. I'll fix it in no time.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Провал Операции</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_032.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Oh no! My Meeboo...! I'll need to make more...</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Назначение на Объект</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_033.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Now I want a new workshop!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Взаимодействие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_034.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Whuah?! Hey, I'm working here!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Сбор Доверия</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_036.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Doctor, let me touch your head and give you some inspiration!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Титульный экран</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_037.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Arknights.</td>
+                    <td >Аркнайтс.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Приветствие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_042.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Doctor! Heya!</td>
+                    <td ></td>
+                </tr>              
+            </tbody>
+        </table>
+
+    </div>
+
+    
+
+    <script src="../../../jquery.min.js"></script>
+    <script src="../java.js"></script>
+    <script src="java.js"></script>
+ </body>
+</html>
