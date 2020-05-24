@@ -99,7 +99,7 @@ h3
     #main
     {
         margin-top: 10px;
-        width: 90%;
+        width: 100%;
     }
 
     #main .selector
@@ -110,12 +110,12 @@ h3
 
     #dynamic_select
     {
-        width: 70%;
+        width: 60%;
     }
 
     #pageSelect
     {
-        width: 40%;
+        width: 30%;
     }
 
     h3
