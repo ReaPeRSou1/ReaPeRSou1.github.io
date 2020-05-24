@@ -1,0 +1,127 @@
+#main
+{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    background-color: rgba(31, 30, 30,0.7);
+}
+
+#main .selector
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:100%;
+}
+
+.dot 
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    top: 100%;
+}
+
+.dot:hover 
+{
+    background-color: #717171;
+}
+
+.prev, .next 
+{
+    cursor: pointer;
+    position: relative;
+    top: 100%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(200, 200, 200);
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.6s ease;
+    border: 1px solid gray;
+    user-select: none;
+}
+
+#dynamic_select, #pageSelect
+{
+    display: block; 
+    margin: 10px auto 10px auto;
+    width: 40%;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0;
+    background-color: #535353;
+    border: none;
+    border-bottom: 2px solid #797979;
+    color: white;
+    padding: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    text-align: center;
+}
+
+#pageSelect
+{
+    display: inline-block; 
+    width: 20%;
+}
+
+#dynamic_select::-ms-expand, #pageSelect::-ms-expand  
+{
+    display: none; 
+}
+
+#dynamic_select:hover, #dynamic_select:focus, #pageSelectt:hover, #pageSelect:focus
+{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-bottom-color: rgba(255, 255, 255, 0.7);
+}
+
+h3
+{
+    text-align: center;
+}
+
+@media(max-width: 900px)
+{
+    #main
+    {
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    #main .selector
+    {
+        height: auto;
+        width: 100%;
+    }
+
+    #dynamic_select
+    {
+        width: 70%;
+    }
+
+    #pageSelect
+    {
+        width: 40%;
+    }
+
+    h3
+    {
+        margin-top: 0;
+    }
+
+
+}

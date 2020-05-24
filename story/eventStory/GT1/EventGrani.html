@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Arknights Вики </title>
+   <head>
+    <title>Arknights Вики </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../header.css"/>
+  </head>
+ </head>
+
+ <body>
+
+    <div id="header">
+
+        <a href="../../../index.html"><img id="headPic" src="../../../pic/arknights.png" alt=""></a>
+        <div class="headernav">
+            <div class="quad">
+                <a href="../../../index.html">Главная</a>
+            </div>
+            
+            <div class="quad" style="margin-left: 25%;">
+                <a href="../../../Oplist/oplist.html">Оперлист</a>
+            </div>
+            
+            <div class="quad" style="margin-left: 50%;">
+                <div class="drop">
+                    <button class="hui">Cюжет</button>
+                    <div class="headcont">
+                        <ul>
+                            <li>
+                                <a href="../../storyList.html"> Основные и побочные <br>истории </a>
+                            </li>
+                            <li>
+                                <a href="../../../organizations/fractions.html"> Организации </a>
+                            </li>
+                            <li>
+                                <a href="../../../handbook/handbook.html"> Толковый Словарь </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quad" style="margin-left: 73%;">
+                <div class="drop">
+                    <button class="hui">Гайды</button>
+                    <div class="headcont">
+                        <ul>
+                            <li>
+                                <a href="../../../guides/guideMain.html"> ВСЕ ГАЙДЫ </a>
+                            </li>
+                            <li>
+                                <a href="../../../guides/Guide1/Guide.html"> Гайд по Классам </a>
+                            </li>
+                            <li>
+                                <a href="../../../guides/Guide2/Guide.html"> Гайд по Прокачке</a>
+                            </li>
+                            <li>
+                                <a href="../../../guides/Guide3/Guide.html"> Гайд по Умениям </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="main">
+
+        <h3>Event select</h3>
+
+        <select id="dynamic_select">
+            <option value="" selected>Грани и рыцарское окровище</option>
+            <option value="../GT2/EventGrani.html">GT2</option>
+            <option value="../GT3/EventGrani.html">GT3</option>
+            <option value="../GT4/EventGrani.html">GT4</option>
+        </select>
+
+        <h3>Выбор главы</h3>
+
+        <select id="dynamic_select">
+            <option value="" selected>GT1</option>
+            <option value="../GT2/EventGrani.html">GT2</option>
+            <option value="../GT3/EventGrani.html">GT3</option>
+            <option value="../GT4/EventGrani.html">GT4</option>
+        </select>
+
+        <img id="img1" class="selector" src="1.jpg" alt="">
+        <img id="img2" class="selector" src="2.jpg" alt="">
+        <img id="img3" class="selector" src="3.jpg" alt="">
+        <img id="img4" class="selector" src="4.jpg" alt="">
+        <img id="img5" class="selector" src="5.jpg" alt="">
+        <img id="img6" class="selector" src="6.jpg" alt="">
+        <img id="img7" class="selector" src="7.jpg" alt="">
+        <img id="img8" class="selector" src="8.jpg" alt="">
+        <img id="img9" class="selector" src="9.jpg" alt="">
+        <img id="img10" class="selector" src="10.jpg" alt="">
+        <img id="img11" class="selector" src="11.jpg" alt="">
+        <img id="img12" class="selector" src="12.jpg" alt="">
+        <img id="img13" class="selector" src="13.jpg" alt="">
+        <img id="img14" class="selector" src="14.jpg" alt="">
+        <img id="img15" class="selector" src="15.jpg" alt="">
+        <img id="img16" class="selector" src="16.jpg" alt="">
+        <img id="img17" class="selector" src="17.jpg" alt="">
+        <img id="img18" class="selector" src="18.jpg" alt="">
+        <img id="img19" class="selector" src="19.jpg" alt="">
+        <img id="img20" class="selector" src="20.jpg" alt="">
+        <img id="img21" class="selector" src="21.jpg" alt="">
+        <img id="img22" class="selector" src="22.jpg" alt="">
+        <img id="img23" class="selector" src="23.jpg" alt="">
+        <img id="img24" class="selector" src="24.jpg" alt="">
+
+        <div style="text-align: center;">
+            
+            <button type="button" id="prev" onclick="plusSlides(-1)">&#10094;</button>
+            
+            <select id="pageSelect" onchange="currentImg(this.value)">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+            </select>
+            
+            <button type="button" id="next" onclick="plusSlides(1)">&#10095;</button>
+
+
+            
+
+        </div>
+
+    </div>
+
+    <script src="../../../jquery.min.js"></script>
+    <script src="../java.js"></script>
+    <script>
+        
+    </script>
+
+ </body>
+</html>
