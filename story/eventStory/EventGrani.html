@@ -2,8 +2,8 @@
 <html>
  <head>
    <title>Arknights Вики </title>
-   <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-   <link rel="stylesheet" type="text/css" href="../../header.css"/>
+   <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+   <link rel="stylesheet" type="text/css" href="../../../header.css"/>
  </head>
 
  <body>
@@ -26,10 +26,7 @@
                     <div class="headcont">
                         <ul>
                             <li>
-                                <a href="../mainStory/storyList.html"> Основной сюжет </a>
-                            </li>
-                            <li>
-                                <a href="storyList.html"> Побочные истории </a>
+                                <a href="../storyList.html"> Основные и побочные <br>истории </a>
                             </li>
                             <li>
                                 <a href="../../organizations/fractions.html"> Организации </a>
@@ -67,6 +64,47 @@
         </div>
 
     </div>
+
+    <div id="main">
+
+        <img id="selector" src="1.jpg" alt="" height="100%">
+
+        <div style="text-align: center;">
+            
+            <a class="prev" onclick="imgSelect1()">&#10094;</a>
+            
+                
+            <select id="dynamic_select">
+                <option value="" selected>Pick a Website</option>
+                <option value="">Google</option>
+                <option value="http://www.youtube.com">YouTube</option>
+                <option value="https://www.gurustop.net">GuruStop.NET</option>
+            </select>
+
+            
+            <a class="next" onclick="plusSlides(1)" >&#10095;</a>
+
+
+            
+
+        </div>
+
+    </div>
+
+    <script src="../../jquery.min.js"></script>
+    <script src="java.js"></script>
+    <script>
+        $(function(){
+          // bind change event to select
+          $('#dynamic_select').on('change', function () {
+              var url = $(this).val(); // get selected value
+              if (url) { // require a URL
+                  window.location = url; // redirect
+              }
+              return false;
+          });
+        });
+    </script>
 
  </body>
 </html>
