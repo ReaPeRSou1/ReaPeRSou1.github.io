@@ -28,7 +28,7 @@ function imgSelect(n)
 }
 
 $("#next").click(function() {
-    var isLastElementSelected = $('#pageSelect > option:selected').index() == $('#pageSelect > option').length -1;
+    var isLastElementSelected = $('#pageSelect > option:selected').index() == ($('#pageSelect > option').length - 1);
 
     if (!isLastElementSelected) 
     {     
@@ -58,11 +58,11 @@ $("#prev").click(function() {
 
 
 $(function(){
-    // bind change event to select
     $('#dynamic_select').on('change', function () {
-        var url = $(this).val(); // get selected value
-        if (url) { // require a URL
-            window.location = url; // redirect
+        var url = $(this).val();
+        if (url) 
+        {
+            window.location = url; 
         }
         return false;
     });
