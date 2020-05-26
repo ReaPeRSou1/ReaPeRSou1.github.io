@@ -51,7 +51,7 @@
     user-select: none;
 }
 
-#dynamic_select, #pageSelect
+#dynamic_select, #pageSelect, #part
 {
     display: block; 
     margin: 10px auto 10px auto;
@@ -108,7 +108,7 @@ h3
         width: 100%;
     }
 
-    #dynamic_select
+    #dynamic_select #part
     {
         width: 60%;
     }

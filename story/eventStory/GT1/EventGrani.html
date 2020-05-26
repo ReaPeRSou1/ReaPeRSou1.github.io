@@ -82,7 +82,7 @@
 
         <h3>Выбор главы</h3>
 
-        <select id="dynamic_select">
+        <select id="part">
             <option value="" selected>GT1</option>
             <option value="../GT2/EventGrani.html">GT2</option>
             <option value="../GT3/EventGrani.html">GT3</option>
@@ -118,7 +118,7 @@
             
             <button type="button" id="prev" onclick="plusSlides(-1)">&#10094;</button>
             
-            <select id="pageSelect" onchange="currentImg(this.value)">
+            <select id="pageSelect" name="page" onchange="currentImg(this.value)">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
