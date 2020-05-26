@@ -13,6 +13,26 @@ function currentImg(n)
     var int = parseInt(n)
     slideIndex = int;
     imgSelect(slideIndex);
+    var str = `${n}`;
+    $('#pageSelect option').removeAttr('selected');
+    $('#pageSelect option[value="' + str + '"]').attr('selected', 'selected'); 
+
+    if (n==$('#pageSelect option:last-child').val()) 
+    {
+        document.getElementById("next").style.visibility = 'hidden';
+    }
+    else {
+        document.getElementById("next").style.visibility = 'visible';
+    }
+
+    if (n==$('#pageSelect option:first-child').val()) 
+    {
+        document.getElementById("prev").style.visibility = 'hidden';
+    }
+    else {
+        document.getElementById("prev").style.visibility = 'visible';
+    }
+
 }
 
 function imgSelect(n)
@@ -28,33 +48,41 @@ function imgSelect(n)
 }
 
 $("#next").click(function() {
-    var isLastElementSelected = $('#pageSelect > option:selected').index() == ($('#pageSelect > option').length - 1);
+    document.getElementById("prev").style.visibility = 'visible';
+    var nextElement = $('#pageSelect > option:selected').next('option');
+    if (nextElement.length > 0) {
+      $('#pageSelect > option:selected').removeAttr('selected').next('option').attr('selected', 'selected');
+    }
 
+    var isLastElementSelected = $('#pageSelect > option:selected').index() == ($('#pageSelect > option').length - 1);
     if (!isLastElementSelected) 
     {     
-        $('#pageSelect > option:selected').removeAttr('selected').next('option').attr('selected', 'selected'); 
+        document.getElementById("next").style.visibility = 'visible';
     } 
     else 
     {
-        $('#pageSelect > option:selected').removeAttr('selected');
-        $('#pageSelect > option').first().attr('selected', 'selected'); 
-    }   
-});
+        document.getElementById("next").style.visibility = 'hidden';
+    }    
+  });
 
-$("#prev").click(function() {
-    var isFirstElementSelected = $('#pageSelect > option:selected').index() == 1;
+  $("#prev").click(function() {
+    document.getElementById("next").style.visibility = 'visible';
+    var nextElement = $('#pageSelect > option:selected').prev('option');
+    if (nextElement.length > 0) {
+      $('#pageSelect > option:selected').removeAttr('selected').prev('option').attr('selected', 'selected');
+    }
+
+    var isFirstElementSelected = $('#pageSelect > option:selected').index() == 0;
 
     if (!isFirstElementSelected) 
     {
-        $('#pageSelect > option:selected').removeAttr('selected').prev('option').attr('selected', 'selected');
+        document.getElementById("prev").style.visibility = 'visible';
     }
     else 
     {
-        $('#pageSelect > option:selected').removeAttr('selected');
-        $('#pageSelect > option').last().attr('selected', 'selected'); 
+        document.getElementById("prev").style.visibility = 'hidden';
     }
-
-});
+  });
 
 
 $(function(){
