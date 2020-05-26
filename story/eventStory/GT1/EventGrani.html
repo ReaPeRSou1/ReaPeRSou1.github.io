@@ -89,6 +89,8 @@
             <option value="../GT4/EventGrani.html">GT4</option>
         </select>
 
+    <div id="read">
+
         <img id="img1" class="selector" src="1.jpg" alt="">
         <img id="img2" class="selector" src="2.jpg" alt="">
         <img id="img3" class="selector" src="3.jpg" alt="">
@@ -114,11 +116,13 @@
         <img id="img23" class="selector" src="23.jpg" alt="">
         <img id="img24" class="selector" src="24.jpg" alt="">
 
+    </div>
+
         <div style="text-align: center;">
             
-            <button type="button" id="prev" style="visibility: hidden;" onclick="plusSlides(-1)">&#10094;</button>
+            <button type="button" id="prev" style="visibility: hidden;" onclick="plusSlides(-1); location.href='#read';">&#10094;</button>
             
-            <select id="pageSelect" name="page" onchange="currentImg(this.value)">
+            <select id="pageSelect" name="page" onchange="currentImg(this.value); location.href='#read';">
                 <option value="1" selected="selected">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -145,7 +149,7 @@
                 <option value="24">24</option>
             </select>
             
-            <button type="button" id="next" onclick="plusSlides(1)">&#10095;</button>
+            <button type="button" id="next" onclick="plusSlides(1); location.href='#read';">&#10095;</button>
 
 
             
