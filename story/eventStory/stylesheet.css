@@ -12,29 +12,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height:100%;
+    width:100%;
 }
 
-.dot 
-{
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    position: relative;
-    top: 100%;
-}
-
-.dot:hover 
-{
-    background-color: #717171;
-}
-
-.prev, .next 
+#prev, #next 
 {
     cursor: pointer;
     position: relative;
@@ -49,6 +30,8 @@
     transition: 0.6s ease;
     border: 1px solid gray;
     user-select: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 #dynamic_select, #pageSelect, #part
@@ -69,6 +52,11 @@
     -moz-appearance: none;
     padding: 10px;
     text-align: center;
+}
+
+#main button:hover
+{
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 #pageSelect
@@ -92,6 +80,18 @@
 h3
 {
     text-align: center;
+}
+
+#read .prevButton
+{
+    position: absolute;
+    vertical-align: middle;
+}
+
+#read .nextButton
+{
+    position: absolute;
+    vertical-align: middle;
 }
 
 @media(max-width: 900px)
@@ -124,4 +124,45 @@ h3
     }
 
 
+}
+
+@media (min-width: 1899px)
+{
+
+    #main h3
+    {
+        font-size: 22px;
+    }
+
+    #dynamic_select, #pageSelect, #part
+    {
+        font-size: 18px;
+    }
+
+}
+@media (min-width: 2200px)
+{
+
+    #main h3
+    {
+        font-size: 24px;
+    }
+  
+    #dynamic_select, #pageSelect, #part
+    {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 3000px)
+{
+    #main h3
+    {
+        font-size: 26px;
+    }
+
+    #dynamic_select, #pageSelect, #part
+    {
+        font-size: 22px;
+    }
 }
