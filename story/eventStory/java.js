@@ -51,7 +51,7 @@ $("#next").click(function() {
     document.getElementById("prev").style.visibility = 'visible';
     var nextElement = $('#pageSelect > option:selected').next('option');
     if (nextElement.length > 0) {
-      $('#pageSelect > option:selected').removeAttr('selected').next('option').attr('selected', 'selected');
+      $('#pageSelect > option:selected').removeAttr('selected').next('option').prop('selected', 'selected');
     }
 
     var isLastElementSelected = $('#pageSelect > option:selected').index() == ($('#pageSelect > option').length - 1);
@@ -67,9 +67,9 @@ $("#next").click(function() {
 
   $("#prev").click(function() {
     document.getElementById("next").style.visibility = 'visible';
-    var nextElement = $('#pageSelect > option:selected').prev('option');
-    if (nextElement.length > 0) {
-      $('#pageSelect > option:selected').removeAttr('selected').prev('option').attr('selected', 'selected');
+    var prevElement = $('#pageSelect > option:selected').prev('option');
+    if (prevElement.length > 0) {
+      $('#pageSelect > option:selected').removeAttr('selected').prev('option').prop('selected', 'selected');
     }
 
     var isFirstElementSelected = $('#pageSelect > option:selected').index() == 0;
