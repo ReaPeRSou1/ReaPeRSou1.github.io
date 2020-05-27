@@ -106,3 +106,33 @@ $(function(){
         return false;
     });
 });
+
+document.addEventListener("keyup",function(e){
+    var key = e.which||e.keyCode;
+    switch(key){
+       //left arrow
+       case 37:
+        var isFirstElementSelected = $('#pageSelect > option:selected').index() == 0;
+
+        if (!isFirstElementSelected) 
+        {
+          var x = document.getElementById("prev");
+          x.click();
+        }
+       break;
+       //right arrow
+       case 39:    
+       var isLastElementSelected = $('#pageSelect > option:selected').index() == ($('#pageSelect > option').length - 1);
+
+       if (!isLastElementSelected) 
+       {     
+         var x = document.getElementById("next");
+         x.click();
+       } 
+
+       break;
+       //esc
+
+ 
+    }
+});
