@@ -32,6 +32,7 @@ function currentImg(n)
     else {
         document.getElementById("prev").style.visibility = 'visible';
     }
+    
 
 }
 
@@ -45,6 +46,22 @@ function imgSelect(n)
         slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block";
+
+    if (n==$('#pageSelect option:last-child').val()) 
+    {
+        document.getElementById("next").style.visibility = 'hidden';
+    }
+    else {
+        document.getElementById("next").style.visibility = 'visible';
+    }
+
+    if (n==$('#pageSelect option:first-child').val()) 
+    {
+        document.getElementById("prev").style.visibility = 'hidden';
+    }
+    else {
+        document.getElementById("prev").style.visibility = 'visible';
+    }
 }
 
 $("#next").click(function() {
