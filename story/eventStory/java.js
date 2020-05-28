@@ -49,18 +49,18 @@ function imgSelect(n)
 
     if (n==$('#pageSelect option:last-child').val()) 
     {
-        document.getElementById("nextButton").style.visibility = 'hidden';
+        document.getElementById("next").style.visibility = 'hidden';
     }
     else {
-        document.getElementById("nextButton").style.visibility = 'visible';
+        document.getElementById("next").style.visibility = 'visible';
     }
 
     if (n==$('#pageSelect option:first-child').val()) 
     {
-        document.getElementById("prevButton").style.visibility = 'hidden';
+        document.getElementById("prev").style.visibility = 'hidden';
     }
     else {
-        document.getElementById("prevButton").style.visibility = 'visible';
+        document.getElementById("prev").style.visibility = 'visible';
     }
 }
 
@@ -152,24 +152,4 @@ document.addEventListener("keyup",function(e){
 
  
     }
-});
-
-$("#prevButton").click(function() {
-    var isFirstElementSelected = $('#pageSelect > option:selected').index() == 0;
-
-    if (!isFirstElementSelected) 
-    {
-      var x = document.getElementById("prev");
-      x.click();
-    }
-  });
-
-$("#nextButton").click(function() {
-    var isLastElementSelected = $('#pageSelect > option:selected').index() == ($('#pageSelect > option').length - 1);
-
-       if (!isLastElementSelected) 
-       {     
-         var x = document.getElementById("next");
-         x.click();
-       }
 });
