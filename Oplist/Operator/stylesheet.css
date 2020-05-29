@@ -363,6 +363,7 @@
 #stick
 {
   position: sticky;
+  width: fit-content;
   top: 15px;
   left: 1px;
 }
