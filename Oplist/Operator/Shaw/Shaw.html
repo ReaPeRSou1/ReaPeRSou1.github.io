@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Arknights Вики </title>
+   <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+   <link rel="stylesheet" type="text/css" href="../../../header.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+
+ <body>
+
+    <div id="header">
+
+        <a href="../../../index.html"><img id="headPic" src="../../../pic/arknights.png" alt=""></a>
+        <div class="headernav">
+            <div class="quad">
+                <a href="../../../index.html">Главная</a>
+            </div>
+            
+            <div class="quad" style="margin-left: 25%;">
+                <a href="../../oplist.html">Оперлист</a>
+            </div>
+            
+            <div class="quad" style="margin-left: 50%;">
+                <div class="drop">
+                    <button class="hui">Cюжет</button>
+                    <div class="headcont">
+                        <ul>
+                            <li>
+                                <a href="../../../story/storyList.html"> Основные и побочные <br>истории </a>
+                            </li>
+                            <li>
+                                <a href="../../../organizations/fractions.html"> Организации </a>
+                            </li>
+                            <li>
+                                <a href="../../../handbook/handbook.html"> Толковый Словарь </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quad" style="margin-left: 73%;">
+                <div class="drop">
+                    <button class="hui">Гайды</button>
+                    <div class="headcont">
+                        <ul>
+                            <li>
+                                <a href="../../../guides/guideMain.html"> ВСЕ ГАЙДЫ </a>
+                            </li>
+                            <li>
+                                <a href="../../../guides/Guide1/Guide.html"> Гайд по Классам </a>
+                            </li>
+                            <li>
+                                <a href="../../../guides/Guide2/Guide.html"> Гайд по Прокачке</a>
+                            </li>
+                            <li>
+                                <a href="../../../guides/Guide3/Guide.html"> Гайд по Умениям </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="content">   
+        
+        <ul>
+            <li>
+                <button id="but1" onclick="showPanel(0)"> <img src="../pic/elite1.png" alt="" width="40px"> </button>
+            </li>
+            <li>
+                <button id="but2" onclick="showPanel(1)"> <img src="../pic/elite2.png" alt="" width="40px"> </button>
+            </li>
+           
+        </ul>
+
+        <h2 style="color: white; text-align: center; margin: 0;"> Shaw</h2>
+
+        <img id="classs" src="pic/spec.png" width="125px" style="position: absolute; left: 15px; bottom: 15px;">
+
+        <img id="frac" src="pic/logo_yan.png" width="125px" style="position: absolute; left: 15px;">
+        
+        <div class="operPic">
+            <img src="pic/Shaw_1.png" height="99%" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+
+        <div class="operPic">
+            <img src="pic/Shaw_2.png" height="99%" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+
+    </div>
+
+    <div id="info">
+
+        <h2>Статы:</h2>
+        
+        <table class="lvlButton">
+            <tr>
+                <td>
+                    <button onclick="changeElite(0)">Non-Elite </button>
+                </td>
+
+                <td>
+                    <button onclick="changeElite(1)">Элита I </button>
+                </td>
+
+                <td>
+                    <button onclick="changeElite(2)">Элита II </button>
+                </td>
+            </tr>
+        </table>
+
+        <div class="elite">
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="6" oninput="changeLevel(this,0)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <h3 id="lvl1num0" class="lev0 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
+            <h3 id="lvl2num0" class="lev0">10</h3>
+            <h3 id="lvl3num0" class="lev0">20</h3>
+            <h3 id="lvl4num0" class="lev0">30</h3>
+            <h3 id="lvl5num0" class="lev0">40</h3>
+            <h3 id="lvl6num0" class="lev0">45</h3>
+
+            <div id="elite0lev1" class="lvl0 active">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">824</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">252</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">17</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">151</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev2" class="lvl0">
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">880</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">272</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">17</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">167</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev3" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">943</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">295</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">17</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">185</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev4" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1005</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">317</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">17</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">202</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev5" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1068</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">240</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">17</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">220</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite0lev6" class="lvl0">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1099</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">351</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">17</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">299</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <img src="pic/range1.png" width="50px" style="display: block; margin-left: auto; margin-right: auto;">
+            
+        </div>
+
+        <div class="elite">
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="7" oninput="changeLevel(this,1)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <h3 id="lvl1num1" class="lev1 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
+            <h3 id="lvl2num1" class="lev1">10</h3>
+            <h3 id="lvl3num1" class="lev1">20</h3>
+            <h3 id="lvl4num1" class="lev1">30</h3>
+            <h3 id="lvl5num1" class="lev1">40</h3>
+            <h3 id="lvl6num1" class="lev1">50</h3>
+            <h3 id="lvl7num1" class="lev1">60</h3>
+
+            <div id="elite1lev1" class="lvl1 active">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1099</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">251</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">229</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev2" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1144</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">369</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">240</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev3" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1193</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">389</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">253</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev4" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1243</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">409</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">265</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev5" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1293</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">429</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">277</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev6" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1342</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">449</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">290</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite1lev7" class="lvl1">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1392</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">469</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">302</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <img src="pic/range1.png" width="50px" style="display: block; margin-left: auto; margin-right: auto;">
+            
+        </div>
+
+        <div class="elite">
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="8" oninput="changeLevel(this,2)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <h3 id="lvl1num2" class="lev2 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
+            <h3 id="lvl2num2" class="lev2">10</h3>
+            <h3 id="lvl3num2" class="lev2">20</h3>
+            <h3 id="lvl4num2" class="lev2">30</h3>
+            <h3 id="lvl5num2" class="lev2">40</h3>
+            <h3 id="lvl6num2" class="lev2">50</h3>
+            <h3 id="lvl7num2" class="lev2">60</h3>
+            <h3 id="lvl8num2" class="lev2">70</h3>
+
+            <div id="elite2lev1" class="lvl2 active">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1392</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">469</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">302</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev2" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1443</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">483</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">310</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev3" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1500</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">500</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">319</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev4" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1557</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">516</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">328</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev5" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1614</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">532</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">338</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev6" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1671</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">548</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">347</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev7" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1728</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">564</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">356</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div id="elite2lev8" class="lvl2">
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td class="skillnum">1785</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td class="skillnum">580</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">19</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td class="skillnum">365</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.2с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <img src="pic/range1.png" width="50px" style="display: block; margin-left: auto; margin-right: auto;">
+
+        </div>
+
+        <h2> Потенциал:</h2>
+            <div style="display: block; width: 65%; margin-left: auto; margin-right: auto;">
+                <ul id="potential" style="list-style-type: none; width: 75%; padding-left: 10px; margin-block-start: 0; margin-block-end: 0;">
+                    <li>
+                        <img src="../pic/pot1.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Стоимость: -1
+                        
+                    </li>
+                    <li>
+                        <img src="../pic/pot2.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Повторный призыв: -4
+                        
+                    </li>
+                    <li>
+                        <img src="../pic/pot3.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            
+                            Максимум HP: +140
+                        
+                    </li>
+                    <li>
+                        <img src="../pic/pot4.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Повторный призыв: -6
+                        
+                    </li>
+                    <li>
+                        <img src="../pic/pot5.png" alt="" height="15px" style="display: inline-block;">
+                        
+                            Стоимость: -1
+                        
+                    </li>
+                </ul>
+            </div>
+
+            <h2> Бонус доверия:</h2>
+            <div style="display: block; width: 65%; margin-left: auto; margin-right: auto;">
+
+                <p style="text-align: center;">Максимум HP: +200</p>
+                <p style="text-align: center;">Сила Атаки: +35</p>
+                
+            </div>   
+            
+
+        <h2 style="margin-top: 10px;">Скиллы:</h2>
+
+        <table class="skillButton">
+            <tbody>
+                <tr>
+                    <td>
+                        <button onclick="changeSkill(0)">Скилл I</button>
+                    </td>
+                    <td>
+                        <button onclick="changeSkill(1)">Скилл II</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="skillDis">
+
+            <div style=" background-color: rgba(255, 0, 0, 0.4);">
+                <img src="pic/skill1.png" alt="" height="50px" style="display: inline-block">
+                <span class="skillTitle"style="margin-top: 4%; margin-left: 15px;"> Steam Pump </span>
+            </div>
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="10" oninput="changeSkillLevel(this,0)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <img src="../pic/1.png" height="50px" id="skill1num0" class="skillLev0 display1">
+            <img src="../pic/2.png" height="50px" id="skill2num0" class="skillLev0">
+            <img src="../pic/3.png" height="50px" id="skill3num0" class="skillLev0">
+            <img src="../pic/4.png" height="50px" id="skill4num0" class="skillLev0">
+            <img src="../pic/5.png" height="50px" id="skill5num0" class="skillLev0">
+            <img src="../pic/6.png" height="50px" id="skill6num0" class="skillLev0">
+            <img src="../pic/8.png" height="50px" id="skill7num0" class="skillLev0">
+            <img src="../pic/9.png" height="50px" id="skill8num0" class="skillLev0">
+            <img src="../pic/10.png" height="50px" id="skill9num0" class="skillLev0">
+            <img src="../pic/11.png" height="50px" id="skill10num0" class="skillLev0">
+
+            <div id="skill0dis1" class="skill0 active">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 6</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Автоматический</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p style="padding-left: 10px; padding-right: 10px;">
+                    The next attack will push the target away with <span style="color: rgb(78, 196, 255);">small</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">105%</span> physical damage
+                </p>
+
+            </div>
+
+            <div id="skill0dis2" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 6</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Автоматический</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p style="padding-left: 10px; padding-right: 10px;">
+                    The next attack will push the target away with <span style="color: rgb(78, 196, 255);">small</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">110%</span> physical damage
+                </p>
+
+            </div>
+
+            <div id="skill0dis3" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 6</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Автоматический</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p style="padding-left: 10px; padding-right: 10px;">
+                    The next attack will push the target away with <span style="color: rgb(78, 196, 255);">small</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">115%</span> physical damage
+                </p>
+
+            </div>
+
+            <div id="skill0dis4" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 6</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Автоматический</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p style="padding-left: 10px; padding-right: 10px;">
+                    The next attack will push the target away with <span style="color: rgb(78, 196, 255);">medium</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">124%</span> physical damage
+                </p>
+
+            </div>
+
+            <div id="skill0dis5" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 6</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Автоматический</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p style="padding-left: 10px; padding-right: 10px;">
+                    The next attack will push the target away with <span style="color: rgb(78, 196, 255);">medium</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">127%</span> physical damage
+                </p>
+
+            </div>
+
+            <div id="skill0dis6" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 6</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Автоматический</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p style="padding-left: 10px; padding-right: 10px;">
+                    The next attack will push the target away with <span style="color: rgb(78, 196, 255);">medium</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">130%</span> physical damage
+                </p>
+
+            </div>
+
+            <div id="skill0dis7" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 6</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Автоматический</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p style="padding-left: 10px; padding-right: 10px;">
+                    The next attack will push the target away with <span style="color: rgb(78, 196, 255);">medium</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">135%</span> physical damage
+                </p>
+
+            </div>
+
+            <div id="skill0dis8" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 5</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Автоматический</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p style="padding-left: 10px; padding-right: 10px;">
+                    The next attack will push the target away with <span style="color: rgb(78, 196, 255);">medium</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">140%</span> physical damage
+                </p>
+
+            </div>
+
+            <div id="skill0dis9" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 5</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Автоматический</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p style="padding-left: 10px; padding-right: 10px;">
+                    The next attack will push the target away with <span style="color: rgb(78, 196, 255);">medium</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">145%</span> physical damage
+                </p>
+
+            </div>
+
+            <div id="skill0dis10" class="skill0">
+
+                <div style="background-color: rgb(30, 30, 30);">
+    
+                    <table id="skdit" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 5</p>
+                            </td>
+    
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                    <table id="skdit2" cellspacing="7px">
+    
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность: <span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Автоматический</span>
+                                </p>
+                            </td>
+                        </tr>
+    
+                    </table>
+    
+                </div>
+
+                <p style="padding-left: 10px; padding-right: 10px;">
+                    The next attack will push the target away with with <span style="color: rgb(78, 196, 255);">large</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">150%</span> physical damage
+                </p>
+
+            </div>
+    
+        </div>
+
+        <div class="skillDis">
+
+            <div style=" background-color: rgba(255, 0, 0, 0.4);">
+                <img src="pic/skill2.png" alt="" height="50px" style="display: inline-block">
+                <span class="skillTitle" style="margin-top: 5%; margin-left: 15px;"> High-pressure Water Cannon </span>
+            </div>
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <input type="range" value="1" min="1" max="10" oninput="changeSkillLevel(this,1)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <img src="../pic/1.png" height="50px" id="skill1num1" class="skillLev1 display1">
+            <img src="../pic/2.png" height="50px" id="skill2num1" class="skillLev1">
+            <img src="../pic/3.png" height="50px" id="skill3num1" class="skillLev1">
+            <img src="../pic/4.png" height="50px" id="skill4num1" class="skillLev1">
+            <img src="../pic/5.png" height="50px" id="skill5num1" class="skillLev1">
+            <img src="../pic/6.png" height="50px" id="skill6num1" class="skillLev1">
+            <img src="../pic/8.png" height="50px" id="skill7num1" class="skillLev1">
+            <img src="../pic/9.png" height="50px" id="skill8num1" class="skillLev1">
+            <img src="../pic/10.png" height="50px" id="skill9num1" class="skillLev1">
+            <img src="../pic/11.png" height="50px" id="skill10num1" class="skillLev1">
+
+            
+
+            <div id="skill1dis1" class="skill1 active">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 20</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно </span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность:<span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p style="padding-right: 10px; padding-left: 10px;">
+                    Immediately push away all enemies 2 tiles ahead with <span style="color: rgb(78, 196, 255);">small</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">180%</span> physical damage.
+                </p>
+
+            </div>
+
+            <div id="skill1dis2" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 20</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно </span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность:<span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p style="padding-right: 10px; padding-left: 10px;">
+                    Immediately push away all enemies 2 tiles ahead with <span style="color: rgb(78, 196, 255);">small</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">190%</span> physical damage.
+                </p>
+
+            </div>
+
+            <div id="skill1dis3" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 20</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно </span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность:<span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p style="padding-right: 10px; padding-left: 10px;">
+                    Immediately push away all enemies 2 tiles ahead with <span style="color: rgb(78, 196, 255);">small</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">200%</span> physical damage.
+                </p>
+
+            </div>
+
+            <div id="skill1dis4" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 20</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно </span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность:<span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p style="padding-right: 10px; padding-left: 10px;">
+                    Immediately push away all enemies 2 tiles ahead with <span style="color: rgb(78, 196, 255);">medium</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">210%</span> physical damage.
+                </p>
+
+            </div>
+
+            <div id="skill1dis5" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 20</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно </span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность:<span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p style="padding-right: 10px; padding-left: 10px;">
+                    Immediately push away all enemies 2 tiles ahead with <span style="color: rgb(78, 196, 255);">medium</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">220%</span> physical damage.
+                </p>
+
+            </div>
+
+            <div id="skill1dis6" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 20</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно </span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность:<span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p style="padding-right: 10px; padding-left: 10px;">
+                    Immediately push away all enemies 2 tiles ahead with <span style="color: rgb(78, 196, 255);">medium</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">230%</span> physical damage.
+                </p>
+
+            </div> 
+
+            <div id="skill1dis7" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 20</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно </span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность:<span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p style="padding-right: 10px; padding-left: 10px;">
+                    Immediately push away all enemies 2 tiles ahead with <span style="color: rgb(78, 196, 255);">large</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">240%</span> physical damage.
+                </p>
+
+            </div>
+
+            <div id="skill1dis8" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 19</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно </span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность:<span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p style="padding-right: 10px; padding-left: 10px;">
+                    Immediately push away all enemies 2 tiles ahead with <span style="color: rgb(78, 196, 255);">large</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">260%</span> physical damage.
+                </p>
+
+            </div>
+
+            <div id="skill1dis9" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 18</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно </span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность:<span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p style="padding-right: 10px; padding-left: 10px;">
+                    Immediately push away all enemies 2 tiles ahead with <span style="color: rgb(78, 196, 255);">large</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">280%</span> physical damage.
+                </p>
+
+            </div>
+
+            <div id="skill1dis10" class="skill1">
+
+                <div style="background-color: rgb(30, 30, 30);">
+                    <table id="skdit" cellspacing="7px">
+        
+                        <tr>
+                            <td>
+                                <p>SP Стоимость: 17</p>
+                            </td>
+            
+                            <td>
+                                <p>Начальное SP: 0</p>
+                            </td>
+                        </tr>
+            
+                    </table>
+            
+                    <table id="skdit2" cellspacing="7px">
+            
+                        <tr>
+                            <td>
+                                <p>
+                                    Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно </span>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Длительность:<span style="color: rgb(78, 196, 255);"> Мгновенное действие</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td colspan="2">
+                                <p>
+                                    Тип активации скилла: <span style="color: rgb(78, 196, 255);"> Вручную</span>
+                                </p>
+                            </td>
+                        </tr>
+            
+                    </table>
+                </div>
+
+                <p style="padding-right: 10px; padding-left: 10px;">
+                    Immediately push away all enemies 2 tiles ahead with <span style="color: rgb(78, 196, 255);">large</span> force, 
+                    dealing <span style="color: rgb(78, 196, 255);">300%</span> physical damage.
+                </p>
+
+            </div>
+
+            <div>
+                <h3 style="text-align: center; background-color: rgba(78, 196, 255,0.6); margin-bottom: 0; color: white;">Радиус:</h3>
+
+                <img src="pic/rad1.png" alt="" height="40px" style="display: block; margin-left: auto; margin-right: auto; margin-top: 2%;">
+            </div>
+
+        </div>
+
+        <h2>RIIC Скиллы:</h2>
+        <div class="RIIC">
+
+            <h4> <img src="pic/RIIC1.png" alt="" style="vertical-align: middle;">  Engineering</h4>
+            <p style="padding: 0 15px 0 15px;">
+                When stationed at the <span style="color: skyblue;"> Synthesis Station</span> and producing infrastructure materials,
+                increase the rate of by-products by <span style="color: skyblue;">70%</span>
+            </p>
+
+        </div>
+
+        <div class="RIIC">
+
+            
+            <h4> <img src="pic/RIIC2.png" alt="" style="vertical-align: middle;">  Equipment Maintenance </h4>
+            <p style="padding: 0 15px 0 15px;">
+                When stationed at a <span style="color: skyblue;">Power Station</span>, 
+                drone recovery per hour <span style="color: skyblue;">+15%</span>
+            </p>
+
+        </div>
+
+        <h2>Таланты:</h2>
+
+        <div class="talent">
+            <p>
+                Fire-fighting Gear Lv:1 <img src="../pic/elite1.png" height="17px">
+            </p>
+            <p>
+                Маг. защита <span style="color: skyblue;">+7</span>
+            </p>
+        </div>
+        
+        <div class="talent">
+            <p>
+                Fire-fighting Gear Lv:1 <img src="../pic/elite2.png" height="17px">
+            </p>
+            <p>
+                Маг. защита <span style="color: skyblue;">+15</span>
+            </p>
+        </div>
+
+    </div>
+
+    <div id="stick">
+        
+        <button onclick="displayMain(0)"> <img src="../pic/bio.png" alt="" height="55px"><br> Биография  </button>
+        <div id="br"></div>
+        <button onclick="displayMain(1)"> <img src="../pic/voice.png" alt="" height="55px"><br> Голос </button>
+        
+    </div>
+
+    <div class="main" id="main1">
+
+        <div id="infoSpace" >
+
+            <div class="part3">
+                <h3>Рекрутинговый контракт</h3>
+                <p style="margin-left: 5px; margin-right: 5px;">
+                    Not just a firefighter.<br>
+                    <br>
+                    Shaw, officer of the Lungmen Fire Department, will provide various means of tactical support for everyone.</p>
+            </div>
+
+            <div class="part4">
+                <h3>Токен</h3>
+                <p style="margin-left: 5px; margin-right: 5px;">
+                    A stamp album. In the past, the owner never let anyone touch her precious collection. <br>
+                    <br>
+                    <br>
+                    Используется для улучшения Потенциала Shaw.</p>
+            </div>
+
+            <div class="part1" >
+
+                <table class="info-table">
+                    <tbody>
+                        <tr>
+                            <th colspan="2" style="text-align: center; border-bottom: 1.5px solid rgb(80, 80, 80); height: 30px;">
+                                Общая Информация
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Позывной: </td>
+                            <td>Shaw</td>
+                        </tr>
+                        <tr>
+                            <td>Пол: </td>
+                            <td>Женский</td>
+                        </tr>
+                        <tr>
+                            <td>Класс: </td>
+                            <td>Specialist</td>
+                        </tr>
+                        <tr>
+                            <td>Боевой опыт: </td>
+                            <td>None</td>
+                        </tr>
+                        <tr >
+                            <td>Место рождения: </td>
+                            <td><a href="">Lungmen</a></td>
+                        </tr>
+                        <tr>
+                            <td>Дата рождения: </td>
+                            <td>5 Января</td>
+                        </tr>
+                        <tr>
+                            <td>Раса: </td>
+                            <td><a href="">Zalak</a></td>
+                        </tr>
+                        <tr>
+                            <td>Рост: </td>
+                            <td>135 см</td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: none;">Статус заражения: </td>
+                            <td style="border-bottom: none;">Non-infected as confirmed by medical report.</td>
+                        </tr>
+                    </tbody>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="part2" >
+
+                <table class="info-table">
+
+                    <tr>
+                        <th colspan="2" style="text-align: center; border-bottom: 1.5px solid rgb(80, 80, 80); height: 30px;">
+                            Физические показатели
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Физическая сила: </td>
+                        <td>Нормальная</td>
+                    </tr>
+                    <tr>
+                        <td>Мобильность: </td>
+                        <td>Отличная</td>
+                    </tr>
+                    <tr>
+                        <td>Сопротивление &nbsp;&nbsp; <br> физическим атакам:</td>
+                        <td>Нормальное</td>
+                    </tr>
+                    <tr>
+                        <td>Тактическое мышление: </td>
+                        <td>Стандартное</td>
+                    </tr>
+                    <tr>
+                        <td>Боевые навыки: </td>
+                        <td>Стандартные</td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: none;">Усвоение Ориджиниума: </td>
+                        <td style="border-bottom: none;">Нормальное</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+        
+        <h2>Краткая Биография</h2>
+
+        <p> 
+            Shaw, a firefighter of the Lungmen FD, has adapted firefighting skills to actual combat, providing a variety of new tactical options to Rhodes Island. 
+            Currently a member of a special ops squad, she offers expertise in firefighting and safety.
+        </p>
+
+        <h2>Клинический анализ</h2>
+        <p>Требуется <span class="sky">уровень доверия: 25%</span></p>
+        <p>
+            Imaging tests on this Operator show clear outlines of internal organs, with no abnormal dark spots or shadows. 
+            No unusual traces of Originium particles present in the circulatory system, no signs of infection, confirming this operator as uninfected.
+        </p>   
+            <p> 
+                [Поглощение клеток Ориджиниумом] 0%
+                <br>
+                Operator Shaw showed no signs of infection.
+            </p>  
+            <p> 
+                [Плотность кристалов Ориджиниума в крови] 0.12u/L 
+                <br>
+                Operator Shaw rarely comes into contact with Originium.
+            </p>
+
+        <h2>Архивные записи</h2>
+        <h3>Архивная запись 1 </h3>
+        <p>Требуется <span class="sky">уровень доверия: 50%</span></p>
+        <br>
+        <p> 
+            Operator Shaw tends to get nervous easily. Introverted and slow to speak, she has a tendency to keep running her mouth once she gets going. 
+            When engaged in conversation, Shaw spends most of her time struggling to choose the right words, which wears her out quickly. 
+            She is a highly dedicated worker, committed to getting the job done, especially in scenarios involving fire or arson.
+        </p>
+
+        <h3>Архивная запись 2 </h3>
+        <p>Требуется <span class="sky">уровень доверия: 100%</span></p>
+        <br>
+        <p>
+            The petite Shaw managed to win the trust of her peers with her diligence and professionalism in the field of firefighting. 
+            The huge fire rescue operation last winter more than proved Shaw's competence: When the irresponsible use of a space heater eventually set a whole 
+            building ablaze, Shaw made numerous incursions inside to rescue trapped victims, orchestrating a successful operation with zero casualties. 
+            That earned her a personal invite from Wei Yenwu, Chief Executive of Lungmen, as well as headlines in all the newspapers.
+            <br>
+            With Wei's and the L.G.D's support, Shaw was accepted into Rhodes Island for her expertise in fire safety and prevention. 
+            It was an obvious boon to the island, since most Operators have little to no knowledge of or training in firefighting. 
+            Shaw handily filled the gap.
+            <br>
+            When Shaw had the chance to inspect the intricate passageways and firefighting equipment on the island, and after meeting certain Operators who wield fire Arts at will, she realized she faced a daunting task.
+        </p>
+
+        <h3>Архивная запись 3 </h3>
+        <p>Требуется <span class="sky">уровень доверия: 150%</span></p>
+        <br>
+        <p>
+            To accommodate Shaw's daily tasks, the installation team at Rhodes Island provided her with convenient, portable firefighting devices and a thermometer, although the latter quickly overloaded and broke down. 
+            Operators Skyfire and Ifrit both denied responsibility for the demise of this extremely sensitive tool.
+            <br>
+            To combat this, Shaw decided to implement an effective, if rather old-fashioned technique: Make a list of theOperatorsmost likely to start a fire, and initiate a firefighting program for the entire island. 
+            The first seminar commenced with the notable absence of Dr. Kal'tsit, where Shaw presented materials and slides (including various scenes of major fires and warning signs). 
+            The presentation was short, thanks to Shaw's famously fast rate of speech, and the raucous applause made it clear the audience had no clue what she had intended to communicate to them. 
+            (Some confessed to hearing a voice but being unable to locate the speaker).
+            <br>
+            This disappointing outcome only kept Shaw down for about half a day, when she realized that there are many setbacks in life, depression is the death of passion.
+        </p>
+        
+        <h3>Архивная запись 4 </h3>
+        <p>Требуется <span class="sky">уровень доверия: 200%</span></p>
+        <br>
+        <p>
+            Shaw reports her first memory of fire came from the tragic loss of a beloved fruit vendor to arson. 
+            That was when she realized a person can create a Catastrophe from will alone, but will alone won't resolve it. 
+            The idea of becoming a firefighting expert took root in her mind, as she hoped to save all the good things in life from the threat of fire. 
+            It also strengthened her resolve as a Rhodes Island Operator. When faced with a malefactor out to cause a Catastrophe, she is always willing to stand against it. 
+            To Shaw, safeguarding the people from the suffering of an unexpected crisis is as precious and worth protecting as the feeling she gets from buying a big, round apple.
+        <p> 
+
+    </div>
+
+    <div class="main" id="main2">
+
+        <table class="quote">
+            <tbody>
+                <tr>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;" >Диалог</td>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Аудио</td>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Английский</td>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Русский</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Назначение ассистентом</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_001.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Awaitingorders, readywhenyouare, Chief!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_002.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Intheinterestsofsafety, Iaminspecting escaperoutes and firefightingequipment. Onemomentplease.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_003.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Pleasebeaware, itisagainstregulation tolightfires or smokecigarettes inthecorridors. Thankyouforyourcooperation, Operators.</td>
+                    <td > </td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор 3</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_004.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Ensuringawareness of firesafety and firefightingprotocols isakeypart ofmyduties. Allowmeto beginwithyou, Chief.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после Повышения 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_005.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Iamverysmall, butthatmeans Icandowork nooneelsecan.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после Повышения 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_006.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Um... Thetruthis... I'mverynervous... AndIdon'tknow whattosay... Chief, thankyouverymuch, foryourconcern.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после увеличения Доверия 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_007.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >WhenIstartspeaking sometimesIcan'tstop. Ihopeyouforgiveme, Chief... *sob*...</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после увеличения Доверия 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_008.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Chief, canyoupleasehelp changethislightbulb... I... can'treachit... Oh, it'sworkingnow. Thankyou.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Разговор после увеличения Доверия 3</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_009.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Chief... Theytheythey're barbecuinginthedormagain. Canyouplease stopthemforme! Aaaah! Someoneswapped myfireextinguisher withIfrit'sflamethrower! Areyouokay, Chief?</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Бездействие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_010.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Breaktimeends inafewminutes. Justtoletyouknow, Chief.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Вербовка</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_011.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Pleasuretomeetyou, Chief. IamShaw oftheLungmenFireDepartment, reportingforduty!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Получение опыта</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_012.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Exercisevideosare partofthetraining?</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Повышение 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_013.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Thankyouforyourtrust, Chief!</td>
+                    <td > </td>
+                </tr>
+                <tr>
+                    <td class="cent" >Повышение 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_014.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Thisis... anelitemedal? Ah! Yes! Iwillcontinue todomybest foreveryone, andfortheChief!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Добавление в отряд</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_017.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >All ready.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Назначение командиром отряда</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_018.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Followmyorders.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Отбытие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_019.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Deploying!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Начало операции</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_020.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Thefireis spreadingthisway. Getready!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Выбор оператора 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_021.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Here!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Выбор оператора 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_022.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Roger!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Размещение на поле 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_023.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Uhuh.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Размещение на поле 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_024.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Uhuh!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Во время боя 1</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_025.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Haah!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Во время боя 2</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_026.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Move! Move!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Во время боя 3</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_027.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Extinguishingflames!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Во время боя 4</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_028.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Yourbehaviorisunsafe andmustbestopped.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >4★ результат</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_029.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Afireofthisscale couldnotbeextinguished withoutthehelp oftheChief andtheothers.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >3★ результат</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_030.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Thefireisextinguished. Readytoreturntobase.</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >2★ результат</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_031.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Thefireisundercontrol, areweinneed ofdamagecontrol?</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Провал Операции</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_032.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >O-oh no! Thefireis spreadingin thisdirection!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Назначение на Объект</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_033.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Iwillstayhere fromnowon then?</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Взаимодействие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_034.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Um...</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Сбор Доверия</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_036.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Aablublublu!</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td class="cent" >Титульный экран</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_037.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Arknights.</td>
+                    <td >Аркнайтс.</td>
+                </tr>
+                <tr>
+                    <td class="cent" >Приветствие</td>
+                    <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_042.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
+                    <td >Needsomething, Chief?</td>
+                    <td ></td>
+                </tr>              
+            </tbody>
+        </table>
+
+    </div>
+
+    
+
+    <script src="../../../jquery.min.js"></script>
+    <script src="../java.js"></script>
+ </body>
+</html>
