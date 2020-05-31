@@ -62,7 +62,7 @@
   font-size: 20px;
 }
 
-@media(max-width:1300px)
+@media(max-width:800px)
 {
   #main
   {
@@ -71,11 +71,9 @@
 
   #freespace
   {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 240px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 110px;
   }
   
   .fracPic
@@ -86,6 +84,7 @@
   .window
   {
     width: 90%;
+    margin-top: 10px;
   }
 
   .window img
