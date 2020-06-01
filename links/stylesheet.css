@@ -6,17 +6,20 @@
     margin-right: auto;
     margin-top: 50px;
     height: auto;
-    background-color: red;
+}
+
+h2
+{
+    text-align: center;
 }
 
 .link
 {
     display: inline-block;
 	border-radius: 5px;
-	background-color: #0098DC;
+	background-color: rgb(128, 128, 128);
 	width: 45%;
 	min-height: 350px;
-
 	position: relative;
 	margin:auto;
 	margin:28px;
@@ -32,6 +35,6 @@
         margin-left: auto;
         margin-right: auto;
         width: 60%;
-		min-height: 260px;
+		min-height: 420px;
     }
 }
