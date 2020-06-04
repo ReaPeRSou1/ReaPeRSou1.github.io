@@ -78,6 +78,7 @@
 {
   width: auto;
   max-width: 100%;
+  min-width: 100%;
 }
 
 .block
