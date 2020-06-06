@@ -46,8 +46,10 @@
 
 @media(min-width: 1900px)
 {
-  *
-  {
-  zoom: 67%;
-  }
+  #main
+{
+  width: 67%;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
