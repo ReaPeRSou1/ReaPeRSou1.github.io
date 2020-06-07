@@ -70,3 +70,12 @@
     margin: 15px 0 15px 11%;
   }
 }
+
+@media(min-width: 1900px)
+{
+    .sidenav
+    {
+        margin-top: -35px;
+    }
+        
+}
