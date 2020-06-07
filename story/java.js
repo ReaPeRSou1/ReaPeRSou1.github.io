@@ -15,7 +15,7 @@ function open0()
     }
     else
     {
-        cont[0].style.width = "100%";
+        cont[0].style.width = "80%";
         cont[0].style.height = "70vh";
     }
         
@@ -45,8 +45,8 @@ function open1()
         
     else
     {
+        cont[1].style.width = "80%";
         cont[1].style.height = "70vh";
-        cont[1].style.width = "100%";
     }
     cont[1].style.display = "block";
     back.forEach(function(node){
