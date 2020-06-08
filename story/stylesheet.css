@@ -13,7 +13,6 @@
     margin-bottom: 10px;
     width: fit-content;
     height: auto;
-    background: #252525;
     flex: 1 !important;
     overflow: hidden;
 }
@@ -33,6 +32,11 @@
     width: 100%;
     overflow:auto;
     overflow-x: hidden;
+    background: #252525;
+    animation-name: popUp;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
 }
 
 .contentContainer p
@@ -52,22 +56,47 @@
   
 @-webkit-keyframes fade 
 {
-  from {opacity: 0.4}
-  to {opacity: 1}
+    from {opacity: 0.4;}
+    to {opacity: 1; }
+    
 }
   
 @keyframes fade 
 {
-  from {opacity: 0.4}
-  to {opacity: 1}
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+@-webkit-keyframes popUp 
+{
+    from 
+    {
+        height: 0%;
+    }
+    to 
+    {
+        height: 100%;
+    }
+}
+  
+@keyframes popUp 
+{
+    from 
+    {
+        height: 0%; 
+    }
+    to 
+    {
+        height: 100%;
+    }
 }
 
 .closebtn 
 {
     position: absolute;
     top: 170px;
-    right: 150px;
-    font-size: 70px;
+    right: 290px;
+    font-size: 55px;
     margin-left: 50px;
     cursor: pointer;
 }
