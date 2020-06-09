@@ -40,7 +40,7 @@ function open1()
     
     if (x.matches) 
     {
-        cont[0].style.height = "570px";
+        cont[1].style.height = "570px";
     }
         
     else
