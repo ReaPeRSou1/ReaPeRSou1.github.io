@@ -1,4 +1,4 @@
-var x = window.matchMedia("(max-width: 900px)")
+var x = window.matchMedia("(max-width: 800px)")
 
 function open0()
 {
