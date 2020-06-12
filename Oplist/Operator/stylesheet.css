@@ -58,6 +58,13 @@
   vertical-align: middle
 }
 
+#test
+{
+  margin-top: 8px; 
+  margin-bottom: 8px; 
+  vertical-align: middle;
+}
+
 #but5
 {
   top: 401px;
@@ -739,6 +746,13 @@
   {
     left: 188px;
     top: 406px;
+  }
+
+  #test
+  {
+    margin-top: 7px; 
+    margin-bottom: 7px; 
+    vertical-align: middle;
   }
 
   #but1 img
