@@ -7,7 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 
- <body>
+<body>
 
     <div id="header">
 
@@ -69,7 +69,7 @@
         
         <ul>
             <li>
-                <button id="but1" onclick="showPanel(0)"> <img src="../pic/elite1.png" alt="" width="40px"> </button>
+                <button id="but1" onclick="showPanel(0)" style="color: white;"> <img src="../pic/elite1.png" alt="" width="40px"> </button>
             </li>
             <li>
                 <button id="but2" onclick="showPanel(1)"> <img src="pic/cambrian.png" alt="" style="vertical-align: middle; margin-top: 3px; margin-bottom: 2px;"> </button>
@@ -82,11 +82,11 @@
 
         <img id="frac" src="pic/rhodes.png" width="125px" style="position: absolute; left: 15px;">
         
-        <div class="operPic">
+        <div class="operPic" style="display: block;">
             <img src="pic/fang_1.png" height="99%">
         </div>
 
-        <div class="operPic">
+        <div class="operPic" style="display: none;">
             <img src="pic/fang_winter.png" height="99%">
         </div>
         
@@ -98,20 +98,20 @@
         <h2>Статы:</h2>
         
         <table class="lvlButton">
-            <tr>
+            <tbody><tr>
                 <td>
-                    <button onclick="changeElite(0)">Non-Elite </button>
+                    <button onclick="changeElite(0)" style="color: white; background-color: rgba(175, 175, 175, 0.3);">Без элиты</button>
                 </td>
 
                 <td>
                     <button onclick="changeElite(1)">Элита I </button>
                 </td>
             </tr>
-        </table>
+        </tbody></table>
 
-        <div class="elite">
+        <div class="elite" style="display: block;">
 
-            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <h3 style="margin: 10px 0 0 10px;">Уровень</h3>
             <input type="range" value="1" min="1" max="5" oninput="changeLevel(this,0)" style="margin-top:20px;width:60%; margin-left: 20px;">
             <h3 id="lvl1num0" class="lev0 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
             <h3 id="lvl2num0" class="lev0">10</h3>
@@ -126,26 +126,26 @@
                         <tr>
                             <td class="skillname">Максимум HP</td>
                             <td class="skillnum">742</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
+                            <td class="skillname">Повторное <br> Развёртывание</td>
+                            <td class="skillnum">70 сек</td>
                         </tr>
                         <tr>
                             <td class="skillname">Сила Атаки</td>
                             <td class="skillnum">157</td>
-                            <td class="skillname">Стоимость</td>
+                            <td class="skillname">Стоимость DP</td>
                             <td class="skillnum">9</td>
                         </tr>
                         <tr>
-                            <td class="skillname">Физ. защита</td>
+                            <td class="skillname">Физ. Защита</td>
                             <td class="skillnum">130</td>
                             <td class="skillname">Блокирует</td>
                             <td class="skillnum">2</td>
                         </tr>
                         <tr>
-                            <td class="skillname">Маг. защита</td>
+                            <td class="skillname">Маг. Защита</td>
                             <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.05с</td>
+                            <td class="skillname">Время Атаки</td>
+                            <td class="skillnum">1.05 сек</td>
                         </tr>
                     </tbody>
                 </table>
@@ -284,14 +284,14 @@
 
             </div>
 
-            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <h3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;">Радиус Атаки</h3>
             <img src="pic/range.png" width="50px" style="display: block; margin-left: auto; margin-right: auto;">
             
         </div>
 
-        <div class="elite">
+        <div class="elite" style="display: none;">
 
-            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <h3 style="margin: 10px 0 0 10px;">Уровень</h3>
             <input type="range" value="1" min="1" max="7" oninput="changeLevel(this,1)" style="margin-top:20px;width:60%; margin-left: 20px;">
             <h3 id="lvl1num1" class="lev1 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
             <h3 id="lvl2num1" class="lev1">10</h3>
@@ -533,7 +533,7 @@
             </div>
 
 
-            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <h3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;">Радиус Атаки</h3>
             <img src="pic/range.png" width="50px" style="display: block; margin-left: auto; margin-right: auto;">
             
         </div>
@@ -550,20 +550,20 @@
                     <li>
                         <img src="../pic/pot2.png" alt="" height="15px" style="display: inline-block;">
                         
-                            Повторный призыв: -4
+                            Повторное Развёртывание: -4
                         
                     </li>
                     <li>
                         <img src="../pic/pot3.png" alt="" height="15px" style="display: inline-block;">
                         
                             
-                           Физ. защита: +20
+                           Физ. Защита: +20
                         
                     </li>
                     <li>
                         <img src="../pic/pot4.png" alt="" height="15px" style="display: inline-block;">
                         
-                            Повторный призыв: -6
+                            Повторнон Развёртывание: -6
                         
                     </li>
                     <li>
@@ -583,26 +583,26 @@
             </div>   
             
 
-        <h2 style="margin-top: 10px;">Скиллы:</h2>
+        <h2 style="margin-top: 10px;">Навыки:</h2>
 
         <table class="skillButton">
             <tbody>
                 <tr>
                     <td>
-                        <button onclick="changeSkill(0)">Скилл I</button>
+                        <button onclick="changeSkill(0)" style="color: white; background-color: rgba(175, 175, 175, 0.3);">Навык I</button>
                     </td>
                 </tr>
             </tbody>
         </table>
 
-        <div class="skillDis">
+        <div class="skillDis" style="display: block;">
 
             <div style=" background-color: #8fc117;">
                 <img src="pic/skill1.png" alt="" height="50px" style="display: inline-block">
-                <span class="skillTitle"style="margin-top: 4%; margin-left: 15px;"> Assault Order·Charge α </span>
+                <span class="skillTitle" style="margin-top: 4%; margin-left: 15px;"> Рывок α </span>
             </div>
 
-            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <h3 style="margin: 10px 0 0 10px;">Уровень</h3>
             <input type="range" value="1" min="1" max="7" oninput="changeSkillLevel(this,0)" style="margin-top:20px;width:60%; margin-left: 20px;">
             <img src="../pic/1.png" height="50px" id="skill1num0" class="skillLev0 display1">
             <img src="../pic/2.png" height="50px" id="skill2num0" class="skillLev0">
@@ -618,9 +618,9 @@
     
                     <table id="skdit" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
-                                <p>SP Стоимость: 30</p>
+                                <p>Стоимость SP: 30</p>
                             </td>
     
                             <td>
@@ -628,11 +628,11 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                     <table id="skdit2" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>
                                     Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно </span>
@@ -653,12 +653,12 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                 </div>
 
                 <p style="padding-left: 10px; padding-right: 10px;">
-                    Мгновенно даёт <span style="color: rgb(78, 196, 255);">6 DP</span>.
+                    При срабатывании немедленно даёт <span style="color: rgb(78, 196, 255);">6 DP</span>.
                 </p>
 
             </div>
@@ -669,7 +669,7 @@
     
                     <table id="skdit" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>SP Стоимость: 29</p>
                             </td>
@@ -679,11 +679,11 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                     <table id="skdit2" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>
                                     Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
@@ -704,7 +704,7 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                 </div>
 
@@ -720,7 +720,7 @@
     
                     <table id="skdit" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>SP Стоимость: 28</p>
                             </td>
@@ -730,11 +730,11 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                     <table id="skdit2" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>
                                     Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
@@ -755,7 +755,7 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                 </div>
 
@@ -771,7 +771,7 @@
     
                     <table id="skdit" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>SP Стоимость: 27</p>
                             </td>
@@ -781,11 +781,11 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                     <table id="skdit2" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>
                                     Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
@@ -806,7 +806,7 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                 </div>
 
@@ -822,7 +822,7 @@
     
                     <table id="skdit" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>SP Стоимость: 26</p>
                             </td>
@@ -832,11 +832,11 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                     <table id="skdit2" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>
                                     Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
@@ -857,7 +857,7 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                 </div>
 
@@ -873,7 +873,7 @@
     
                     <table id="skdit" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>SP Стоимость: 25</p>
                             </td>
@@ -883,11 +883,11 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                     <table id="skdit2" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>
                                     Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
@@ -908,7 +908,7 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                 </div>
 
@@ -924,7 +924,7 @@
     
                     <table id="skdit" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>SP Стоимость: 25</p>
                             </td>
@@ -934,11 +934,11 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                     <table id="skdit2" cellspacing="7px">
     
-                        <tr>
+                        <tbody><tr>
                             <td>
                                 <p>
                                     Тип зарядки SP: <span style="color: rgb(78, 196, 255);"> Ежесекундно</span>
@@ -959,7 +959,7 @@
                             </td>
                         </tr>
     
-                    </table>
+                    </tbody></table>
     
                 </div>
 
@@ -971,10 +971,10 @@
     
         </div>
 
-        <h2>RIIC Скиллы:</h2>
+        <h2>RIIC Навыки:</h2>
         <div class="RIIC">
 
-            <h4> <img src="pic/RIIC1.png" alt="" style="vertical-align: middle;">  Hothead</h4>
+            <h4> <img src="pic/RIIC1.png" alt="" style="vertical-align: middle;">  Горячая голова</h4>
             <p style="padding: 0 15px 0 15px;">
                 При размещении на <span style="color: skyblue;">Фабрике</span> производство в первый час
                  <span style="color: skyblue;">+20%</span>. После этого постепенно увеличивается на <span style="color: skyblue;">+1%</span>
@@ -986,9 +986,9 @@
         <div class="RIIC">
 
             
-            <h4> <img src="pic/RIIC2.png" alt="" style="vertical-align: middle;">  Order Distribution β</h4>
+            <h4> <img src="pic/RIIC2.png" alt="" style="vertical-align: middle;">  Транспортировка заказа β</h4>
             <p style="padding: 0 15px 0 15px;">
-                При размещении в <span style="color: skyblue;">Торговом посту</span> скорость получения заказов
+                При размещении в <span style="color: skyblue;">Торговом посте</span> скорость получения заказов
                  <span style="color: skyblue;">+30%</span> в час
             </p>
 
@@ -998,10 +998,10 @@
 
         <div class="talent">
             <p>
-                Lightening Lv:1 <img src="../pic/elite1.png" height="17px">
+                Лёгкость Ур: 1 <img src="../pic/elite1.png" height="17px">
             </p>
             <p>
-                Стоимость призыва <span style="color: skyblue;">-1</span> DP.
+                Стоимость Развёртывания <span style="color: skyblue;">-1</span> DP.
             </p>
         </div>
 
@@ -1009,33 +1009,32 @@
 
     <div id="stick">
         
-        <button onclick="displayMain(0)"> <img src="../pic/bio.png" alt="" height="55px"><br> Биография  </button>
+        <button onclick="displayMain(0)" style="color: white; background-color: rgba(175, 175, 175, 0.3);"> <img src="../pic/bio.png" alt="" height="55px"><br> Биография  </button>
         <div id="br"></div>
-        <button onclick="displayMain(1)"> <img src="../pic/voice.png" alt="" height="55px"><br> Голос </button>
+        <button onclick="displayMain(1)" style=""> <img src="../pic/voice.png" alt="" height="55px"><br> Голос </button>
         
     </div>
 
-    <div class="main" id="main1">
+    <div class="main" id="main1" style="display: block;">
 
-        <div id="infoSpace" >
+        <div id="infoSpace">
 
             <div class="part3">
                 <h3>Рекрутинговый контракт</h3>
                 <p style="margin-left: 5px; margin-right: 5px;">
-                    Она бегает действительно быстро. <br>
+                    Она действительно быстро бегает. <br>
                     <br>
-                    Fang, оперативник авангарда Rhodes Island, будет сражаться на поле боя, чтобы дать отряду тактическое преимущество.</p>
+                    Фэнг (англ. "Fang" - клык), оперативник-вэнгард Родос Айлэнда (англ. Rhodes Island), будет сражаться на поле боя, чтобы дать отряду тактическое преимущество.</p>
             </div>
 
             <div class="part4">
                 <h3>Токен</h3>
-                <p style="margin-left: 5px; margin-right: 5px;">
-                    Пара кроссовок, которые идеально подходят вашим ногам. Человек, который дал вам это, должно быть, потратил много усилий, чтобы попросить вас присоединиться к ней в ее утренней зарядке. <br>
+                <p style="margin-left: 5px; margin-right: 5px;">Пара кроссовок, которые идеально подходят  Вам по размеру. Тот, кто сделал этот подарок, очень старался уговорить Вас присоединиться к утренним пробежкам.<br>
                     <br>
-                    Используется для улучшения потенциала Fang.</p>
+                    Используется для улучшения потенциала Фэнг.</p>
             </div>
 
-            <div class="part1" >
+            <div class="part1">
 
                 <table class="info-table">
                     <tbody>
@@ -1046,7 +1045,7 @@
                         </tr>
                         <tr>
                             <td>Позывной: </td>
-                            <td>Fang</td>
+                            <td>Фэнг</td>
                         </tr>
                         <tr>
                             <td>Пол: </td>
@@ -1054,15 +1053,15 @@
                         </tr>
                         <tr>
                             <td>Класс: </td>
-                            <td>Vanguard</td>
+                            <td>Вэнгард</td>
                         </tr>
                         <tr>
                             <td>Боевой опыт: </td>
                             <td>1 год</td>
                         </tr>
-                        <tr >
+                        <tr>
                             <td>Место рождения: </td>
-                            <td><a href="">Kazimierz</a></td>
+                            <td><a href="">Казимеж</a></td>
                         </tr>
                         <tr>
                             <td>Дата рождения: </td>
@@ -1070,7 +1069,7 @@
                         </tr>
                         <tr>
                             <td>Раса: </td>
-                            <td><a href="">Kuranta</a></td>
+                            <td><a href="">Куранта</a></td>
                         </tr>
                         <tr>
                             <td>Рост: </td>
@@ -1081,16 +1080,16 @@
                             <td style="border-bottom: none;">Заражена</td>
                         </tr>
                     </tbody>
-                    </tbody>
+                    
                 </table>
 
             </div>
 
-            <div class="part2" >
+            <div class="part2">
 
                 <table class="info-table">
 
-                    <tr>
+                    <tbody><tr>
                         <th colspan="2" style="text-align: center; border-bottom: 1.5px solid rgb(80, 80, 80); height: 30px;">
                             Физические показатели
                         </th>
@@ -1116,11 +1115,11 @@
                         <td>Стандартные</td>
                     </tr>
                     <tr>
-                        <td style="border-bottom: none;">Усвоение Ориджиниума: </td>
+                        <td style="border-bottom: none;">Ассимиляция Ориджиниума: </td>
                         <td style="border-bottom: none;">Стандартное</td>
                     </tr>
 
-                </table>
+                </tbody></table>
 
             </div>
 
@@ -1128,24 +1127,22 @@
 
         </div>
         
-        <h2>Краткая Биография</h2>
+        <h2>Краткая биография</h2>
 
         <p> 
-            Капитан команды Оперативного резервного отряда А1. У нее есть предварительный опыт работы в Колумбийском гарнизоне, и она зарекомендовала себя как выдающийся боец. 
-            Присоединившись к Rhodes Island, она без проблем приспособилась к своей текущей работе. Она присоединилась к Группе оперативного планирования с где уже состояли 
-             Beagle и Kroos, упорно трудясь над тем, чтобы стать ее лидирующим оперативником.
+            Капитан команды Оперативного Резервного Отряда А1. Раннее Фэнг служила в Колумбийском гарнизоне и зарекомендовала себя как выдающегося бойца. У нее не возникало проблем с привыканием к новому месту работы в Родос Айлэнд. Фэнг присоединилась к Группе Планирования Операций, где уже состояли Бигл и Крус. Она упорно трудилась, желая стать лидером этой группы.
         </p>
 
         <h2>Клинический анализ</h2>
         <p>Требуется <span class="sky">уровень доверия: 25%</span></p>
         <p>
-            Анализы показали, что очертания её внутренних органов нечеткие из-за аномальных теней. 
+            Обследование выявляет нечеткие очертания внутренних органов, скрытых аномальными тенями. 
             В её кровеносной системе были обнаружены частицы Ориджиниума, подтверждающие, что она заражена Орипатией.
         </p>   
             <p> 
                 [Поглощение клеток Ориджиниумом] 7.4%
                 <br>
-                У неё нет явных внешних симптомов Орипатии.
+                У неё нет явных внешних признаков Орипатии.
             </p>  
             <p> 
                 [Плотность кристаллов Ориджиниума в крови] 0.2u/L 
@@ -1158,237 +1155,228 @@
         <p>Требуемый <span class="sky">уровень доверия: 50%</span></p>
         <br>
         <p> 
-            Fang демонстрирует природное превосходство расы Kuranta в бою, всегда занимая наиболее выгодное положение в критический момент. 
-            Для достижения баланса между силой и контролем, Fang предпочитает использовать копье, которое она гибко применяет в любой ситуации. 
-            Fang ведёт себя импульсивно и бросается действовать еще до того, как другие успевают закончить говорить.
+            В бою Фэнг демонстрирует природное превосходство расы Куранта, всегда занимая наиболее выгодную позицию в критических ситуациях. Для того, чтобы достичь баланса между боевой мощью и контролем, Фэнг предпочитает использовать копье, которое отличается универсальностью в любой ситуации. Девушка импульсивна и готова действовать ещё до того, как другие закончат говорить.
         </p>
 
         <h3>Архивная запись 2 </h3>
         <p>Требуемый <span class="sky">уровень доверия: 100%</span></p>
         <br>
         <p>
-            Иммигранты из многих стран прибыли на окраины Колумбии. Fang, Kroos и Beagle встретились там после переезда со своих родных краев. 
-            Осознав свои общие цели, они присоединились к городской гвардии и вместе прошли базовую подготовку. Слишком серьёзная Fang, мягкая Beagle и 
-            безмятежная Kroos хоть и обладают совершенно разными личностями, но тем не менее поддерживают друг друга.
+            Иммигранты со многих стран приезжали на окраины Колумбии. Фэнг, Крус (англ. Kroos) и Бигл (англ. Beagle) встретились там после того, как переехали из разных мест. После того, как они реализовали свои общие цели, они вступили в городскую гвардию и вместе прошли базовую боевую подготовку. Лишенная чувства юмора Фэнг, скромная Бигл и беспечная Крус обладают очень разными характерами, но всё же всегда полагаются друг на друга.
         </p>
 
         <h3>Архивная запись 3 </h3>
         <p>Требуется <span class="sky">уровень доверия: 150%</span></p>
         <br>
         <p>
-            Перед днем выборов Катастрофа обрушилась на окраину Колумбии. В своих попытках помочь другим бежать, все три оперативника были заражены Орипатией. 
-            Fang страдала от дискриминации из-за своего состояния и впала в глубокое отчаяние. Kroos сплотила их троих и вместе они отправились на Rhodes Island.
+            Накануне выборов на окраине Колумбии случилась Катастрофа. Пока три оперативника пытались помочь другим спастись бегством, они все заразились Орипатией. Из-за своего состояния Фэнг подверглась травле и впала в глубокое отчаяние. Крус собрала своих подруг, после чего они вместе отправились на Родос Айлэнд.
         </p>
 
         <h3>Архивная запись 4 </h3>
         <p>Требуется <span class="sky">уровень доверия: 200%</span></p>
         <br>
         <p>
-            По прибытии на Rhodes Island Fang и две ее спутницы, а также Hibiscus и Lava были натренированы под руководством Dobermann. Подготовка была необычайно 
-            интенсивной, и Kroos с Hibiscus использовали все возможности, чтобы отлынивать. Даже Fang, как их капитан, не могла ничего сделать, чтобы контролировать их. 
-            В настоящее время Fang тренируется быть такой же жесткой и строгой, как и ее учитель Dobermann. Тем не менее, возбужденное выражение на ее лице, когда она ест 
-            фрукты, явный признак того, что ей предстоит ещё долгий путь.
-        </p>
+            После прибытия на Родос Айлэнд, Фэнг и две её спутницы проходили тренировки под руководством Доберман (англ. Dobermann) вместе с Хибискус (англ. Hibiscus) и Лавой (англ. Lava). Тренировки были невероятно сложными, из-за чего Крус и Хибискус использовали любой повод чтобы отлынивать от них. Даже будучи их капитаном, Фэнг не могла ничего поделать с поведением своих подруг. В настоящее время Фэнг приучает себя быть такой же строгой и суровой, как её наставник, Доберман, хотя счастливое выражение на её лице, когда девушка ест фрукты, намекает, что ей предстоит ещё долгий путь.       </p>
 
         
 
     </div>
 
-    <div class="main" id="main2">
+    <div class="main" id="main2" style="display: none;">
 
         <table class="quote">
             <tbody>
                 <tr>
-                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;" >Диалог</td>
+                    <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Диалог</td>
                     <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Аудио</td>
                     <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Английский</td>
                     <td style="background-color: rgba(22, 131, 185, 0.5); text-align: center;">Русский</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Назначение ассистентом</td>
+                    <td class="cent">Назначение ассистентом</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_001.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Doctor, is there anything I can help you with?</td>
-                    <td >Доктор, я могу вам чем-нибудь помочь?</td>
+                    <td>Doctor, is there anything I can help you with?</td>
+                    <td>Доктор, я могу Вам чем-нибудь помочь?</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Разговор 1</td>
+                    <td class="cent">Разговор 1</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_002.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Thank you for believing in me! I'll keep up my work!</td>
-                    <td >Спасибо за веру в меня! Я буду продолжать свою работу!</td>
+                    <td>Thank you for believing in me! I'll keep up my work!</td>
+                    <td>Спасибо за веру в меня! Я буду продолжать работать!</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Разговор 2</td>
+                    <td class="cent">Разговор 2</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_003.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                        <td >Hibiscus and Lava are fighting again... What a pain. Why are they like this when they're siblings?</td>
-                        <td >Гибискус и Лава снова ссорятся... Какая досада. Почему они так себя ведут, когда они сестры?</td>
+                        <td>Hibiscus and Lava are fighting again... What a pain. Why are they like this when they're siblings?</td>
+                        <td>Хибискус и Лава снова ссорятся... Какая досада. Почему они так себя ведут, хотя они сестры?</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Разговор 3</td>
+                    <td class="cent">Разговор 3</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_004.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >We often have mock battles with Instructor Dobermann, but I always fail to grasp her skill. Doctor, next time you and Amiya observe our training, would you please give us some guidance?</td>
-                    <td >Мы часто проводим тренировочные бои с инструктором Доберманн, но я всегда не могу понять в чём секрет ее мастерства. Доктор, в следующий раз, когда вы с Амией будете наблюдать за нашей тренировкой, не могли бы вы дать нам несколько указаний?</td>
+                    <td>We often have mock battles with Instructor Dobermann, but I always fail to grasp her skill. Doctor, next time you and Amiya observe our training, would you please give us some guidance?</td>
+                    <td>Мы часто проводим тренировочные бои с инструктором Доберман, но я всегда не могу понять в чём секрет ее мастерства. Доктор, в следующий раз, когда вы с Амией будете наблюдать за нашей тренировкой, не могли бы вы дать нам несколько указаний?</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Разговор после Повышения 1</td>
+                    <td class="cent">Разговор после Повышения 1</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_005.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Is there something you want to tell me? Ah, I understand now. Someone on my team is late again, aren't they? I'll see to it that gets fixed.</td>
-                    <td >Вы что-то хотите мне сказать? А, я поняла. Кто-то из моей команды опять опаздывает, не так ли? Я прослежу, чтобы это не повторилось.</td>
+                    <td>Is there something you want to tell me? Ah, I understand now. Someone on my team is late again, aren't they? I'll see to it that gets fixed.</td>
+                    <td>Вы что-то хотите мне сказать? А, я поняла. Кто-то из моей команды опять опаздывает, не так ли? Я прослежу, чтобы это не повторилось.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Разговор после увеличения Доверия 1</td>
+                    <td class="cent">Разговор после увеличения Доверия 1</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_007.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Lava and I are both Infected, but I didn't receive powerful Arts from it like she did...</td>
-                    <td >Мы с Лавой обе зараженные, но я, в отличии от неё, не получила сильную совместимость с магией...</td>
+                    <td>Lava and I are both Infected, but I didn't receive powerful Arts from it like she did...</td>
+                    <td>Мы с Лавой обе зараженные, но я, в отличии от неё, не получила сильную совместимость с магией...</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Разговор после увеличения Доверия 2</td>
+                    <td class="cent">Разговор после увеличения Доверия 2</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_008.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Rhodes Island is our home and shelter, Doctor. I will protect everyone here with my life.</td>
-                    <td >Родос Айленд - наш дом и убежище, Доктор. Я защищу здесь всех даже ценой своей жизни.</td>
+                    <td>Rhodes Island is our home and shelter, Doctor. I will protect everyone here with my life.</td>
+                    <td>Родос Айлэнд - наш дом и убежище, Доктор. Я защищу всех в этом месте даже ценой своей жизни.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Разговор после увеличения Доверия 3</td>
+                    <td class="cent">Разговор после увеличения Доверия 3</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_009.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >The ever-honest and reliable Beagle, the perceptive Kroos, the resourceful Lava and the energetic Hibiscus. I like everyone in this team... as long as Hibiscus doesn't force her newly invented dishes on me.</td>
-                    <td >Всегда честная и надежная Бигл, проницательная Крус, изобретательная Лава и энергичная Гибискус. Я люблю всех в этой команде... до тех пор, пока Гибискус не навязывает мне свои новоизобретённые блюда.</td>
+                    <td>The ever-honest and reliable Beagle, the perceptive Kroos, the resourceful Lava and the energetic Hibiscus. I like everyone in this team... as long as Hibiscus doesn't force her newly invented dishes on me.</td>
+                    <td>Всегда честная и надежная Бигл, проницательная Крус, изобретательная Лава и энергичная Хибискус. Я люблю всех в этой команде... до тех пор, пока Хибискус не навязывает мне свои новые блюда.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Бездействие</td>
+                    <td class="cent">Бездействие</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_010.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Shhh! The Doctor's resting. We can talk outside.</td>
-                    <td >Тссс! Доктор отдыхает. Мы можем поговорить снаружи.</td>
+                    <td>Shhh! The Doctor's resting. We can talk outside.</td>
+                    <td>Тссс! Доктор отдыхает. Мы можем поговорить снаружи.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Вербовка</td>
+                    <td class="cent">Вербовка</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_011.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >This is lancer Fang, the captain of Reserve Op Team A1. My team and I will do our best to serve Rhodes Island.</td>
-                    <td >Копейщица Фэнг, капитан Оперативного резервного отряда А1, здесь. Моя команда и я приложим все усилия для работы на Родос Айленд.</td>
+                    <td>This is lancer Fang, the captain of Reserve Op Team A1. My team and I will do our best to serve Rhodes Island.</td>
+                    <td>Копейщица Фэнг, капитан Оперативного Резервного Отряда А1, здесь. Я и моя команда приложим все усилия для работы на Родос Айлэнд.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Просмотр Боевых записей</td>
+                    <td class="cent">Просмотр Боевых записей</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_012.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Thank you for your guidance.</td>
-                    <td >Спасибо за Ваше руководство.</td>
+                    <td>Thank you for your guidance.</td>
+                    <td>Спасибо за Ваше руководство.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Повышение 1</td>
+                    <td class="cent">Повышение 1</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_013.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >I'm greatly honored by the promotion!</td>
-                    <td >Для меня большая честь получить повышение!</td>
+                    <td>I'm greatly honored by the promotion!</td>
+                    <td>Для меня большая честь получить повышение!</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Добавление в отряд</td>
+                    <td class="cent">Добавление в отряд</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_017.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Leave it to me.</td>
-                    <td >Оставьте это на меня.</td>
+                    <td>Leave it to me.</td>
+                    <td>Оставьте это мне.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Назначение командиром отряда</td>
+                    <td class="cent">Назначение командиром отряда</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_018.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >I know well what a captain's duty is. Rest easy.</td>
-                    <td >Я прекрасно осознаю каковы обязанности капитана. Будьте спокойны.</td>
+                    <td>I know well what a captain's duty is. Rest easy.</td>
+                    <td>Я прекрасно осознаю что должен делать капитан. Будьте спокойны.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Отбытие</td>
+                    <td class="cent">Отбытие</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_019.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Team, check your gear before departing.</td>
-                    <td >Команда, проверьте ваше снаряжение перед отбытием.</td>
+                    <td>Team, check your gear before departing.</td>
+                    <td>Команда, проверьте ваше снаряжение перед отправлением.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Начало операции</td>
+                    <td class="cent">Начало операции</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_020.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Enemy spotted. Prepare to fight!</td>
-                    <td >Враг замечен. Приготовьтесь к бою!</td>
+                    <td>Enemy spotted. Prepare to fight!</td>
+                    <td>Враг замечен. Приготовьтесь к бою!</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Выбор оператора 1</td>
+                    <td class="cent">Выбор оперативника 1</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_021.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Ready for action.</td>
-                    <td >Готова к действию.</td>
+                    <td>Ready for action.</td>
+                    <td>Готова к действию.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Выбор оператора 2</td>
+                    <td class="cent">Выбор оперативника 2</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_022.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >On standby.</td>
-                    <td >В состоянии готовности.</td>
+                    <td>On standby.</td>
+                    <td>В состоянии готовности.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Размещение на поле 1</td>
+                    <td class="cent">Размещение на поле 1</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_023.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >In position.</td>
-                    <td >На позиции.</td>
+                    <td>In position.</td>
+                    <td>На позиции.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Размещение на поле 2</td>
+                    <td class="cent">Размещение на поле 2</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_024.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Leave it to us.</td>
-                    <td >Оставьте это нам.</td>
+                    <td>Leave it to us.</td>
+                    <td>Оставьте это нам.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Во время боя 1</td>
+                    <td class="cent">Во время боя 1</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_025.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Thrust!</td>
-                    <td >Удар!</td>
+                    <td>Thrust!</td>
+                    <td>Укол!</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Во время боя 2</td>
+                    <td class="cent">Во время боя 2</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_026.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Everyone, follow me!</td>
-                    <td >Всем следовать за мной!</td>
+                    <td>Everyone, follow me!</td>
+                    <td>Всем следовать за мной!</td>
                 </tr>
                 <tr>
-                    <td class="cent" >4★ результат</td>
+                    <td class="cent">4★ результат</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_029.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >With the right plan, even Starters like us can win a tough fight!</td>
-                    <td >С правильным планом, даже такие новички, как мы, могут выиграть тяжелую битву!</td>
+                    <td>With the right plan, even Starters like us can win a tough fight!</td>
+                    <td>С правильным планом, даже такие новички, как мы, могут выиграть тяжелую битву!</td>
                 </tr>
                 <tr>
-                    <td class="cent" >3★ результат</td>
+                    <td class="cent">3★ результат</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_030.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >We have accomplished our objective as planned.</td>
-                    <td >Мы выполнили свою задачу, как и планировалось.</td>
+                    <td>We have accomplished our objective as planned.</td>
+                    <td>Мы выполнили свою задачу, как и планировалось.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >2★ результат</td>
+                    <td class="cent">2★ результат</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_031.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td > We can't call a mission complete if we let even one enemy get away. Beagle, let's do better on the next one.</td>
-                    <td >Мы не можем назвать миссию законченной, если позволим хоть одному врагу уйти. Бигл, давай постараемся лучше в следующий раз.</td>
+                    <td> We can't call a mission complete if we let even one enemy get away. Beagle, let's do better on the next one.</td>
+                    <td>Мы не можем назвать миссию завершённой, если позволим хоть одному врагу уйти. Бигл, давай постараемся лучше в следующий раз.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Провал Операции</td>
+                    <td class="cent">Провал Операции</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_032.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >I'm sorry for having failed you, Instructor Dobermann...</td>
-                    <td >Простите, что подвела Вас, инструктор Доберманн...</td>
+                    <td>I'm sorry for having failed you, Instructor Dobermann...</td>
+                    <td>Простите, что подвела Вас, инструктор Доберман...</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Назначение на Объект</td>
+                    <td class="cent">Назначение на Объект</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_033.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Yes. I'm back. Is Kroos here too?</td>
-                    <td >Да. Я вернулась. Крус тоже здесь?</td>
+                    <td>Yes. I'm back. Is Kroos here too?</td>
+                    <td>Да. Я вернулась. Крус тоже здесь?</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Взаимодействие</td>
+                    <td class="cent">Взаимодействие</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_034.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Ahh...!</td>
-                    <td >Ахх..!</td>
+                    <td>Ahh...!</td>
+                    <td>Ахх..!</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Сбор Доверия</td>
+                    <td class="cent">Сбор Доверия</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_036.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Do you find me helpful?</td>
-                    <td >Вы находите меня полезной?</td>
+                    <td>Do you find me helpful?</td>
+                    <td>Вы считаете меня полезной?</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Титульный экран</td>
+                    <td class="cent">Титульный экран</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_037.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >Arknights.</td>
-                    <td >Аркнайтс.</td>
+                    <td>Arknights.</td>
+                    <td>Аркнайтс.</td>
                 </tr>
                 <tr>
-                    <td class="cent" >Приветствие</td>
+                    <td class="cent">Приветствие</td>
                     <td class="cent"><audio preload="metadata" controls="" style="margin-top:5px"> <source src="Audio/CN_042.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio></td>
-                    <td >I'm ready whenever you need me, Doctor.</td>
-                    <td >Я готова, когда бы Вы не нуждались во мне, Доктор.</td>
+                    <td>I'm ready whenever you need me, Doctor.</td>
+                    <td>Я готова, когда бы Вы не нуждались во мне, Доктор.</td>
                 </tr>              
             </tbody>
         </table>
@@ -1399,5 +1387,6 @@
 
     <script src="../../../jquery.min.js"></script>
     <script src="../java.js"></script>
- </body>
+ 
+</body>
 </html>
