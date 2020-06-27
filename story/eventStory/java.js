@@ -153,3 +153,23 @@ document.addEventListener("keyup",function(e){
  
     }
 });
+
+function clickL() {
+    var isFirstElementSelected = $('#pageSelect > option:selected').index() == 0;
+
+        if (!isFirstElementSelected) 
+        {
+          var x = document.getElementById("prev");
+          x.click();
+        }
+  }
+
+  function clickR() {
+    var isLastElementSelected = $('#pageSelect > option:selected').index() == ($('#pageSelect > option').length - 1);
+
+       if (!isLastElementSelected) 
+       {     
+         var x = document.getElementById("next");
+         x.click();
+  }
+}

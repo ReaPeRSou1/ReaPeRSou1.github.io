@@ -7,6 +7,25 @@
     background-color: rgba(31, 30, 30,0.7);
 }
 
+#left
+{
+    position: absolute;
+    z-index: 1;
+    background-color: red;
+    height: 115.5%;
+    width: 25%;
+}
+
+#right
+{
+    position: absolute;
+    left: 54.5%;
+    z-index: 1;
+    background-color: blue;
+    height: 115.5%;
+    width: 25%;
+}
+
 #main .selector
 {
     display: block;
