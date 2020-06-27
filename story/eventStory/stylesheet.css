@@ -12,17 +12,17 @@
     position: absolute;
     z-index: 1;
     background-color: red;
-    height: 115.5%;
+    height: 177.5%;
     width: 25%;
 }
 
 #right
 {
     position: absolute;
-    left: 54.5%;
+    left: 54.6%;
     z-index: 1;
     background-color: blue;
-    height: 115.5%;
+    height: 177.5%;
     width: 25%;
 }
 
