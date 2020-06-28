@@ -10,6 +10,7 @@
 #left
 {
     position: absolute;
+    display: inline-block;
     z-index: 1;
     background-color: red;
     height: 177.5%;
@@ -19,7 +20,8 @@
 #right
 {
     position: absolute;
-    left: 54.6%;
+    display: inline-block;
+    margin-left: 34.3%;
     z-index: 1;
     background-color: blue;
     height: 177.5%;
@@ -141,6 +143,19 @@ h3
     h3
     {
         margin-top: 0;
+    }
+
+    #left
+    {
+        height: 290.5%;
+        width: 45%;
+    }
+
+    #right
+    {
+        height: 290.5%;
+        width: 45%;
+        margin-left: 52.9%;
     }
 
 }
