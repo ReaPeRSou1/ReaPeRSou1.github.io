@@ -123,198 +123,28 @@
         <div class="elite">
 
             <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
-            <input type="range" value="1" min="1" max="6" oninput="changeLevel(this,0)" style="margin-top:20px;width:60%; margin-left: 20px;">
-            <h3 id="lvl1num0" class="lev0 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
-            <h3 id="lvl2num0" class="lev0">10</h3>
-            <h3 id="lvl3num0" class="lev0">20</h3>
-            <h3 id="lvl4num0" class="lev0">30</h3>
-            <h3 id="lvl5num0" class="lev0">40</h3>
-            <h3 id="lvl6num0" class="lev0">50</h3>
+            <input type="range" value="1" min="1" max="50" oninput="changeLevel(this.value,0, 50, 1086, 490, 123)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <h3 id="num0" class="lev0 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
 
-            <div id="elite0lev1" class="lvl0 active">
+            <div>
 
                 <table class="skilltab">
                     <tbody>
                         <tr>
                             <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">781</td>
+                            <td id="HPstats0" class="skillnum">781</td>
                             <td class="skillname">Повторное <br> Размещение</td>
                             <td class="skillnum">70с</td>
                         </tr>
                         <tr>
                             <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">357</td>
+                            <td id="ATKstats0" class="skillnum">357</td>
                             <td class="skillname">Стоимость</td>
                             <td class="skillnum">16</td>
                         </tr>
                         <tr>
                             <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">86</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite0lev2" class="lvl0">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">837</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">381</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">16</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">93</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">2</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite0lev3" class="lvl0">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">899</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">409</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">16</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">100</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite0lev4" class="lvl0">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">962</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">436</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">16</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">108</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite0lev5" class="lvl0">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1024</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">463</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">16</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">115</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite0lev6" class="lvl0">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1086</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">490</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">16</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">123</td>
+                            <td id="DEFstats0" class="skillnum">86</td>
                             <td class="skillname">Блокирует</td>
                             <td class="skillnum">1</td>
                         </tr>
@@ -337,300 +167,28 @@
         <div class="elite">
 
             <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
-            <input type="range" value="1" min="1" max="9" oninput="changeLevel(this,1)" style="margin-top:20px;width:60%; margin-left: 20px;">
-            <h3 id="lvl1num1" class="lev1 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
-            <h3 id="lvl2num1" class="lev1">10</h3>
-            <h3 id="lvl3num1" class="lev1">20</h3>
-            <h3 id="lvl4num1" class="lev1">30</h3>
-            <h3 id="lvl5num1" class="lev1">40</h3>
-            <h3 id="lvl6num1" class="lev1">50</h3>
-            <h3 id="lvl7num1" class="lev1">60</h3>
-            <h3 id="lvl8num1" class="lev1">70</h3>
-            <h3 id="lvl9num1" class="lev1">80</h3>
+            <input type="range" value="1" min="1" max="80" oninput="changeLevel(this.value, 1, 80, 1393, 646, 164)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <h3 id="num1" class="lev1 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
 
-            <div id="elite1lev1" class="lvl1 active">
+            <div>
 
                 <table class="skilltab">
                     <tbody>
                         <tr>
                             <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1086</td>
+                            <td id="HPstats1" class="skillnum">1086</td>
                             <td class="skillname">Повторное <br> Размещение</td>
                             <td class="skillnum">70с</td>
                         </tr>
                         <tr>
                             <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">490</td>
+                            <td id="ATKstats1" class="skillnum">490</td>
                             <td class="skillname">Стоимость</td>
                             <td class="skillnum">18</td>
                         </tr>
                         <tr>
                             <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">123</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite1lev2" class="lvl1">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1121</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">508</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">18</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">128</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite1lev3" class="lvl1">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1160</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">528</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">18</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">133</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite1lev4" class="lvl1">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1199</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">547</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">18</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">547</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite1lev5" class="lvl1">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1238</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">567</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">18</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">567</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite1lev6" class="lvl1">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1276</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">587</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">18</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">148</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite1lev7" class="lvl1">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1315</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">607</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">18</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">154</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite1lev8" class="lvl1">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1354</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">626</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">18</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">159</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite1lev9" class="lvl1">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1393</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">646</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">18</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">164</td>
+                            <td id="DEFstats1" class="skillnum">123</td>
                             <td class="skillname">Блокирует</td>
                             <td class="skillnum">1</td>
                         </tr>
@@ -653,334 +211,28 @@
         <div class="elite">
 
             <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
-            <input type="range" value="1" min="1" max="10" oninput="changeLevel(this,2)" style="margin-top:20px;width:60%; margin-left: 20px;">
-            <h3 id="lvl1num2" class="lev2 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
-            <h3 id="lvl2num2" class="lev2">10</h3>
-            <h3 id="lvl3num2" class="lev2">20</h3>
-            <h3 id="lvl4num2" class="lev2">30</h3>
-            <h3 id="lvl5num2" class="lev2">40</h3>
-            <h3 id="lvl6num2" class="lev2">50</h3>
-            <h3 id="lvl7num2" class="lev2">60</h3>
-            <h3 id="lvl8num2" class="lev2">70</h3>
-            <h3 id="lvl9num2" class="lev2">80</h3>
-            <h3 id="lvl10num2" class="lev2">90</h3>
-
-            <div id="elite2lev1" class="lvl2 active">
+            <input type="range" value="1" min="1" max="90" oninput="changeLevel(this.value, 2, 90, 1833, 840, 225)" style="margin-top:20px;width:60%; margin-left: 20px;">
+            <h3 id="num2" class="lev2 display1" style="padding: 5px 9.6px 5px 9.6px;">1</h3>
+            
+            <div>
 
                 <table class="skilltab">
                     <tbody>
                         <tr>
                             <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1393</td>
+                            <td id="HPstats2" class="skillnum">1393</td>
                             <td class="skillname">Повторное <br> Размещение</td>
                             <td class="skillnum">70с</td>
                         </tr>
                         <tr>
                             <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">646</td>
+                            <td id="ATKstats2" class="skillnum">646</td>
                             <td class="skillname">Стоимость</td>
                             <td class="skillnum">20</td>
                         </tr>
                         <tr>
                             <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">164</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite2lev2" class="lvl2">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1437</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">666</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">20</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">170</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite2lev3" class="lvl2">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1487</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">687</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">20</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">177</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite2lev4" class="lvl2">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1536</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">709</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">20</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">184</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite2lev5" class="lvl2">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1586</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">731</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">20</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">191</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite2lev6" class="lvl2">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1635</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">753</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">20</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">198</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite2lev7" class="lvl2">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1685</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">775</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">20</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">204</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite2lev8" class="lvl2">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1734</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">796</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">20</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">211</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite2lev9" class="lvl2">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1784</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">818</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">20</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">218</td>
-                            <td class="skillname">Блокирует</td>
-                            <td class="skillnum">1</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Маг. защита</td>
-                            <td class="skillnum">0</td>
-                            <td class="skillname">Время атаки</td>
-                            <td class="skillnum">1.6с</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div id="elite2lev10" class="lvl2">
-
-                <table class="skilltab">
-                    <tbody>
-                        <tr>
-                            <td class="skillname">Максимум HP</td>
-                            <td class="skillnum">1833</td>
-                            <td class="skillname">Повторное <br> Размещение</td>
-                            <td class="skillnum">70с</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Сила Атаки</td>
-                            <td class="skillnum">840</td>
-                            <td class="skillname">Стоимость</td>
-                            <td class="skillnum">20</td>
-                        </tr>
-                        <tr>
-                            <td class="skillname">Физ. защита</td>
-                            <td class="skillnum">225</td>
+                            <td id="DEFstats2" class="skillnum">164</td>
                             <td class="skillname">Блокирует</td>
                             <td class="skillnum">1</td>
                         </tr>
