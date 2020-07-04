@@ -1,37 +1,9 @@
-#main
-{
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-    background-color: rgba(31, 30, 30,0.7);
-}
-
-#left
-{
-    position: absolute;
-    z-index: 1;
-    background-color: red;
-    height: 177.5%;
-    width: 25%;
-}
-
-#right
-{
-    position: absolute;
-    left: 54.6%;
-    z-index: 1;
-    background-color: blue;
-    height: 177.5%;
-    width: 25%;
-}
-
-#main .selector
+.selector
 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:100%;
+    width: 60%;
 }
 
 #prev, #next
@@ -54,11 +26,11 @@
 }
 
 
-#dynamic_select, #pageSelect, #part
+#dynamic_select, #part, #dynamic_select1, #part1
 {
     display: block; 
     margin: 10px auto 10px auto;
-    width: 40%;
+    width: 20%;
     font-weight: bold;
     cursor: pointer;
     border-radius: 0;
@@ -74,23 +46,13 @@
     text-align: center;
 }
 
-#next:hover, #prev:hover
-{
-    background-color: rgba(255, 255, 255, 0.3);
-}
 
-#pageSelect
-{
-    display: inline-block; 
-    width: 20%;
-}
-
-#dynamic_select::-ms-expand, #pageSelect::-ms-expand  
+#dynamic_select::-ms-expand,  ::-ms-expand  
 {
     display: none; 
 }
 
-#dynamic_select:hover, #dynamic_select:focus, #pageSelectt:hover, #pageSelect:focus
+#dynamic_select:hover, #dynamic_select:focus, #part:hover, #part:focus #dynamic_select1:hover, #part1:hover, #dynamic_select1:focus, #part1:focus
 {
     color: black;
     background-color: rgba(255, 255, 255, 0.3);
@@ -116,26 +78,16 @@ h3
 
 @media(max-width: 900px)
 {
-    #main
-    {
-        margin-top: 10px;
-        width: 100%;
-    }
 
-    #main .selector
+      .selector
     {
         height: auto;
         width: 100%;
     }
 
-    #dynamic_select #part
+    #dynamic_select, #part, #dynamic_select1, #part1
     {
         width: 60%;
-    }
-
-    #pageSelect
-    {
-        width: 30%;
     }
 
     h3
@@ -148,12 +100,12 @@ h3
 @media (min-width: 1899px)
 {
 
-    #main h3
+      h3
     {
         font-size: 22px;
     }
 
-    #dynamic_select, #pageSelect, #part
+    #dynamic_select, #part,#dynamic_select1, #part1
     {
         font-size: 18px;
     }
@@ -162,12 +114,11 @@ h3
 @media (min-width: 2200px)
 {
 
-    #main h3
+      h3
     {
         font-size: 24px;
     }
-  
-    #dynamic_select, #pageSelect, #part
+    #dynamic_select, #part, #dynamic_select1, #part1
     {
         font-size: 20px;
     }
@@ -175,12 +126,12 @@ h3
 
 @media (min-width: 3000px)
 {
-    #main h3
+      h3
     {
         font-size: 26px;
     }
 
-    #dynamic_select, #pageSelect, #part
+    #dynamic_select, #part
     {
         font-size: 22px;
     }
