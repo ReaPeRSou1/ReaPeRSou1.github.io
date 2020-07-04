@@ -10,7 +10,7 @@
   </head>
  </head>
 
- <body>
+<body>
 
     <div id="header">
 
@@ -71,26 +71,25 @@
 
     <div id="main">
 
-        <h3>Event select</h3>
+        <h3>Выбор Ивента</h3>
 
         <select id="dynamic_select">
-            <option value="../GT1/EventGrani.html">Грани и рыцарское окровище</option>
+            <option value="" selected>Грани и рыцарское окровище</option>
             <option value="../GT2/EventGrani.html">GT2</option>
-            <option value=""selected>GT3</option>
+            <option value="../GT3/EventGrani.html">GT3</option>
             <option value="../GT4/EventGrani.html">GT4</option>
         </select>
 
         <h3>Выбор главы</h3>
 
-        <select id="dynamic_select">
-            <option value="../GT1/EventGrani.html">Грани и рыцарское окровище</option>
+        <select id="part">
+            <option value="" selected>GT1</option>
             <option value="../GT2/EventGrani.html">GT2</option>
-            <option value=""selected>GT3</option>
+            <option value="../GT3/EventGrani.html">GT3</option>
             <option value="../GT4/EventGrani.html">GT4</option>
         </select>
 
-    <div id="read">     
-
+    
         <img id="img1" class="selector" src="1.jpg" alt="">
         <img id="img2" class="selector" src="2.jpg" alt="">
         <img id="img3" class="selector" src="3.jpg" alt="">
@@ -113,50 +112,28 @@
         <img id="img20" class="selector" src="20.jpg" alt="">
         <img id="img21" class="selector" src="21.jpg" alt="">
 
-    </div>
+        <h3>Выбор Ивента</h3>
 
-        <div style="text-align: center;">
-            
-            <button type="button" id="prev" style="visibility: hidden;" onclick="plusSlides(-1); location.href='#read';">&#10094;</button>
-            
-            <select id="pageSelect" onchange="currentImg(this.value); location.href='#read';">
-                <option value="1" selected="selected">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-            </select>
-            
-            <button type="button" id="next" onclick="plusSlides(1); location.href='#read';">&#10095;</button>
+        <select id="dynamic_select1">
+            <option value="" selected>Грани и рыцарское окровище</option>
+            <option value="../GT2/EventGrani.html">GT2</option>
+            <option value="../GT3/EventGrani.html">GT3</option>
+            <option value="../GT4/EventGrani.html">GT4</option>
+        </select>
 
+        <h3>Выбор главы</h3>
 
-            
-
-        </div>
+        <select id="part1">
+            <option value="" selected>GT1</option>
+            <option value="../GT2/EventGrani.html">GT2</option>
+            <option value="../GT3/EventGrani.html">GT3</option>
+            <option value="../GT4/EventGrani.html">GT4</option>
+        </select>
 
     </div>
 
     <script src="../../../jquery.min.js"></script>
     <script src="../java.js"></script>
-    <script>
-        
-    </script>
+</body>
 
- </body>
 </html>
