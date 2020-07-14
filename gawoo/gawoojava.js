@@ -10,5 +10,5 @@ function spat()
 
 function gawoono()
 {
-    new Audio("gawoono1.mp3").play();
+    new Audio("tymenyadostal.mp3").play();
 }
