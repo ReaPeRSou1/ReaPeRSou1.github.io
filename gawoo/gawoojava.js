@@ -5,5 +5,5 @@ function gawoo()
 
 function spat()
 {
-    new Audio("spat.mp3").play();
+    new Audio("spipadla.mp3").play();
 }
