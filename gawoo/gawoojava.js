@@ -8,7 +8,7 @@ function spat()
     new Audio("spipadla.mp3").play();
 }
 
-function gawoono()
+function gawoonooo()
 {
     new Audio("tymenyadostal.mp3").play();
 }
