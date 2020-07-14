@@ -7,3 +7,8 @@ function spat()
 {
     new Audio("spipadla.mp3").play();
 }
+
+function gawoono()
+{
+    new Audio("gawoono.mp3").play();
+}
