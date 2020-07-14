@@ -44,7 +44,7 @@
     opacity: 0.3;
 }
 
-#gawoono
+#suka
 {
     width: 500px;
     background-color: rgba(0, 0, 0, 0);
@@ -55,14 +55,14 @@
     border-radius: 50% ;
 }
 
-#gawoono:hover
+#suka:hover
 {
     opacity: 0.9;
     background-color: rgba(0, 110, 255, 0.5);
     border-radius: 50% ;
 }
 
-#gawoono:active:after
+#suka:active:after
 {
     opacity: 0.3;
 }
@@ -82,7 +82,7 @@
         width: 90%;
     }
 
-    #gawoono
+    #suka
     {
         transform: translate(0, 40%);
         width: 90%;
