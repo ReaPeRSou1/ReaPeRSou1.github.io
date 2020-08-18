@@ -147,5 +147,11 @@
     bottom: 0;
     left: 0;
     top: initial;
+    background-color: rgba(128, 128, 128, 0.3);
   }
+
+  #backBut:hover
+{
+  background-color: rgba(128, 128, 128, 0.4);
+}
 }
