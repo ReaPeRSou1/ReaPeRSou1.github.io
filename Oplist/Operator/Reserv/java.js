@@ -1,6 +1,6 @@
 showPanel(0);
 changeElite(0);
-displayMain(0);
+
 var check = $('#info .skillDis').length
 if (check > 0) {
     changeSkill(0);
@@ -14,6 +14,7 @@ const ATKstats2 = parseInt($("#ATKstats2").html());
 const DEFstats0 = parseInt($("#DEFstats0").html());
 const DEFstats1 = parseInt($("#DEFstats1").html());
 const DEFstats2 = parseInt($("#DEFstats2").html());
+
 
 function showPanel(index)
 {
@@ -36,7 +37,7 @@ function showPanel(index)
 
 function changeElite(index)
 {
-    var buttons=document.querySelectorAll("#info .lvlButton button");
+    var buttons=document.querySelectorAll("#content button");
     var content=document.querySelectorAll("#info .elite");
 
     buttons.forEach(function(node){
@@ -131,22 +132,3 @@ function changeSkillLevel(el, n)
 }
 
 
-function displayMain(index)
-{
-    var buttons=document.querySelectorAll("#stick button");
-    var content=document.querySelectorAll(".main");
-
-    buttons.forEach(function(node){
-        node.style.backgroundColor="";
-        node.style.color="";
-    });
-    
-    buttons[index].style.color="white";
-    buttons[index].style.backgroundColor="rgba(175, 175, 175, 0.3)";
-
-    content.forEach(function(node){
-        node.style.display="none";
-    });
-
-    content[index].style.display="block";
-}
