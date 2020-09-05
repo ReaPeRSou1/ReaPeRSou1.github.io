@@ -2,7 +2,7 @@
 <html>
  <head>
    <title>Arknights Вики </title>
-   <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+   <link rel="stylesheet" type="text/css" href="../style.css"/>
    <link rel="stylesheet" type="text/css" href="../../header.css"/>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
  </head>
@@ -66,5 +66,96 @@
 
     </div>
 
+    <table id="list">
+        <tr>
+            <td class="listItem active">
+                <a onclick="classSelect(0)">Авангард</a> 
+            </td>
+
+            <td class="listItem">
+                <a onclick="classSelect(1)">Гвард</a>
+            </td>
+
+            <td class="listItem" onclick="classSelect(2)">
+                Защитник
+            </td>
+
+            <td class="listItem" onclick="classSelect(3)">
+                Маг
+            </td>
+
+            <td class="listItem" onclick="classSelect(4)">
+                Стрелок
+            </td>
+
+            <td class="listItem" onclick="classSelect(5)">
+                Специалист
+            </td>
+
+            <td class="listItem" onclick="classSelect(6)">
+                Медик
+            </td>
+
+            <td class="listItem" onclick="classSelect(7)">
+                Саппорт
+            </td>
+        </tr>
+    </table>
+
+    <div id="content">
+
+        <div class="inactive visible">
+
+            <img src="pic/vanguard.png" alt="">
+
+        </div>
+
+        <div class="inactive">
+
+            <img src="pic/Class_Guard.png" alt="">
+
+        </div>
+
+        <div class="inactive">
+
+            <img src="pic/class_defender.png" alt="">
+
+        </div>
+
+        <div class="inactive">
+
+            <img src="pic/class_caster.png" alt="">
+
+        </div>
+
+        <div class="inactive">
+
+            <img src="pic/class_sniper.png" alt="">
+
+        </div>
+
+        <div class="inactive">
+
+            <img src="pic/spec.png" alt="">
+
+        </div>
+
+        <div class="inactive">
+
+            <img src="pic/medic.png" alt="">
+
+        </div>
+        
+        <div class="inactive">
+
+            <img src="pic/class_supporter.png" alt="">
+
+        </div>
+
+
+    </div>
+
+    <script src="../../jquery.min.js"></script>
+    <script src="../java.js"></script>
  </body>
 </html>
