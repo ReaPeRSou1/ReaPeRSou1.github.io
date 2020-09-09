@@ -1,0 +1,53 @@
+#list
+{
+    width: 80%;
+    font-size: 18px;
+    margin: 50px auto 0 auto;
+}
+
+#list td
+{
+    text-align: center;
+    width: 25%;
+}
+
+#list .listItem
+{
+    background-color: rgb(30, 30, 30);
+}
+
+
+#content
+{
+    width: 79.83%;
+    margin: 0 auto 0 auto;
+    background-color: rgb(50, 50, 50);
+}
+
+#content .inactive
+{
+    display: none;
+}
+
+#content .inactive img
+{
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 150px;
+    height: 150px;
+}
+
+@media(max-width: 900px)
+{
+
+    #list
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content
+    {
+        width: 100%;
+    }
+}
