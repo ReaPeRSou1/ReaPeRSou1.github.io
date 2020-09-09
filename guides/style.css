@@ -8,20 +8,12 @@
 #list td
 {
     text-align: center;
-    width: 12.5%;
+    width: 25%;
 }
 
-.listItem
+#list .listItem
 {
-    background-color: rgb(60, 60, 60);
-}
-
-.active
-{
-    border-top: 1px solid gray;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(30, 30, 30);
 }
 
 
@@ -45,7 +37,17 @@
     height: 150px;
 }
 
-#content .visible
+@media(max-width: 900px)
 {
-    display: block;
+
+    #list
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content
+    {
+        width: 100%;
+    }
 }
