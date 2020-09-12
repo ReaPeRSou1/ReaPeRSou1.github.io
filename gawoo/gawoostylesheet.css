@@ -1,90 +1,24 @@
-#gawooo
+.window
 {
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    border-radius: 50% ;
+    display: inline-block;
+    width: 32%;
+    height: 300px;
+    margin: 30px 0.5% 0 0.5%;
+    background-color: black;
 }
 
-#gawooo:hover
+.window h1
 {
-    opacity: 0.9;
-    background-color: rgba(255, 153, 0, 0.5);
-    border-radius: 50% ;
-}
-
-#gawooo:active:after
-{
-    opacity: 0.3;
-}
-
-#spat
-{
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    border-radius: 50% ;
-}
-
-#spat:hover
-{
-    opacity: 0.9;
-    background-color: rgba(0, 110, 255, 0.5);
-    border-radius: 50% ;
-}
-
-#spat:active:after
-{
-    opacity: 0.3;
-}
-
-#suka
-{
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    border-radius: 50% ;
-}
-
-#suka:hover
-{
-    opacity: 0.9;
-    background-color: rgba(0, 110, 255, 0.5);
-    border-radius: 50% ;
-}
-
-#suka:active:after
-{
-    opacity: 0.3;
+    text-align: center;
+    margin: 10px auto auto 10px;
 }
 
 @media (max-width: 900px)
 {
-
-    #gawooo
+    .window
     {
-        transform: translate(0, 20%);
-        width: 90%;
-    }
-
-    #spat
-    {
-        transform: translate(0, 30%);
-        width: 90%;
-    }
-
-    #suka
-    {
-        transform: translate(0, 40%);
-        width: 90%;
+        display: block;
+        margin: 10px auto 0 auto;
+        width: 80%;
     }
 }
