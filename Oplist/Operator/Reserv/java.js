@@ -1,3 +1,4 @@
+changeName(0);
 showPanel(0);
 changeElite(0);
 
@@ -20,6 +21,25 @@ function showPanel(index)
 {
     var buttons=document.querySelectorAll("#content button");
     var content=document.querySelectorAll("#content .operPic");
+
+    buttons.forEach(function(node){
+        node.style.backgroundColor="";
+        node.style.color="";
+    });
+    
+    buttons[index].style.color="white";
+
+    content.forEach(function(node){
+        node.style.display="none";
+    });
+
+    content[index].style.display="block";
+}
+
+function changeName(index)
+{
+    var buttons=document.querySelectorAll("#content button");
+    var content=document.querySelectorAll("#content .name");
 
     buttons.forEach(function(node){
         node.style.backgroundColor="";

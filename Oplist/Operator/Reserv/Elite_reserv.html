@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Arknights Вики </title>
+   <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+    <link rel="stylesheet" type="text/css" href="../material.css"/>
+   <link rel="stylesheet" type="text/css" href="../../../header.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+
+ <body>
+
+    <div id="header">
+
+        <a href="../../../index.html"><img id="headPic" src="../../../pic/arknights.png" alt=""></a>
+        <div class="headernav">
+            <div class="quad">
+                <a href="../../../index.html">Главная</a>
+            </div>
+            
+            <div class="quad" style="margin-left: 25%;">
+                <a href="../../oplist.html">Оперлист</a>
+            </div>
+            
+            <div class="quad" style="margin-left: 50%;">
+                <div class="drop">
+                    <button class="hui">Cюжет</button>
+                    <div class="headcont">
+                        <ul>
+                            <li>
+                                <a href="../../../story/storyList.html"> Основные и побочные <br>истории </a>
+                            </li>
+                            <li>
+                                <a href="../../../organizations/fractions.html"> Организации </a>
+                            </li>
+                            <li>
+                                <a href="../../../handbook/handbook.html"> Толковый Словарь </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quad" style="margin-left: 73%;">
+                <div class="drop">
+                    <button class="hui">Гайды</button>
+                    <div class="headcont">
+                        <ul>
+                            <li>
+                                <a href="../../../guides/guideMain.html"> ВСЕ ГАЙДЫ </a>
+                            </li>
+                            <li>
+                                <a href="../../../guides/Guide1/Guide.html"> Гайд по Классам </a>
+                            </li>
+                            <li>
+                                <a href="../../../guides/Guide2/Guide.html"> Гайд по Прокачке</a>
+                            </li>
+                            <li>
+                                <a href="../../../guides/Guide3/Guide.html"> Гайд по Умениям </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="content">   
+        
+        <ul>
+            <li>
+                <button id="but1" onclick="changeName(0); showPanel(0); changeElite(0)"> <img src="pic/class_vanguard.png" alt="" width="40px" style="vertical-align: middle;"> </button>
+            </li>
+            <li>
+                <button id="but2" onclick="changeName(1); showPanel(1); changeElite(1)"> <img src="pic/class_sniper.png" alt="" width="40px" style="vertical-align: middle;"> </button>
+            </li>
+            <li>
+                <button id="but3" onclick="changeName(2); showPanel(2); changeElite(2)"> <img src="pic/class_caster.png" alt="" width="40px" style="vertical-align: middle;"> </button>
+            </li>
+            <li>
+                <button id="but4" onclick="changeName(3); showPanel(3); changeElite(3)"> <img src="pic/class_medic.png" alt="" width="40px" style="vertical-align: middle;"> </button>
+            </li>
+        </ul>
+
+        <h2 class="name default" style="color: white; text-align: center; margin: 0;"> 1</h2>
+		<h2 class="name" style="color: white; text-align: center; margin: 0;"> 2</h2>
+		<h2 class="name" style="color: white; text-align: center; margin: 0;"> 3</h2>
+		<h2 class="name" style="color: white; text-align: center; margin: 0;"> 4</h2>
+
+
+        <img id="frac" src="pic/rhodes.png" width="125px" style="position: absolute; left: 15px;">
+        
+        <div class="operPic">
+            <img src="pic/Reserv_melee.png" height="99%">
+        </div>
+
+        <div class="operPic">
+            <img src="pic/Reserv_sniper.png" height="99%">
+        </div>
+
+        <div class="operPic">
+            <img src="pic/Reserv_caster.png" height="99%">
+        </div>
+
+        <div class="operPic">
+            <img src="pic/Reserv_medic.png" height="99%">
+        </div>
+        
+
+    </div>
+
+    <div id="info">
+
+        <h2>Статы:</h2>
+
+        <div class="elite">
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <p style="margin-top: 0; margin-left: 3%;">
+                <img src="../pic/elite1.png" width="40px" style="vertical-align: bottom; ">LV.55
+            </p>
+
+            <div>
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td id="HPstats0" class="skillnum">1165</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td id="ATKstats0" class="skillnum">309</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">10</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td id="DEFstats0" class="skillnum">278</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">2</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1.05с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <img src="pic/range_melee.png" width="100px" style="display: block; margin-left: auto; margin-right: auto;">
+            
+        </div>
+
+        <div class="elite">
+
+            <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+            <p style="margin-top: 0; margin-left: 3%;">
+                <img src="../pic/elite1.png" width="40px" style="vertical-align: bottom; ">LV.55
+            </p>
+
+            <div>
+
+                <table class="skilltab">
+                    <tbody>
+                        <tr>
+                            <td class="skillname">Максимум HP</td>
+                            <td id="HPstats1" class="skillnum">980</td>
+                            <td class="skillname">Повторное <br> Размещение</td>
+                            <td class="skillnum">70с</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Сила Атаки</td>
+                            <td id="ATKstats1" class="skillnum">401</td>
+                            <td class="skillname">Стоимость</td>
+                            <td class="skillnum">10</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Физ. защита</td>
+                            <td id="DEFstats1" class="skillnum">115</td>
+                            <td class="skillname">Блокирует</td>
+                            <td class="skillnum">1</td>
+                        </tr>
+                        <tr>
+                            <td class="skillname">Маг. защита</td>
+                            <td class="skillnum">0</td>
+                            <td class="skillname">Время атаки</td>
+                            <td class="skillnum">1с</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+            <img src="pic/range_sniper.png" width="200px" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+
+        <div class="elite">
+
+                <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+                <p style="margin-top: 0; margin-left: 3%;">
+                    <img src="../pic/elite1.png" width="40px" style="vertical-align: bottom; ">LV.55
+                </p>
+    
+                <div>
+    
+                    <table class="skilltab">
+                        <tbody>
+                            <tr>
+                                <td class="skillname">Максимум HP</td>
+                                <td id="HPstats0" class="skillnum">1050</td>
+                                <td class="skillname">Повторное <br> Размещение</td>
+                                <td class="skillnum">70с</td>
+                            </tr>
+                            <tr>
+                                <td class="skillname">Сила Атаки</td>
+                                <td id="ATKstats0" class="skillnum">456</td>
+                                <td class="skillname">Стоимость</td>
+                                <td class="skillnum">17</td>
+                            </tr>
+                            <tr>
+                                <td class="skillname">Физ. защита</td>
+                                <td id="DEFstats0" class="skillnum">84</td>
+                                <td class="skillname">Блокирует</td>
+                                <td class="skillnum">1</td>
+                            </tr>
+                            <tr>
+                                <td class="skillname">Маг. защита</td>
+                                <td class="skillnum">15</td>
+                                <td class="skillname">Время атаки</td>
+                                <td class="skillnum">1.6с</td>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+                </div>
+    
+                <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+                <img src="pic/range_caster.png" width="150px" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+
+        <div class="elite">
+
+                    <H3 style="margin: 10px 0 0 10px;">Уровень</H3>
+                    <p style="margin-top: 0; margin-left: 3%;">
+                        <img src="../pic/elite1.png" width="40px" style="vertical-align: bottom; ">LV.55
+                    </p>
+        
+                    <div>
+        
+                        <table class="skilltab">
+                            <tbody>
+                                <tr>
+                                    <td class="skillname">Максимум HP</td>
+                                    <td id="HPstats0" class="skillnum">1080</td>
+                                    <td class="skillname">Повторное <br> Размещение</td>
+                                    <td class="skillnum">70с</td>
+                                </tr>
+                                <tr>
+                                    <td class="skillname">Сила Атаки</td>
+                                    <td id="ATKstats0" class="skillnum">338</td>
+                                    <td class="skillname">Стоимость</td>
+                                    <td class="skillnum">16</td>
+                                </tr>
+                                <tr>
+                                    <td class="skillname">Физ. защита</td>
+                                    <td id="DEFstats0" class="skillnum">102</td>
+                                    <td class="skillname">Блокирует</td>
+                                    <td class="skillnum">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="skillname">Маг. защита</td>
+                                    <td class="skillnum">0</td>
+                                    <td class="skillname">Время атаки</td>
+                                    <td class="skillnum">2.85с</td>
+                                </tr>
+                            </tbody>
+                        </table>
+        
+                    </div>
+        
+                    <H3 style="margin: 10px 0 10px 0; text-align: center; background-color: rgb(50, 50, 50); padding: 5px 0 5px;" >Радиус Атаки</H3>
+                    <img src="pic/range_sniper.png" width="200px" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+            
+
+    </div>
+
+    
+
+    <script src="../../../jquery.min.js"></script>
+    <script src="java.js"></script>
+ </body>
+</html>
