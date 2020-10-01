@@ -13,6 +13,46 @@
     margin: 10px auto auto 10px;
 }
 
+.window ul
+{
+	list-style: none;
+}
+
+.window i
+{	
+	margin-right: 2%;
+}
+
+.window a
+{
+	vertical-align: super;
+}
+
+.discord a, .discord i
+{
+	color: #7289d9;
+}
+
+.vk a, .vk i
+{
+	color: #4c75a3;
+}
+
+.twitter
+{
+	color: #1DA1F2;
+}
+
+.instagram
+{
+	color: #8a3ab9;
+}
+
+.fb
+{
+	color: #4267B2;
+}
+
 @media (max-width: 900px)
 {
     .window
