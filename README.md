@@ -18,10 +18,6 @@
   https://reapersou1.github.io/guides/guideMain.html  
   Сами страницы гайдов пока что находятся на стадии разработки.
   
-- #### Навигация по гайдах:
-  https://reapersou1.github.io/guides/guideMain.html  
-  Сами страницы гайдов пока что находятся на стадии разработки.
-  
 - #### Фракции (с навигацией):
   https://reapersou1.github.io/organizations/fractions.html 
 
