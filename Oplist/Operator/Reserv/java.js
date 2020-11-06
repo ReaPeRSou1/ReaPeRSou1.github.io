@@ -1,4 +1,3 @@
-changeName(0);
 showPanel(0);
 changeElite(0);
 
