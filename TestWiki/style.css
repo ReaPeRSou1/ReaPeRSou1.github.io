@@ -1,0 +1,280 @@
+#bodyS {
+  width: 90%;
+  margin: auto;
+  color: #000;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#header {
+  margin-top: 25px;
+  width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1vw;
+}
+
+#nav
+{
+  width: 80%;
+  position: relative;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#nav th
+{
+  font-weight: normal;
+  text-align: center;
+}
+
+#nav th a{
+  color: black;
+}
+
+#nav th a:hover
+{
+  text-shadow: 1px 1px rgba(150, 150, 150, 0.8);
+  color: rgb(58, 58, 58);
+}
+
+
+#serv
+{
+  width: 9%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#serv a
+{
+  color: #000;
+}
+
+#serv li
+{
+  list-style: none;
+}
+
+.ban
+{
+  position: absolute; 
+  top: 83%; 
+  left: 73%; 
+  background-color: rgba(255, 255, 255, 0.7); 
+  padding: 2vh 2vw 2vh 2vw; 
+  color: rgb(58, 58, 58); 
+  font-size: 1.3vw;
+}
+
+.carousel-item a:hover
+{
+  opacity: 0.8;
+}
+
+#banner
+{
+  display: block;
+  width: 75%;
+  margin: 0 auto 0 auto;
+}
+
+.carousel-control-prev, .carousel-control-next
+{
+  width: 10%;
+}
+
+#guide
+{
+  width: 89%;
+  margin: 20vh auto 5vh auto;
+}
+
+#guide h2
+{
+  font-size: 2vw;
+}
+
+.line {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column1 {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column img:hover, .column1 img:hover
+{
+  opacity: 0.90;
+}
+
+#patch
+{
+  width: 100%;
+  font-size: 1.4vw;
+  font-weight: 600;
+}
+
+#patch tr
+{
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+}
+
+#patch .date
+{
+  width: 12%;
+}
+
+#patch .cont
+{
+  width: 87%;
+}
+
+#dit
+{
+  padding: 2vh 4.5vw 2vh 4.5vw;
+  background-color: rgb(20, 20, 20);
+  font-size: 1.5vw;
+  float: right;
+  color: white;
+  margin: 5vh 0 5vh 0;
+  font-weight: 400;
+}
+
+#dit:hover
+{
+  background-color: rgb(40, 40, 40);
+}
+
+
+
+#info
+{
+  background-color: #1C1C1C;
+  margin-top: 40vh;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#infoS
+{
+  width: 90%;
+  margin: auto;
+  color: #FFFF;
+  padding: 15vh 0 5vh 0;
+  border-bottom: 2px solid #FFFF;
+}
+
+#invert
+{
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  margin: 0 7% 0 0;
+}
+
+
+
+#infoTable
+{
+  display: inline-flex;
+  position: relative;
+  width: 35%;
+  font-size: 1vw;
+  table-layout: fixed;
+}
+
+#infoTable td
+{
+  padding: 1vh 3.5vw 1vh 3.5vw;
+}
+
+#halp
+{
+  display: inline-flex; 
+  font-size: 1vw; 
+  width: 45%;
+  position: relative;
+  table-layout: fixed;
+}
+
+#halp tr
+{
+  margin: 1vh 0 1vh 0;
+}
+
+#cop
+{
+  background-color: rgba(0, 0, 0, 0.0);
+  border: none;
+  color: #FFFF;
+}
+
+#cop:hover
+{
+  text-decoration: underline 1px solid #FFFF;
+}
+
+#item-to-copy
+{display: none;}
+
+#flex
+{
+  flex-direction:row-reverse;
+  width: 49.3%;
+  display: inline-flex;
+}
+#flex a
+{
+  text-align: right;
+  max-width: 5%;
+  margin: 0 0 0 0.7vw;
+}
+
+.inv
+{
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  max-width: 90%;
+  display: inline-flex;
+  margin: 0 0 0 0.7vw;
+}
+
+.inv:hover
+{
+  -webkit-filter: invert(0.7);
+  filter: invert(0.7);
+}
+
